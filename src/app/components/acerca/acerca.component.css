@@ -1,0 +1,146 @@
+#acerca{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.titulo{
+     display: flex;
+     color: #fff;
+     font-size: 1.5rem;
+     letter-spacing: 1px;
+     justify-content: center;
+     padding-top: 5rem;
+     font-family: 'Cairo', sans-serif;
+     z-index: 1;
+}
+
+
+.icon-acerca{
+     position: relative;
+     cursor: pointer;
+     transition: .2s;
+     left: 1.5rem;
+     top: .8rem;
+}
+
+.icon-acerca:hover{
+    color: #D9A0BB;
+}
+
+#foto{
+    position: relative;
+    width: 25rem;
+    border-radius: 40%;
+    border: 3px solid #fff;
+}
+
+.info-container{
+    display: flex;
+    position: relative;
+    top:6rem;
+    justify-content: center;
+}
+
+.acerca-texto{
+    max-width: 600px;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.espacio{
+    margin-left: 4.5rem;
+}
+
+.acerca-texto span{
+    color: #D9A0BB;
+    font-weight: bold ;
+}
+
+.hola{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 6ch;
+    font-size: 1.3rem;
+    position: relative;
+    overflow: hidden;
+    right: 4.4rem;
+    top: 2rem;
+
+    animation: tipeo 3s 1 steps(5),
+    cursor .6s infinite;
+    
+}
+
+@keyframes tipeo {
+    0% {width: 0;}
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+.info_lista_container{
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info_lista_container ul {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.info_lista_container ul li span{
+    font-weight: bold;
+}
+
+.info_lista_container ul li span:hover{
+    color: #D9A0BB;
+}
+
+.all-info-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    top: -8rem;
+    z-index: -1;
+}
+
+.extras{
+    display: flex;
+}
+
+.mas-info{
+    max-width: 500px;
+    position: relative;
+    left: 10%;
+    top: 10rem;
+}
+
+.info_lista_container{
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 1rem;
+}
+
+.circle{
+    margin-right: .5rem;
+    font-size: .7rem;
+    position: relative;
+    top: -.1rem;
+}
+
+.btn-new button{
+    background-color:#A498B3;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    height: 3rem;
+    width: 10rem;
+    cursor: pointer;
+    animation: float 4s linear infinite;
+    font-size: 1.2rem;
+}

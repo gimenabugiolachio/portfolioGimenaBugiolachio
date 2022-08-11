@@ -1,0 +1,132 @@
+#experiencia{
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.icon-exp{
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    left: 1.5rem;
+    top: .8rem;
+}
+
+.icon-exp:hover{
+    color: #D9A0BB;
+}
+
+.cards{
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    -webkit-backgroubd-size: cover;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    background: #fff;
+    transition: 1s;
+    width: 400px;
+    height: 450px;
+    margin: 0 15px;
+    border-radius: 15px;
+    color: #232322;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+
+.box h3{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.box h4{
+    font-size: .9rem;
+}
+
+.box p{
+    width: 90%;
+    margin: 1% auto 10px;
+    font-size: .8rem;
+}
+
+.box-contenido{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    -webkit-background-size: cover;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: #302f2f;
+    border: 3px solid #fff;
+    position: relative;
+    top: 150px;
+    margin-left: 240px;
+    box-shadow: 0 2px 15px rgb(58, 54,54);
+}
+
+.shape{
+    height: 204px;
+    width:700px;
+    background-color: #232323;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='32' viewBox='0 0 48 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e8e3ea' fill-opacity='0.24'%3E%3Cpath d='M27 32c0-3.314 2.686-6 6-6 5.523 0 10-4.477 10-10S38.523 6 33 6c-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 6.627 0 12 5.373 12 12s-5.373 12-12 12c-2.21 0-4 1.79-4 4h-2zm-6 0c0-3.314-2.686-6-6-6-5.523 0-10-4.477-10-10S9.477 6 15 6c3.314 0 6-2.686 6-6h-2c0 2.21-1.79 4-4 4C8.373 4 3 9.373 3 16s5.373 12 12 12c2.21 0 4 1.79 4 4h2z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    left: -90px;
+    position: relative;
+    top: -65px;
+    border-radius: 300px;
+}
+
+.box button{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    background: #232322c5;
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 6px 11px;
+    font-size: 1rem;
+}
+
+.box button:hover{
+    background: #A498B3;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media (max-width:700px){
+    .cards{
+        flex-direction: column;
+    }
+    .box{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .box:hover{
+        transform: scale(1);
+}
+}

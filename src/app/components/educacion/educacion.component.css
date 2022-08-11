@@ -1,0 +1,137 @@
+#educacion{
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo{
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.icon-edu{
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    left: 1.5rem;
+    top: .8rem;
+}
+
+.icon-edu:hover{
+    color: #D9A0BB;
+}
+
+.card-contenido h3{
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card-contenido p{
+    margin-top: .5rem;
+}
+
+.icon-edu:hover{
+   color: #D9A0BB;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer button{
+    background: #232322c5;
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0;
+    padding: 6px 11px;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.card-footer button:hover{
+    background: #A498B3;
+}
+
+ a{
+    text-decoration: none;
+}
+
+.card-footer span{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    position: relative;
+    margin-top: .3rem;
+   
+}
+
+.icon-arrow{
+    color: #A498B3;
+    margin-right: .5rem;
+}
+
+.card-contenido p{
+    text-align: center;
+    font-size: .8rem;
+}
+
+.cards{
+    display: flex;
+    position: relative;
+    top: 2.5rem;
+    justify-content: center;
+}
+
+.card-container img{
+    width: 100%;
+    margin-bottom: -2.5rem;
+    position: relative;
+}
+
+.card-container:hover{
+    transform: scale(1.05);
+}
+
+.card-container{
+    width: 26rem;
+    height: 32rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 2rem;
+    transition: 1s;
+}
+
+.card-contenido{
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
+    background: #fff;
+    border-top-right-radius: 2.5rem;
+    position: relative;
+    color: #232322;
+}
+
+.card-contenido::before{
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: -4rem;
+    left: 0;
+    border-bottom-left-radius: 3rem;
+    box-shadow: -1.5rem 0.3rem 0 0.2rem #fff;
+}

@@ -1,0 +1,35 @@
+#skills{
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family:Verdana;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.skills-contenido{
+    margin-top: 3rem;
+    position: relative;
+    text-align: center;
+   
+   
+}
+
+.icon-skills{
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    left: 1.5rem;
+    top: .8rem;
+}
+
+.icon-skills:hover{
+    color: #D9A0BB;
+}

@@ -1,0 +1,122 @@
+#proyectos {
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo {
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: Verdana;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-proyec{
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    left: 1.5rem;
+    top: .8rem;
+}
+
+.icon-proyec:hover{
+    color: #D9A0BB;
+}
+
+.proyectos-body{
+    padding: 40px 0;
+    margin-top: 3rem;
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 410px;
+}
+
+.slider-main {
+    position: absolute;
+    width: 200%;
+}
+
+.item{
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    background: #494848;
+    position: relative;
+    margin: 0 50px;
+    border-radius: 1rem;
+}
+
+.card-image{
+    height: 180px;
+}
+
+.card-image img{
+    height: 180px;
+    margin-left: 1rem;
+}
+
+.text h2{
+    text-align: center;
+    padding: 1rem 0;
+    letter-spacing: 2px;
+}
+
+.text p{
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.item button{
+    background: #232322c5;
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 6px 11px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 8.4rem;
+}
+
+.item button:hover{
+    background: #A498B3;
+}
+
+.prev{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    color: #f8f7f9;
+    cursor:pointer;
+}
+
+.next{
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    color: #f8f7f9; 
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
