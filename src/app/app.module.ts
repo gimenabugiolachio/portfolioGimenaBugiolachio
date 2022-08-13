@@ -20,6 +20,8 @@ import { PrevDirective } from './components/proyectos/prev.directive';
 import { NextDirective } from './components/proyectos/next.directive';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import { NextDirective } from './components/proyectos/next.directive';
     SkillsComponent,
     ContactoComponent,
     PrevDirective,
-    NextDirective
+    NextDirective,
   ],
   imports: [
     BrowserModule,

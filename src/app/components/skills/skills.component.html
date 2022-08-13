@@ -1,148 +1,187 @@
 <section id="skills">
     <div class="skills-container container">
         <div class="titulo">
-        <h2>Hard & Soft Skills</h2>
+            <h2>Hard & Soft Skills</h2>
             <div class="button-editar">
                 <fa-icon [icon]="faPenToSquare" class="icon-skills"></fa-icon>
-            </div>   
-        </div> 
-        <div class="skills-contenido">
-            <circle-progress
-            [percent]="85"
-            [imageSrc]="'../assets/html.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="50"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="85"
-            [imageSrc]="'../assets/css.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="50"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="75"
-            [imageSrc]="'../assets/js.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="50"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="75"
-            [imageSrc]="'../assets/angular.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="60"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="75"
-            [imageSrc]="'../assets/gh.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="90"
-            [imageSrc]="'../assets/COREL.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="60"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="70"
-            [imageSrc]="'../assets/ae.png'"
-            [showImage]="true"
-            [imageHeight]="60"
-            [imageWidth]="60"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
-            <circle-progress
-            [percent]="85"
-            [imageSrc]="'../assets/ps.png'"
-            [showImage]="true"
-            [imageHeight]="60"
-            [imageWidth]="60"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#bb8fa3'"
-            [innerStrokeColor]="'#c0bcf4'"
-            [animation]="true"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [animation]="true"
-            [animationDuration]="600"
-            ></circle-progress>
+            </div>
         </div>
-    </div>
+            <div class="skills-contenido">
+                <div class="front">
+                    <div class="skill-nombre">
+                        <h2>Front-End</h2>
+                        <fa-icon [icon]="faCirclePlus" class="plus"></fa-icon>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faHtml5"></fa-icon>
+                                <h4>HTML</h4>
+                            </div>
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faCss3"></fa-icon>
+                                <h4>CSS</h4>
+                            </div>
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faJs"></fa-icon>
+                                <h4>JavaScript</h4>
+                            </div>                            
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faAngular"></fa-icon>
+                                <h4>Angular</h4>
+                            </div>                          
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faBootstrap"></fa-icon>
+                                <h4>Bootstrap</h4>
+                            </div>                           
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 60%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="skill-nombre">
+                        <h2>Back-End</h2>
+                        <fa-icon [icon]="faCirclePlus" class="plus"></fa-icon>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faJava"></fa-icon>
+                                <h4>Java / SpringBoot</h4>
+                            </div>
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 50%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <fa-icon [icon]="faDatabase"></fa-icon>
+                                <h4>MySQL</h4>
+                            </div>
+                            
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 65%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edicion">
+                    <div class="skill-nombre">
+                        <h2>Edición</h2>
+                        <fa-icon [icon]="faCirclePlus" class="plus"></fa-icon>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <img src="./assets/ps.png" alt="Photoshop" class="img-fluid">
+                                <h4>Photoshop</h4>
+                            </div>
+                            
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <img src="./assets/COREL.png" alt="Photoshop" class="img-fluid">
+                                <h4>Corel Draw</h4>
+                            </div>
+                            
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-titulo">
+                            <div class="inline">
+                                <img src="./assets/ae.png" alt="Photoshop" class="img-fluid">
+                                <h4>After Effects</h4>
+                            </div>
+                            
+                            <span class="skill-edit">
+                                <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <fa-icon [icon]="faTrashCan"></fa-icon>
+                            </span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-porcentaje" style="width: 55%;"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>   
 </section>

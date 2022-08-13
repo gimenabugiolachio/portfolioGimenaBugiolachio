@@ -15,7 +15,6 @@
      z-index: 1;
 }
 
-
 .icon-acerca{
      position: relative;
      cursor: pointer;
@@ -28,18 +27,27 @@
     color: #D9A0BB;
 }
 
+.foto-perfil{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+}
+
 #foto{
     position: relative;
-    width: 25rem;
-    border-radius: 40%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
     border: 3px solid #fff;
 }
 
 .info-container{
     display: flex;
     position: relative;
-    top:6rem;
+    top:8rem;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .acerca-texto{
@@ -106,19 +114,29 @@
     margin: 0;
     display: flex;
     position: relative;
-    top: -8rem;
+    top: -10rem;
     z-index: -1;
+}
+
+#name{
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .extras{
     display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 25%;
+    top: 3rem;
 }
 
 .mas-info{
     max-width: 500px;
     position: relative;
-    left: 10%;
-    top: 10rem;
 }
 
 .info_lista_container{
@@ -143,4 +161,7 @@
     cursor: pointer;
     animation: float 4s linear infinite;
     font-size: 1.2rem;
+    position: relative;
+    left: 4rem;
+    top: 5.5rem;
 }

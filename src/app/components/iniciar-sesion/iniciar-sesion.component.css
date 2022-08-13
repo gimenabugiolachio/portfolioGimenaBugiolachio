@@ -1,32 +1,71 @@
-.sesion-container{
-    background: #232323;
-    color: #fff;
-    max-width: 500px;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin: 0 auto;
+
+#inicio-sesion{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #B394C4, #755886, #798DC5, #BBA5AF);
+    background-size: 400% 400%;
     position: relative;
-    top: 10rem;
-    font-family: 'Cairo', sans-serif;
+    animation: fondoAnimado 10s infinite;
 }
+
+@keyframes fondoAnimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.sesion-container{
+    background: #232323b4;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(.5rem);
+    color: #fff;
+    height: 35vh;
+    width: 400px;  
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    position: relative; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .sesion-container h2{
     text-align: center;
 }
 
+
+fa-icon{
+    color: #D49BB0;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
 form{
     display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     margin-top: 2rem;
 }
 
-form .forma input{
-    background: transparent;
+.form-control{
+    background-color: transparent;
     border: 1px solid #fff;
-    border-radius: 1rem;
-    margin-left: .5rem;
+    border-radius: .5rem;
+    padding: .5rem 1.3rem;
     color: #fff;
+    margin-bottom: 1.5rem;
+  
 }
 
 button{
@@ -37,11 +76,12 @@ button{
     cursor: pointer;
     border: none;
     position: relative;
-    left: 24rem;
-    top: 1rem;
+    left: 15rem;
     font-size: 1.1rem;
+    
 }
 button:hover{
     background: #fff;
     color: #D49BB0;
 }
+

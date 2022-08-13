@@ -10,25 +10,7 @@
     top:4.5rem;
 }
 
-.redes{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    column-gap: 25px;
-    bottom: 25rem;
-    background-color: #606062;
-    width: 10rem;
-    height: 24rem;
-    align-items: center;
-    padding-top: 2rem;
-    border-radius: 1rem;
-}
 
-.redes a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
 
 .btn-new button{
     background-color:#A498B3;
@@ -42,48 +24,3 @@
     font-size: 1.2rem;
 }
 
-.icon{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    border-radius: 50%;
-    outline: 2px solid #fff;
-    transition-property: outline-offset, outline-color, background-color;
-    transition-duration: .25s;
-}
-
-.icon:hover{
-    outline-offset: 4px;
-}
-
-.icon:hover{
-    transform: translateX(10px);
-}
-
-.icon-instagram:hover{
-background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-outline-color: #ff0080;
-}
-
-.icon-facebook:hover{
-    background-color: #3b5998;
-    outline-color: #3b5998;
-}
-
-.icon-github:hover{
-    background-color: #171515;
-    outline-color: #171515;
-}
-
-.icon-twitter:hover{
-    background-color: #00acee;
-    outline-color: #00acee;
-}
-
-.icon-linkedin:hover{
-    background-color: #0072b1;
-    outline-color: #0072b1;
-}

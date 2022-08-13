@@ -103,7 +103,7 @@
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     font-family: 'Cairo', sans-serif;
 }
 
@@ -111,9 +111,19 @@ footer{
     display: flex;
     flex-direction: row;
     background: #313131;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+
+.lado-der{
+    text-align: center;
+}
+
+.lado-izq{
+    text-align: center;
+}
+
+.lado-izq span{
+    font-weight: bold;
 }

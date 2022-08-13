@@ -1,5 +1,5 @@
 #contacto{
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
     font-family: 'Cairo', sans-serif;
 }
@@ -118,26 +118,30 @@
 }
 
 .icon-instagram:hover{
-    background-color: transparent;
-    outline-color: #fff
-}
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    outline-color: #ff0080;
+    }
+    
+    .icon-facebook:hover{
+        background-color: #3b5998;
+        outline-color: #3b5998;
+    }
+    
+    .icon-github:hover{
+        background-color: #171515;
+        outline-color: #171515;
+    }
+    
+    .icon-twitter:hover{
+        background-color: #00acee;
+        outline-color: #00acee;
+    }
+    
+    .icon-linkedin:hover{
+        background-color: #0072b1;
+        outline-color: #0072b1;
+    }
+    
+    
 
-.icon-facebook:hover{
-    background-color: transparent;
-    outline-color: #fff;
-}
-
-.icon-github:hover{
-    background-color: transparent;
-    outline-color: #fff;
-}
-
-.icon-twitter:hover{
-    background-color: transparent;
-    outline-color: #fff;
-}
-
-.icon-linkedin:hover{
-    background-color: transparent;
-    outline-color: #fff;
-}
+    

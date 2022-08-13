@@ -89,17 +89,23 @@ a {
     padding: 6px 11px;
     font-size: 1.1rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 8.4rem;
 }
+
 
 .item button:hover{
     background: #A498B3;
 }
 
+
+.button-area{
+    max-width: max-content;
+}
+
 .prev{
     position: absolute;
-    left: 2rem;
+    left: 3rem;
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
