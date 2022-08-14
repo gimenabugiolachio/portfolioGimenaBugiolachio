@@ -7,11 +7,12 @@
                 <div class="forma mb-3">
                     <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
                     <input type="text" size="30" id="nombreUsuario" class="form-control form-control-lg" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
-                    </div>
-                    <div class="forma mb-3">
+                </div>
+                <div class="forma mb-3">
                     <fa-icon [icon]="faLock" class="icon-form"></fa-icon>
-                    <input type="password" size="30" class="form-control form-control-lg" id="password" placeholder="Contraseña" [(ngModel)]="password" required>
-                    </div>
+                    <input type="password" size="30" class="form-control form-control-lg" id="password"
+                    name="password" placeholder="Contraseña" [(ngModel)]="password" required>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>

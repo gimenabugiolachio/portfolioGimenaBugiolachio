@@ -19,6 +19,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { PrevDirective } from './components/proyectos/prev.directive';
 import { NextDirective } from './components/proyectos/next.directive';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -37,6 +38,7 @@ import { NextDirective } from './components/proyectos/next.directive';
     ContactoComponent,
     PrevDirective,
     NextDirective,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
