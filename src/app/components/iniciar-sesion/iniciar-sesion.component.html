@@ -2,17 +2,23 @@
     <div class="sesion-container container">
         <h2>Bienvenido</h2>
         <hr>
-        <form>
-            <div class="forma mb-3">
-            <fa-icon [icon]="faUser"></fa-icon>
-            <input type="email" size="30" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <div class="informacion">
+                <div class="forma mb-3">
+                    <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
+                    <input type="text" size="30" id="nombreUsuario" class="form-control form-control-lg" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+                    </div>
+                    <div class="forma mb-3">
+                    <fa-icon [icon]="faLock" class="icon-form"></fa-icon>
+                    <input type="password" size="30" class="form-control form-control-lg" id="password" placeholder="Contraseña" [(ngModel)]="password" required>
+                    </div>
             </div>
-            <div class="forma mb-3">
-            <fa-icon [icon]="faLock"></fa-icon>
-            <input type="password" size="30" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
-        <button type="submit" class="btn btn-primary">Ingresar</button>
+
+        <div class="crear-cuenta">
+            <a href="#!"><fa-icon [icon]="faUserPlus" class="icon-crear"></fa-icon>Crear cuenta</a>
+        </div>
     </div>
 </section>
 

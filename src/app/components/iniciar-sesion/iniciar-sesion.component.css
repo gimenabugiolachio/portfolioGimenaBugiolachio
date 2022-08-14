@@ -27,7 +27,7 @@
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     color: #fff;
-    height: 35vh;
+    height: 37vh;
     width: 400px;  
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -38,21 +38,17 @@
     transform: translate(-50%, -50%);
 }
 
-
 .sesion-container h2{
     text-align: center;
 }
 
-
-fa-icon{
+.icon-form{
     color: #D49BB0;
     margin-right: .5rem;
     font-size: 1.2rem;
 }
 
 form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 2rem;
@@ -65,7 +61,11 @@ form{
     padding: .5rem 1.3rem;
     color: #fff;
     margin-bottom: 1.5rem;
-  
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
 }
 
 button{
@@ -76,7 +76,6 @@ button{
     cursor: pointer;
     border: none;
     position: relative;
-    left: 15rem;
     font-size: 1.1rem;
     
 }
@@ -85,3 +84,15 @@ button:hover{
     color: #D49BB0;
 }
 
+.crear-cuenta a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.crear-cuenta a:hover{
+    color: #BBA5AF;
+}
+
+.icon-crear{
+    margin-right: .7rem;
+}
