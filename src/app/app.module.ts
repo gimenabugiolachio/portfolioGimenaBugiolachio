@@ -20,6 +20,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { PrevDirective } from './components/proyectos/prev.directive';
 import { NextDirective } from './components/proyectos/next.directive';
 import { HeaderComponent } from './components/header/header.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 
 
@@ -49,7 +50,9 @@ import { HeaderComponent } from './components/header/header.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
