@@ -2,19 +2,19 @@
     <div class="row">
         <div class="formulario">
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <h2>Agregá tu experiencia</h2>
+                <h2>Agregar experiencia</h2>
                 <hr>
                 <div id="nombre-descripcion">
                     <div class="form-group nombre">
                         <label for="nombreE">Empresa</label>
                         <input type="text" class="form-control" id="nombreE" name="nombreE" size="43.4" [(ngModel)]="nombreE" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group puesto">
                         <label for="puestoE">Puesto</label>
                         <input size="43.4" type="text" class="form-control" id="puestoE" name="puestoE" [(ngModel)]="puestoE" required>
                     </div>
                     <div class="form-group descripcion">
-                        <label for="descripcionE">Descripcion</label>
+                        <label for="descripcionE">Descripción</label>
                         <textarea cols="40" rows="5" type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required></textarea>
                     </div>
                 </div>    

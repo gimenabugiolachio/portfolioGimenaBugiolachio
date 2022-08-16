@@ -24,7 +24,7 @@ experienciaLab: Experiencia = null;
     })
   }
 
-Update(): void{
+onUpdate(): void{
   const id = this.activatedRouter.snapshot.params['id'];
   this.sExperiencia.update(id, this.experienciaLab).subscribe(data => {
     this.router.navigate(['']);

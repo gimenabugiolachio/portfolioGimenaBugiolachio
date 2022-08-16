@@ -40,6 +40,10 @@ form h2{
     height:6rem;
 }
 
+.puesto input{
+    margin-left: .8rem;
+}
+
 .form-control{
     background-color: transparent;
     border: 1px solid #fff;
@@ -59,7 +63,7 @@ form h2{
     position: relative;
     text-align: center;
     font-size: 1.1rem;
-    left: 6.7rem;
+    left: 40%;
 }
 
 .btn:hover{

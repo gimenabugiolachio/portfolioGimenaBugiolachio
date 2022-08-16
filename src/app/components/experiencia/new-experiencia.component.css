@@ -37,6 +37,10 @@ form h2{
     flex-direction: column;
 }
 
+.puesto input{
+    margin-left: .8rem;
+}
+
 .form-control{
     background-color: transparent;
     border: 1px solid #fff;
