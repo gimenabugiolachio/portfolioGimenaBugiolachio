@@ -1,40 +1,43 @@
 <section id="experiencia">
-    <div class="experiencia-container container">
+    <div class="row">
         <div class="titulo">
-            <h2>Experiencia laboral</h2>
-            <div class="boton-editar">
-                <fa-icon [icon]="faPenToSquare" class="icon-exp"></fa-icon>
-            </div>
+            <h2>Experiencia Laboral</h2>
+            <button class="btn-agregar" routerLink="/nuevaExperiencia" *ngIf="isLogged">
+                <fa-icon [icon]="faCirclePlus"></fa-icon>
+            </button>
         </div>
-            <div class="cards">
-                <div class="box">
-                    <div class="shape">
-                        <div class="image" style="background-image: url(./assets/aguila1.png)"></div>
+        <div class="box">
+            <div class="box-contenido" *ngFor="let Experiencia of experiencia">
+                <div class="desc">
+                    <div class="nombre-botones">
+                        <th class="nombreE">
+                            <h2>{{Experiencia.nombreE}}</h2>
+                        </th>
+                        <div class="buttons">
+                            <td *ngIf="isLogged">
+                                <button routerLink="/editarExperiencia/{{Experiencia.id}}">
+                                    <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                                </button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button (click)="delete(Experiencia.id)">
+                                    <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+                                </button>
+                            </td>
+                        </div>
                     </div>
-                    <div class="box-contenido">
-                    <h3>Estampados Aguila</h3>
+                    <td class="puestoE">
+                        <p>{{Experiencia.puestoE}}</p>
+                    </td>
+                    
+                    <td class="descripcionE">
+                        <p>{{Experiencia.descripcionE}}</p>
+                    </td>
+                   
                     <hr>
-                    <h4>Productos personalizados</h4>
-                    <div class="descripcion">
-                        <p>Me encuentro en el área de atención al público-venta. También realizo manejo de plataformas de pago y redes sociales.</p>
-                        <span>agos/2019 - actualidad</span>
-                    </div>
-                    <button><a href="https://www.instagram.com/estampadosaguila/" target="_blank"></a>Más info</button>
-                </div>
-                </div>
-                <div class="box">
-                    <div class="shape">
-                        <div class="image" style="background-image: url(./assets/DEMA1.png)"></div>
-                    </div>
-                    <h3>DEMA Salud-Tex</h3>
-                    <hr>
-                    <h4>Productos ortopédicos y deportivos</h4>
-                    <div class="descripcion">
-                        <p>Me encontraba en el área de facturación. También realizaba pago a proveedores y atención personalizada a clientes.</p>
-                    <span>mar/2016 a dic/2016</span>
-                    </div>
-                    <button><a href="https://home.dema-argentina.com.ar/en/home" target="_blank"></a>Más info</button>
                 </div>
             </div>
+           
+        </div>
     </div>
 </section>

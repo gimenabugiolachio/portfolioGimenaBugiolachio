@@ -21,6 +21,8 @@ import { PrevDirective } from './components/proyectos/prev.directive';
 import { NextDirective } from './components/proyectos/next.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia.component';
 
 
 
@@ -40,6 +42,8 @@ import { interceptorProvider } from './service/interceptor-service';
     PrevDirective,
     NextDirective,
     HeaderComponent,
+    NewExperienciaComponent,
+    EditarExperienciaComponent,
   ],
   imports: [
     BrowserModule,

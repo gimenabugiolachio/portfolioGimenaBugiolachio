@@ -2,7 +2,7 @@
 #inicio-sesion{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(135deg, #B394C4, #755886, #798DC5, #BBA5AF);
+    background-image: linear-gradient(135deg, #c694df, #becbec, #BBA5AF);
     background-size: 400% 400%;
     position: relative;
     animation: fondoAnimado 10s infinite;
@@ -30,8 +30,7 @@
     height: 37vh;
     width: 400px;  
     padding: 1rem 2rem;
-    border-radius: 2rem;
-    position: relative; 
+    border-radius: 2rem; 
     position: absolute;
     top: 50%;
     left: 50%;
