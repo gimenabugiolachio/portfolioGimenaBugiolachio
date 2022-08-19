@@ -18,7 +18,7 @@ export class ExperienciaComponent implements OnInit {
   faCirclePlus=faCirclePlus;
   faTrashCan=faTrashCan;
 
-
+ 
 
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
@@ -33,6 +33,7 @@ export class ExperienciaComponent implements OnInit {
       this.isLogged = false;
     }
   }
+
 
   agregarExp(): void{
     this.sExperiencia.lista().subscribe(data =>{this.experiencia = data;})

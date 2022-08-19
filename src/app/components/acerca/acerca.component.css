@@ -15,23 +15,29 @@
      z-index: 1;
 }
 
-.icon-acerca{
-     position: relative;
-     cursor: pointer;
-     transition: .2s;
-     left: 1.5rem;
-     top: .8rem;
-}
-
-.icon-acerca:hover{
-    color: #D9A0BB;
-}
 
 .foto-perfil{
     display: flex;
     flex-direction: column;
     position: relative;
     top: 5rem;
+}
+
+.btn-editar{
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: transparent;
+    left: 1rem;
+    top: .6rem;
+}
+
+.btn-editar:hover{
+    color: #D9A0BB;
+
 }
 
 #foto{
@@ -151,17 +157,3 @@
     top: -.1rem;
 }
 
-.btn-new button{
-    background-color:#A498B3;
-    border: none;
-    border-radius: 1rem;
-    color: #fff;
-    height: 3rem;
-    width: 10rem;
-    cursor: pointer;
-    animation: float 4s linear infinite;
-    font-size: 1.2rem;
-    position: relative;
-    left: 4rem;
-    top: 5.5rem;
-}

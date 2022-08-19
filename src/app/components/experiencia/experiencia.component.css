@@ -14,7 +14,18 @@
 }
 
 
+.fechas{
+    display: flex;
+    width: 1025px;
+    text-align: center;
+   margin-bottom: 1rem;
+    
+}
 
+.fechas p{
+    font-size: small;
+    margin-left: 27rem;
+}
 
 
 .btn-agregar{
@@ -23,7 +34,7 @@
     transition: .2s;
     border: none;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background-color: transparent;
     left: 1rem;
     top: .2rem;
@@ -89,7 +100,6 @@
 .buttons{
     display: flex;
     flex-direction: row;
-  
 }
 
 .buttons button{
