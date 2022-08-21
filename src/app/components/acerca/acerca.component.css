@@ -42,33 +42,36 @@
 
 #foto{
     position: relative;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     border: 3px solid #fff;
 }
 
 .info-container{
+    max-width: 1200px;
     display: flex;
     position: relative;
-    top:8rem;
-    justify-content: center;
-    margin: 0 auto;
+    flex-direction: row;
+    top: 5rem;
+    left: 15rem;
+    justify-content: space-around;
 }
+
+.info-container .foto-perfil{
+    top: -3rem;
+}
+
+
 
 .acerca-texto{
-    max-width: 600px;
-    margin-left: 6rem;
-    margin-top: 3rem;
-}
-
-.espacio{
-    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 }
 
 .acerca-texto span{
-    color: #D9A0BB;
-    font-weight: bold ;
+   margin-left: 9rem;
 }
 
 .hola{
@@ -76,11 +79,13 @@
     white-space: nowrap;
     border-right: 4px solid;
     width: 6ch;
-    font-size: 1.3rem;
     position: relative;
     overflow: hidden;
-    right: 4.4rem;
-    top: 2rem;
+    font-size: 2.5rem;
+    color: #D9A0BB;
+    font-weight: bold;
+    
+    
 
     animation: tipeo 3s 1 steps(5),
     cursor .6s infinite;
@@ -95,23 +100,25 @@
     50% {border-color: transparent;}
 }
 
-.info_lista_container{
+.mas-info{
     border-radius: 5px;
-    margin: 20px;
+    position: relative;
+    left: 52rem;
     display: flex;
     flex-direction: row;
+
 }
 
-.info_lista_container ul {
+.mas-info ul {
     list-style: none;
     margin-left: 3rem;
 }
 
-.info_lista_container ul li span{
+.mas-info ul li span{
     font-weight: bold;
 }
 
-.info_lista_container ul li span:hover{
+.mas-info ul li span:hover{
     color: #D9A0BB;
 }
 
@@ -119,25 +126,8 @@
     padding: 0;
     margin: 0;
     display: flex;
-    position: relative;
-    top: -10rem;
-    z-index: -1;
-}
-
-#name{
-    color: #fff;
-    font-size: 1.5rem;
-    position: relative;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.extras{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-left: 25%;
-    top: 3rem;
+    flex-direction: column;
+    position: relative;  
 }
 
 .mas-info{
@@ -145,7 +135,7 @@
     position: relative;
 }
 
-.info_lista_container{
+.mas-info{
     background-color: rgba(255, 255, 255, 0.205);
     padding: 1rem;
 }

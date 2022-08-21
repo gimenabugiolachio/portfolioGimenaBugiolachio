@@ -9,18 +9,33 @@
     position: relative;
     top:4.5rem;
 }
-
-
-
-.btn-new button{
-    background-color:#A498B3;
-    border: none;
-    border-radius: 1rem;
-    color: #fff;
-    height: 3rem;
-    width: 10rem;
-    cursor: pointer;
-    animation: float 4s linear infinite;
-    font-size: 1.2rem;
+.portada{
+  position: relative;
+ 
 }
+.info{
+    position: relative;
+    top: -45rem;
+}
+
+.info h1{
+    color: #D9A0BB;
+    text-shadow: 2px  1px #A16C86;
+    font-size: 3rem;
+    z-index: 8888;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.info p{
+    color:#707070;
+    font-weight: bold;
+    font-size: 2rem;
+    z-index: 8888;
+    text-align: center;
+    letter-spacing: 2px; 
+    position: relative;
+    top: -1.5rem;
+}
+
 

@@ -1,63 +1,56 @@
 <section id="acerca">
-    <div class="acerca-container container">
+    <div class="row" *ngFor="let AcercaDe of acercaDe">
         <div class="titulo">
-        <h2>Acerca De</h2>
-            <div class="button-editar">
-                <button class="btn-editar">
-                    <fa-icon [icon]="faPenToSquare"></fa-icon>
-                </button>
-            </div>   
+        <h2>Acerca De</h2>  
+        <div class="button-editar">
+            <button class="btn-editar" routerLink="editarAcercaDe/{{AcercaDe.id}}" *ngIf="isLogged">
+                <fa-icon [icon]="faPenToSquare"></fa-icon>
+            </button>
+        </div> 
         </div>
-        <div class="all-info-container">
-            <div class="info-container"> 
+        <div class="all-info-container" >     
+            <div class="info-container">                
                 <div class="foto-perfil">
                     <!--Elegir otra foto-->
-                    <img src=".../assets/foto-perfil.png" alt="Foto-Gimena" class="img-fluid" id="foto">
-                    <h1 id="name" class="name">{{persona.nombre}} {{persona.apellido}}</h1>
+                    <img src="../assets/foto-perfil.png" alt="Foto-Gimena" class="img-fluid" id="foto">
                 </div>  
-                    <div class="acerca-texto">
-                        <p class="espacio"><span class="hola">¡Hola!</span> Soy Gimena, tengo 27 años. Vivo en San Miguel, Bs. As.</p> 
-                        <p>Actualmente me encuentro estudiando una carrera de sistemas informáticos. Hace unos años comencé a sumergirme en el mundo de la programación, empezando por el lenguaje Visual Basic (allá por el 2012).</p>
-                        <p>Además de la programación, amo todo lo que tiene que ver con edición y diseño de imágenes, vectores. </p>
-                        <p>A pesar de la poca experiencia en el desarrollo de páginas web, soy <span>responsable</span>, <span>detallista</span> y <span>autoexigente</span>; por ende logro trabajos de calidad.</p> 
-                    </div>  
-                </div>
-        </div>
+                <div class="acerca-texto">
+                    <div>
+                        <span class="hola">¡Hola!</span>
+                    </div>
+                    <div>
+                        <p>{{AcercaDe.descripcionA}}</p> 
+                    </div>
+                </div>  
+            </div>
             <div class="mas-info">
-                <div class="info_lista_container">
                     <ul>
                         <li>
                             <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
                                 Nombre Completo: 
                             </span>
-                                Gimena Bugiolachio                    
-                            </li>
+                           {{AcercaDe.nombreA}}
+                        </li>
                         <li>
                             <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
                                 Edad: 
                             </span>
-                            27
-                        </li>
-                        <li>
-                            <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
-                                Fecha de Nacimiento:
-                            </span>
-                            8 de Noviembre de 1994
-                        </li>
+                            {{AcercaDe.edadA}}
+                        </li>                    
                         <li>
                             <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
                                 Cel: 
                             </span>
-                            11 2390-0493
+                            {{AcercaDe.telefonoA}}
                         </li>
                         <li>
                             <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
                                 Email: 
                             </span>
-                            gimena.bugiolachio@gmail.com
+                            {{AcercaDe.mailA}}
                         </li>
                     </ul>
-                </div>
             </div>
+        </div>
     </div>
 </section>

@@ -1,0 +1,35 @@
+<div class="container" *ngIf="acercaDe">
+    <div class="row">
+        <div class="formulario">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <h2>Editar Acerca De</h2>
+                <hr>
+                <div id="nombre-descripcion">
+                    <div class="form-group ">
+                        <label for="descripcionA">Descripción</label>
+                        <textarea type="text" class="form-control" id="descripcionA" name="descripcionA" cols="40" rows="5" [(ngModel)]="acercaDe.descripcionA" required></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label for="nombreA">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombreA" name="nombreA" [(ngModel)]="acercaDe.nombreA" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="edadA">Edad</label>
+                        <input size="43.4" type="text" class="form-control" id="edadA" name="edadA" [(ngModel)]="acercaDe.edadA" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="telefonoA">Teléfono</label>
+                        <input  type="text" class="form-control" id="telefonoA" name="telefonoA" [(ngModel)]="acercaDe.telefonoA" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="mailA">Mail</label>
+                        <input  type="text" class="form-control" id="mailA" name="mailA" [(ngModel)]="acercaDe.mailA" required>
+                    </div>    
+                </div>    
+                <button class="btn">
+                    Guardar
+                </button>  
+            </form>
+        </div>
+    </div>
+</div>

@@ -13,36 +13,36 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-educacion: Educacion[]=[];
+  educacion: Educacion[] = [];
 
-faCirclePlus= faCirclePlus;
-faPenToSquare=faPenToSquare;
-faAnglesRight=faAnglesRight;
-faTrashCan= faTrashCan;
+  faCirclePlus = faCirclePlus;
+  faPenToSquare = faPenToSquare;
+  faAnglesRight = faAnglesRight;
+  faTrashCan = faTrashCan;
 
   constructor(private educacionS: EducacionService, private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {
     this.agregarEduc();
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()) {
       this.isLogged = true;
-    } else{
+    } else {
       this.isLogged = false;
     }
   }
 
-  agregarEduc(): void{
+  agregarEduc(): void {
     this.educacionS.lista().subscribe(
-      data =>{
-          this.educacion = data;
+      data => {
+        this.educacion = data;
       }
     )
   }
 
-  delete(id?: number){
-    if(id != undefined){
-      this.educacionS.delete(id).subscribe(data =>{
+  delete(id?: number) {
+    if (id != undefined) {
+      this.educacionS.delete(id).subscribe(data => {
         this.agregarEduc();
       }, err => {
         alert("No se pudo eliminar educación");
@@ -50,6 +50,4 @@ faTrashCan= faTrashCan;
       )
     }
   }
-
-
 }

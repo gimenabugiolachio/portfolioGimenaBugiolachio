@@ -23,6 +23,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
+import { EditarAcercaDeComponent } from './components/acerca/editar-acerca-de.component';
 
 
 
@@ -44,6 +47,9 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
     HeaderComponent,
     NewExperienciaComponent,
     EditarExperienciaComponent,
+    NewEducacionComponent,
+    EditarEducacionComponent,
+    EditarAcercaDeComponent,
   ],
   imports: [
     BrowserModule,
