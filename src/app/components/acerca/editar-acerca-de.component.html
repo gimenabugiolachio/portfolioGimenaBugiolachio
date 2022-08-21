@@ -4,28 +4,36 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <h2>Editar Acerca De</h2>
                 <hr>
-                <div id="nombre-descripcion">
-                    <div class="form-group ">
+                <div class="detalles-container">
+                    <div class="form-group descripcion">
                         <label for="descripcionA">Descripción</label>
-                        <textarea type="text" class="form-control" id="descripcionA" name="descripcionA" cols="40" rows="5" [(ngModel)]="acercaDe.descripcionA" required></textarea>
+                        <textarea type="text" class="form-control" id="descripcionA" name="descripcionA" cols="50" rows="7" [(ngModel)]="acercaDe.descripcionA" required></textarea>
                     </div>
-                    <div class="form-group ">
-                        <label for="nombreA">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombreA" name="nombreA" [(ngModel)]="acercaDe.nombreA" required>
+                    <div class="nom-edad">
+                        <div class="form-group ">
+                            <label for="nombreA">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreA" name="nombreA" [(ngModel)]="acercaDe.nombreA" required>
+                        </div>
+                        <div class="form-group ">
+                                <label for="edadA">Edad</label>
+                                <input type="text" class="form-control" id="edadA" name="edadA" [(ngModel)]="acercaDe.edadA" required>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group ">
-                        <label for="edadA">Edad</label>
-                        <input size="43.4" type="text" class="form-control" id="edadA" name="edadA" [(ngModel)]="acercaDe.edadA" required>
-                    </div>
-                    <div class="form-group ">
-                        <label for="telefonoA">Teléfono</label>
-                        <input  type="text" class="form-control" id="telefonoA" name="telefonoA" [(ngModel)]="acercaDe.telefonoA" required>
-                    </div>
-                    <div class="form-group ">
-                        <label for="mailA">Mail</label>
-                        <input  type="text" class="form-control" id="mailA" name="mailA" [(ngModel)]="acercaDe.mailA" required>
+                    <div class="tel-mail">
+                        <div class="form-group ">
+                            <label for="telefonoA">Teléfono</label>
+                            <input  type="text" class="form-control" id="telefonoA" name="telefonoA" [(ngModel)]="acercaDe.telefonoA" required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="mailA">Mail</label>
+                            <input  type="text" class="form-control" size="24" id="mailA" name="mailA" [(ngModel)]="acercaDe.mailA" required>
+                        </div>
                     </div>    
-                </div>    
+                    <div class="form-group imgA">
+                        <label for="imgA">Imagen de Perfil</label>
+                        <input type="url" class="form-control" id="imgA" name="imgA" [(ngModel)]="acercaDe.imgA" required>
+                    </div>    
                 <button class="btn">
                     Guardar
                 </button>  

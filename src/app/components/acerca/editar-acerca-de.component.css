@@ -1,6 +1,6 @@
 .formulario{
     position: absolute;
-    width: 500px;
+    width: 700px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,6 +17,17 @@ form h2{
     text-align: center;
 }
 
+.nom-edad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tel-mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .form-group{
     display: flex;
@@ -27,8 +38,13 @@ form h2{
     margin-right: 1rem;
 }
 
+.detalles-container .descripcion{
+   margin-left: 1rem;
+}
 
-
+.imgA{
+    margin-left: 8rem;
+ }
 
 .form-control{
     background-color: transparent;
@@ -49,7 +65,7 @@ form h2{
     position: relative;
     text-align: center;
     font-size: 1.1rem;
-    left: 40%
+    left: 45%
 }
 
 .btn:hover{
@@ -57,3 +73,6 @@ form h2{
     color: #D49BB0;
 }
 
+.detalles-container{
+    margin-top: 1rem;
+}
