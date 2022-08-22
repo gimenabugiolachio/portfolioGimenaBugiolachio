@@ -12,6 +12,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -32,6 +33,7 @@ export class AcercaComponent implements OnInit {
   faGithub=faGithub;
   faTwitter=faTwitter;
   faLinkedin=faLinkedin;
+  faPerson=faPerson;
   
  
 

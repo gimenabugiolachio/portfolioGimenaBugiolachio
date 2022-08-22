@@ -1,32 +1,45 @@
 <section class="proyectos" id="proyectos">
     <div class="proyectos-container">
-    <div class="titulo">
-        <h2>Mis proyectos</h2>
-        <div class="button-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
-           <fa-icon [icon]="faCirclePlus" class="icon-agregar"></fa-icon>
+        <div class="titulo">
+            <h2>Mis proyectos</h2>
+            <div class="button-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
+                <fa-icon [icon]="faCirclePlus" class="icon-agregar"></fa-icon>
+            </div>
+        </div>
+        <div class="proyectos-body" >
+            <div class="container-fluid">
+                <div class="slider-wrap">
+                    <div class="slider-main">
+                        <div class="item" *ngFor="let Proyectos of proyectos">
+                            <div class="buttons">
+                                <button routerLink="/editarProyecto/{{Proyectos.id}}">
+                                    <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                </button>
+                                <button (click)="delete(Proyectos.id)">
+                                    <fa-icon [icon]="faTrashCan"></fa-icon>
+                                </button>
+                            </div>
+                            <div class="text">
+                                <h2>{{Proyectos.nombreP}}</h2>
+                                <div class="card-image">
+                                    <img class="img-fluid" src="{{Proyectos.imgP}}" alt="Portfolio">
+                                </div>
+                                <p>{{Proyectos.descripcionP}}</p>
+                            </div>
+                            <button class="link"><a href={{Proyectos.linkP}}></a>Más info</button>
+                        </div>
+                    </div>
+                    <div class="button-area">
+                        <button appPrevP>
+                            <fa-icon class="prev" [icon]="faCircleChevronLeft"></fa-icon>
+                        </button>
+                        <button appNextP>
+                            <fa-icon class="next" [icon]="faCircleChevronRight"></fa-icon>
+                        </button>
+
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
-<div class="proyectos-body"  *ngFor="let Proyectos of proyectos">
-    <div class="container-fluid">
-                <div class="item">
-                    <div class="buttons">
-                        <button routerLink="/editarProyecto/{{Proyectos.id}}">
-                            <fa-icon [icon]="faPenToSquare"></fa-icon>
-                        </button>
-                        <button (click)="delete(Proyectos.id)">
-                            <fa-icon [icon]="faTrashCan"></fa-icon>
-                        </button>
-                    </div>
-                    <div class="text">
-                        <h2>{{Proyectos.nombreP}}</h2>
-                        <div class="card-image">
-                            <img class="img-fluid" src="{{Proyectos.imgP}}" alt="Portfolio">
-                        </div>
-                        <p>{{Proyectos.descripcionP}}</p>
-                    </div>
-                    <button><a href={{Proyectos.linkP}}></a>Más info</button>
-                </div>
-    </div>
-</div>
-</div>
 </section>

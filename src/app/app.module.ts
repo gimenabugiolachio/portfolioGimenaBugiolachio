@@ -25,6 +25,8 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
 import { EditarAcercaDeComponent } from './components/acerca/editar-acerca-de.component';
 import { EditarProyectosComponent } from './components/proyectos/editar-proyectos.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { NextPDirective } from './components/proyectos/next-p.directive';
+import { PrevPDirective } from './components/proyectos/prev-p.directive';
 
 
 
@@ -48,6 +50,8 @@ import { NewProyectoComponent } from './components/proyectos/new-proyecto.compon
     EditarAcercaDeComponent,
     EditarProyectosComponent,
     NewProyectoComponent,
+    NextPDirective,
+    PrevPDirective,
   ],
   imports: [
     BrowserModule,
