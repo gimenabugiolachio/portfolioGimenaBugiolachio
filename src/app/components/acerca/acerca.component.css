@@ -5,14 +5,14 @@
 
 
 .titulo{
-     display: flex;
-     color: #fff;
-     font-size: 1.5rem;
-     letter-spacing: 1px;
-     justify-content: center;
-     padding-top: 5rem;
-     font-family: 'Cairo', sans-serif;
-     z-index: 1;
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: 'Cairo', sans-serif;
+    z-index: 1;
 }
 
 
@@ -32,7 +32,7 @@
     font-size: 1.3rem;
     background-color: transparent;
     left: 1rem;
-    top: .6rem;
+    top: .2rem;
 }
 
 .btn-editar:hover{
@@ -62,7 +62,10 @@
     top: -3rem;
 }
 
-
+.send{
+    color: #bb8fa3;
+    font-size: 1.4rem;
+}
 
 .acerca-texto{
     display: flex;
@@ -84,9 +87,7 @@
     font-size: 2.5rem;
     color: #D9A0BB;
     font-weight: bold;
-    
-    
-
+  
     animation: tipeo 3s 1 steps(5),
     cursor .6s infinite;
     
@@ -100,26 +101,30 @@
     50% {border-color: transparent;}
 }
 
-.mas-info{
-    border-radius: 5px;
+
+.contacto-info{
+    flex-wrap: wrap;
+    margin-top: 5rem;
     position: relative;
-    left: 52rem;
     display: flex;
-    flex-direction: row;
-
+    flex-direction:row;
+    top: 5rem;
+    margin: 0 auto;
 }
 
-.mas-info ul {
-    list-style: none;
-    margin-left: 3rem;
+.contacto-card h3{
+    margin-top: .2rem;
+    margin-bottom: .2rem;
 }
 
-.mas-info ul li span{
-    font-weight: bold;
-}
-
-.mas-info ul li span:hover{
-    color: #D9A0BB;
+.contacto-card{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin-right: 3rem;
 }
 
 .all-info-container{
@@ -130,20 +135,78 @@
     position: relative;  
 }
 
-.mas-info{
-    max-width: 500px;
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    flex-direction: column;
     position: relative;
+    top: 7rem;
+    align-items: center;
 }
 
-.mas-info{
-    background-color: rgba(255, 255, 255, 0.205);
-    padding: 1rem;
+.redes span{
+    border-bottom: 2px solid #D9A0BB;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 0 3rem;
 }
 
-.circle{
-    margin-right: .5rem;
-    font-size: .7rem;
+.redes-link{
     position: relative;
-    top: -.1rem;
+    top: 1rem;
 }
 
+.redes-link a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: .5rem;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover{
+    outline-offset: 3px;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+}
+
+.icon-instagram:hover{
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    outline-color: #ff0080;
+    }
+    
+    .icon-facebook:hover{
+        background-color: #3b5998;
+        outline-color: #3b5998;
+    }
+    
+    .icon-github:hover{
+        background-color: #171515;
+        outline-color: #171515;
+    }
+    
+    .icon-twitter:hover{
+        background-color: #00acee;
+        outline-color: #00acee;
+    }
+    
+    .icon-linkedin:hover{
+        background-color: #0072b1;
+        outline-color: #0072b1;
+    }
+    

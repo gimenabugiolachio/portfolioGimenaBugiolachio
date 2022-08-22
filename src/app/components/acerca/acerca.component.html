@@ -1,12 +1,10 @@
 <section id="acerca">
     <div class="row" *ngFor="let AcercaDe of acercaDe">
         <div class="titulo">
-        <h2>Acerca De</h2>  
-        <div class="button-editar">
+            <h2>Acerca De</h2>
             <button class="btn-editar" routerLink="editarAcercaDe/{{AcercaDe.id}}" *ngIf="isLogged">
                 <fa-icon [icon]="faPenToSquare"></fa-icon>
-            </button>
-        </div> 
+            </button>   
         </div>
         <div class="all-info-container" >     
             <div class="info-container">                
@@ -23,33 +21,32 @@
                     </div>
                 </div>  
             </div>
-            <div class="mas-info">
-                    <ul>
-                        <li>
-                            <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
-                                Nombre Completo: 
-                            </span>
-                           {{AcercaDe.nombreA}}
-                        </li>
-                        <li>
-                            <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
-                                Edad: 
-                            </span>
-                            {{AcercaDe.edadA}}
-                        </li>                    
-                        <li>
-                            <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
-                                Cel: 
-                            </span>
-                            {{AcercaDe.telefonoA}}
-                        </li>
-                        <li>
-                            <span><fa-icon [icon]="faCircle" class="circle"></fa-icon>
-                                Email: 
-                            </span>
-                            {{AcercaDe.mailA}}
-                        </li>
-                    </ul>
+            <div class="contacto-info">
+                <div class="contacto-card">
+                    <fa-icon [icon]="faEnvelope" class="send"></fa-icon>
+                    <h3>Email</h3>
+                    <span>{{AcercaDe.mailA}}</span>
+                </div>
+                <div class="contacto-card">
+                    <fa-icon [icon]="faWhatsapp" class="send"></fa-icon>
+                    <h3>Whatsapp</h3>
+                    <span>{{AcercaDe.telefonoA}}</span>
+                </div>
+                <div class="contacto-card">
+                    <fa-icon [icon]="faGears" class="send"></fa-icon>
+                    <h3>Edad</h3>
+                    <span>{{AcercaDe.edadA}}</span>
+                </div>
+            </div>
+            <div class="redes">
+                <span>Mis redes</span>
+                <div class="redes-link"> 
+                    <a class="icon icon-facebook" href="https://www.facebook.com/Gimena.Bugiolachio" target="_blank"><fa-icon [icon]="faFacebook"></fa-icon></a> 
+                    <a class="icon icon-instagram" href="https://www.instagram.com/gimenabugiolachio/" target="_blank" ><fa-icon [icon]="faInstagram"></fa-icon></a>
+                    <a class="icon icon-github" href="https://github.com/gimenabugiolachio" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
+                    <a class="icon icon-twitter" href="https://twitter.com/GimenaBugiolac1" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
+                    <a class="icon icon-linkedin" href="https://www.linkedin.com/in/gimena-bugiolachio-55887969/" target="_blank"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                </div>
             </div>
         </div>
     </div>

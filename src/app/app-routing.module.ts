@@ -7,6 +7,8 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { EditarProyectosComponent } from './components/proyectos/editar-proyectos.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 
 const routes: Routes = [
   {path:'', component: PortfolioComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'editarExperiencia/:id', component: EditarExperienciaComponent},
   {path: 'agregarEducacion', component: NewEducacionComponent},
   {path: 'editarEducacion/:id', component: EditarEducacionComponent},
-  {path: 'editarAcercaDe/:id', component: EditarAcercaDeComponent}
+  {path: 'editarAcercaDe/:id', component: EditarAcercaDeComponent},
+  {path: 'agregarProyecto', component: NewProyectoComponent},
+  {path: 'editarProyecto/:id', component: EditarProyectosComponent}
 
     
 ];

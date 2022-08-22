@@ -16,9 +16,6 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsComponent } from './components/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { ContactoComponent } from './components/contacto/contacto.component';
-import { PrevDirective } from './components/proyectos/prev.directive';
-import { NextDirective } from './components/proyectos/next.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
@@ -26,6 +23,8 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
 import { EditarAcercaDeComponent } from './components/acerca/editar-acerca-de.component';
+import { EditarProyectosComponent } from './components/proyectos/editar-proyectos.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 
 
 
@@ -41,15 +40,14 @@ import { EditarAcercaDeComponent } from './components/acerca/editar-acerca-de.co
     PortfolioComponent,
     IniciarSesionComponent,
     SkillsComponent,
-    ContactoComponent,
-    PrevDirective,
-    NextDirective,
     HeaderComponent,
     NewExperienciaComponent,
     EditarExperienciaComponent,
     NewEducacionComponent,
     EditarEducacionComponent,
     EditarAcercaDeComponent,
+    EditarProyectosComponent,
+    NewProyectoComponent,
   ],
   imports: [
     BrowserModule,
