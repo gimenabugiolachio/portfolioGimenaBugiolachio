@@ -2,7 +2,7 @@
     <div class="sesion-container container">
         <h2>Bienvenido</h2>
         <hr>
-        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+        <form #f="ngForm" (ngSubmit)="onLogin()"  novalidate>
             <div class="informacion">
                 <div class="forma mb-3">
                     <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
@@ -16,10 +16,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
-
-        <div class="crear-cuenta">
-            <a href="#!"><fa-icon [icon]="faUserPlus" class="icon-crear"></fa-icon>Crear cuenta</a>
-        </div>
     </div>
 </section>
 

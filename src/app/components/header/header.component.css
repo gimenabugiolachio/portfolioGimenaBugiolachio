@@ -96,3 +96,44 @@
     color: #D49BB0;
 }
 
+@media (max-width: 576px){
+    .logoap{
+        left: 20%;
+        position: relative;
+        top: -5rem;
+    }
+
+    .logo-text{
+        font-size: 1rem;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .navbar{
+        position: relative;
+        left: -13rem;
+        top: 4rem;
+    }
+
+    .navbar li{
+        text-align: center;
+    }
+
+    .nav li a{
+        font-size: .8rem;
+    }
+
+    .buttons{
+        position: relative;
+        left: 20rem;
+        top: -14.2rem;
+    }
+
+    .header-container{
+        position: fixed;
+    }
+}

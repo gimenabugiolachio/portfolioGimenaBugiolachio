@@ -103,7 +103,6 @@
 
 
 .contacto-info{
-    flex-wrap: wrap;
     margin-top: 5rem;
     position: relative;
     display: flex;
@@ -161,7 +160,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
-    margin-left: .5rem;
+    margin-left: .8rem;
 }
 
 .icon{
@@ -196,8 +195,8 @@
     }
     
     .icon-github:hover{
-        background-color: #171515;
-        outline-color: #171515;
+        background-color:   #4c2882;
+        outline-color:  #4c2882;
     }
     
     .icon-twitter:hover{
@@ -210,3 +209,70 @@
         outline-color: #0072b1;
     }
     
+
+    @media (max-width: 576px){
+        #acerca{
+            padding-top: 8rem;
+            height: 100%;
+        }
+
+        .titulo h2{
+            font-size: 1.5rem;
+        }
+
+        .all-info-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #foto{
+            width: 10rem;
+            height: 10rem;
+            position: relative;
+            left: -13rem;
+        }
+
+        .acerca-texto{
+            position: relative;
+            left: -15rem;
+            max-width: 250px;
+            top: -3rem;
+        }
+
+        .acerca-texto span{
+            font-size: 1.2rem;
+            position: relative;
+            left: -3rem;
+        }
+
+        .acerca-texto p{
+            font-size: .7rem;
+        }
+
+        .contacto-info {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            left: 5.5rem;
+        }
+
+        .contacto-card{
+            width: 200px;
+            font-size: 12px;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+            
+        }
+
+        .redes{
+            position: relative;
+            padding-bottom: 10rem;
+        }
+
+        .icon{
+            width: 20px;
+            height: 20px;
+            outline: none;
+        }
+
+    }

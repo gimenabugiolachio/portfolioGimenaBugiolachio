@@ -27,7 +27,6 @@ URL = 'http://localhost:8080/educacion/';
     return this.httpClient.put<any>(this.URL + `update/${id}`, educacion)
   }
 
-
   public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }

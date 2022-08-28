@@ -1,16 +1,16 @@
 <section id="acerca">
-    <div class="row" *ngFor="let AcercaDe of acercaDe">
+    <div class="row" *ngFor="let AcercaDe of acercaDe" >
         <div class="titulo">
             <h2>Acerca De</h2>
             <button class="btn-editar" routerLink="editarAcercaDe/{{AcercaDe.id}}" *ngIf="isLogged">
                 <fa-icon [icon]="faPenToSquare"></fa-icon>
             </button>   
         </div>
-        <div class="all-info-container" >     
+        <div class="all-info-container">     
             <div class="info-container">                
                 <div class="foto-perfil">
                     <!--Elegir otra foto-->
-                    <img src="../assets/foto-perfil.png" alt="Foto-Gimena" class="img-fluid" id="foto">
+                    <img src={{AcercaDe.imgA}} alt="Foto-Gimena" class="img-fluid" id="foto">
                 </div>  
                 <div class="acerca-texto">
                     <div>
@@ -53,6 +53,7 @@
                     <a class="icon icon-linkedin" href="https://www.linkedin.com/in/gimena-bugiolachio-55887969/" target="_blank"><fa-icon [icon]="faLinkedin"></fa-icon></a>
                 </div>
             </div>
-        </div>
+           
+        </div>    
     </div>
 </section>

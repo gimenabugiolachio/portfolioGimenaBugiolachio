@@ -9,6 +9,9 @@ import { faJava } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
+import { Skills } from 'src/app/model/skills';
+import { SkillsService } from 'src/app/service/skills.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-skills',
@@ -16,20 +19,32 @@ import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  faPenToSquare=faPenToSquare;
-  faHtml5=faHtml5;
-  faCss3=faCss3;
-  faJs=faJs;
-  faAngular=faAngular;
-  faBootstrap=faBootstrap;
-  faJava=faJava;
-  faDatabase=faDatabase;
-  faCirclePlus=faCirclePlus;
-  faTrashCan=faTrashCan;
+  skills: Skills[] = [];
 
-  constructor() { }
+  faPenToSquare = faPenToSquare;
+  faCirclePlus = faCirclePlus;
+  faTrashCan = faTrashCan;
+
+  constructor(private skillsS: SkillsService, private tokenService: TokenService) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
+    this.agregarSkill();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
   }
 
+  agregarSkill(): void {
+    this.skillsS.lista().subscribe(data => { this.skills = data; })
+  }
+
+  delete(id?: number) {
+    if (id != undefined) {
+      this.skillsS.delete(id).subscribe(data => { this.agregarSkill() }, err => { alert("No se pudo eliminar skill"); })
+    }
+  }
 }

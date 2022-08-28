@@ -133,3 +133,36 @@
 .icon:hover{
     color: #D9A0BB;
 }
+
+
+@media (max-width: 576px){
+    #educacion{
+        margin-top: -4rem;
+    }
+
+    .row{
+        padding-bottom: 2rem;
+    }
+
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+
+    .box{
+        width: 60%;
+        height: 50%;
+    }
+
+    .nombreE h2{
+        font-size: .8rem;
+    }
+
+    .info p{
+        font-size: .7rem;
+    }
+
+    .buttons button{
+        font-size: .8rem;
+    }
+
+}

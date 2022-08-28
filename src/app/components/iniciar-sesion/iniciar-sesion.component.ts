@@ -23,23 +23,23 @@ export class IniciarSesionComponent implements OnInit {
   roles: string[] = [];
   errMsj!: string;
 
-  faUser=faUser;
-  faLock=faLock;
-  faUserPlus=faUserPlus;
+  faUser = faUser;
+  faLock = faLock;
+  faUserPlus = faUserPlus;
 
 
-  constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) {}
+  constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()) {
       this.isLogged = true;
       this.isLogginFail = false;
       this.roles = this.tokenService.getAuthorities();
     }
   }
 
-  onLogin(): void{
-    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+  onLogin(): void {
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(data => {
       this.isLogged = true;
       this.isLogginFail = false;
@@ -53,7 +53,7 @@ export class IniciarSesionComponent implements OnInit {
       this.isLogginFail = true;
       this.errMsj = err.error.mensaje;
       console.log(this.errMsj);
-      
+
     })
   }
 
