@@ -12,20 +12,22 @@ export class NewSkillComponent implements OnInit {
   nombre: string = '';
   icono: string = '';
   tipo: string = '';
-  porcentaje: string = '';
+  porcentaje: number;
 
   constructor(private skillsS: SkillsService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  /**No le puse el this.router.navigate[('')]; */
+  
   onCreate(){
-    const skills = new Skills(this.nombre, this.icono, this.tipo, this.porcentaje);
+    const skills = new Skills(this.nombre, this.icono, this.porcentaje, this.tipo);
     this.skillsS.save(skills).subscribe(data =>{
       alert("Skill agregada correctamente");
+       this.router.navigate(['']);
     }, err =>{
-      alert("Error al añadir skill")
+      alert("Error al añadir skill");
+      this.router.navigate(['']);
     })
   }
 

@@ -1,30 +1,35 @@
 <div class="container">
     <div class="row">
         <div class="formulario">
-            <form (ngSubmit)="onCreate()"  novalidate #f="ngForm">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <h2>Agregar proyecto</h2>
                 <hr>
                 <div id="nombre-descripcion">
-                    <div class="form-group nombre">
-                        <label for="nombreP">Nombre</label>
-                        <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
+                    <div class="nombre-imagen">
+                        <div class="form-group nombre">
+                            <label for="nombreP">Nombre</label>
+                            <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP"
+                                required>
+                        </div>
+                        <div class="form-group imagen">
+                            <label for="imgP">Imagen</label>
+                            <input type="text" size="30" class="form-control" id="imgP" name="imgP" [(ngModel)]="imgP" required>
+                        </div>
                     </div>
-                    <div class="form-group imagen">
-                        <label for="imgP">Imagen</label>
-                        <input type="text" class="form-control" id="imgP" name="imgP" [(ngModel)]="imgP" required>
-                    </div>
+
                     <div class="form-group descripcion">
                         <label for="descripcionP">Descipción</label>
-                        <textarea col="20" row="7" type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP" required></textarea>
+                        <textarea cols="50" rows="5" type="text" class="form-control" id="descripcionP"
+                            name="descripcionP" [(ngModel)]="descripcionP" required></textarea>
                     </div>
                     <div class="form-group link">
                         <label for="linkP">Link</label>
-                        <input  type="url" class="form-control" id="linkP" name="linkP" [(ngModel)]="linkP" required>
-                        </div>
-                    </div> 
+                        <input type="url" size="30" class="form-control" id="linkP" name="linkP" [(ngModel)]="linkP" required>
+                    </div>
+                </div>
                 <button class="btn">
                     Guardar
-                </button>  
+                </button>
             </form>
         </div>
     </div>

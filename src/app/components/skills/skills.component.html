@@ -1,40 +1,47 @@
-<section id="skills">
+<section id="skills" class="skills">
     <div class="skills-container container">
         <div class="titulo">
             <h2>Hard & Soft Skills</h2>
-            <div class="button-editar" routerLink="/agregarSkill" *ngIf="isLogged">
+            <button class="btn-agregar" routerLink="/agregarSkill" *ngIf="isLogged">
                 <fa-icon [icon]=" faCirclePlus" class="icon-skills"></fa-icon>
-            </div>
+            </button>
         </div>
-        <div class="skills-contenido">
-            <div class="skill-item container" *ngFor="let Skills of skills">
-                <div class="skill-titulo">
-                    <div class="nombre-skill">
-                        <div>
-                            <img src={{Skills.icono}} class="img-icon">
-                            <h4>{{Skills.nombre}}</h4>
-                        </div>
+        <div class="skill-container">
+            <div class="item" *ngFor="let Skills of skills">
+                <div class="buttons">
+                    <td>
+                        <button routerLink="/editarSkill/{{Skills.id}}">
+                            <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                        </button>
+                    </td>
+                    <td>
+                        <button (click)="delete(Skills.id)">
+                            <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+                        </button>
+                    </td>
+                </div>
+                <div>
+                    <div class="titulo-icono">
+                        <h4>{{Skills.nombre}}</h4>
+                        <img src="{{Skills.icono}}" alt="Icono" class="icono-skill">
+                    </div>
+                    <div class="tipo">
                         <p>{{Skills.tipo}}</p>
                     </div>
-                    <div class="buttons">
-                        <td *ngIf="isLogged">
-                            <button routerLink="/editarSkill/{{Skills.id}}">
-                                <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
-                            </button>
-                        </td>
-                        <td *ngIf="isLogged">
-                            <button (click)="delete(Skills.id)">
-                                <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
-                            </button>
-                        </td>
+                    <div class="skill-bar">
+                        <div class="progress mb-3">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              [style.width]="Skills.porcentaje + '%'"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                            </div>
                     </div>
                 </div>
-                <div class="skill-bar"
-                attr.aria-valuenow="{{Skills.porcentaje}}"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                >
-                </div>
+   
+            </div>
             </div>
         </div>
     </div>

@@ -7,44 +7,34 @@
             </button>
         </div>
         <div class="box">
-            <div class="box-contenido" *ngFor="let Educacion of educacion">
-                <div class="desc">
-                    <div class="nombre-botones">
-                        <th class="nombreE">
-                            <h2>{{Educacion.nombreE}}</h2>
-                        </th>
-                        <div class="buttons">
-                            <td *ngIf="isLogged">
-                                <button routerLink="/editarEducacion/{{Educacion.id}}">
-                                    <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
-                                </button>
-                            </td>
-                            <td *ngIf="isLogged">
-                                <button (click)="delete(Educacion.id)">
-                                    <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
-                                </button>
+            <div class="card" *ngFor="let Educacion of educacion">
+                <div class="buttons">
+                    <td *ngIf="isLogged">
+                        <button routerLink="/editarEducacion/{{Educacion.id}}">
+                            <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                        </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button (click)="delete(Educacion.id)">
+                            <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+                        </button>
+                    </td>
+                </div>
+                    <div class="cover-card">
+                        <img src="{{Educacion.imgE}}" alt="ml">
+                    </div>
+                    <h4>{{Educacion.nombreE}}</h4>
+                    <hr>
+                    <div class="footer-card">
+                        <h5 class="detalles">{{Educacion.detallesE}}</h5>
+                        <p class="descripcion">{{Educacion.descripcionE}}</p>
+                        <div class="fechas">
+                            <td>
+                                <p>{{Educacion.fechaInicioE}} al {{Educacion.fechaFinE}}</p>
                             </td>
                         </div>
-                    </div>
-                    <div class="info">
-                        <td>
-                            <p class="carrera">{{Educacion.detallesE}}</p>
-                        </td>
-                        
-                        <td>
-                            <p>{{Educacion.descripcionE}}</p>
-                        </td> 
-                    </div>
-                   
-                    <div class="fechas">
-                        <td>
-                            <p>{{Educacion.fechaInicioE}} - {{Educacion.fechaFinE}}</p>
-                        </td> 
-                    </div>                
-                    <hr>
                 </div>
             </div>
-           
         </div>
     </div>
 </section>

@@ -1,21 +1,27 @@
-<section  id="inicio-sesion">
+<section id="inicio-sesion">
     <div class="sesion-container container">
-        <h2>Bienvenido</h2>
-        <hr>
-        <form #f="ngForm" (ngSubmit)="onLogin()"  novalidate>
-            <div class="informacion">
-                <div class="forma mb-3">
-                    <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
-                    <input type="text" size="30" id="nombreUsuario" class="form-control form-control-lg" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+        <div class="imagen-inicio">
+            <img class="img-fluid" src="./assets/inicio3.png" alt="">
+        </div>
+        <div class="cuerpo-inicio">
+            <h2>Bienvenido</h2>
+            <hr>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="informacion">
+                    <div class="forma mb-3">
+                        <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
+                        <input type="text" size="30" id="nombreUsuario" class="form-control form-control-lg"
+                            name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+                    </div>
+                    <div class="forma mb-3">
+                        <fa-icon [icon]="faLock" class="icon-form"></fa-icon>
+                        <input type="password" size="30" class="form-control form-control-lg" id="password"
+                            name="password" placeholder="Contraseña" [(ngModel)]="password" required>
+                    </div>
                 </div>
-                <div class="forma mb-3">
-                    <fa-icon [icon]="faLock" class="icon-form"></fa-icon>
-                    <input type="password" size="30" class="form-control form-control-lg" id="password"
-                    name="password" placeholder="Contraseña" [(ngModel)]="password" required>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+
     </div>
 </section>
-

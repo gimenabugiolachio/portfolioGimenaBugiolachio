@@ -10,29 +10,29 @@
                         <textarea type="text" class="form-control" id="descripcionA" name="descripcionA" cols="50" rows="7" [(ngModel)]="acercaDe.descripcionA" required></textarea>
                     </div>
                     <div class="nom-edad">
-                        <div class="form-group ">
-                            <label for="nombreA">Nombre Completo</label>
+                        <div class="form-group">
+                            <label for="nombreA">Nombre</label>
                             <input type="text" class="form-control" id="nombreA" name="nombreA" [(ngModel)]="acercaDe.nombreA" required>
                         </div>
-                        <div class="form-group ">
+                        <div class="form-group">
                                 <label for="edadA">Edad</label>
-                                <input type="text" class="form-control" id="edadA" name="edadA" [(ngModel)]="acercaDe.edadA" required>
+                                <input type="text" size="10" class="form-control" id="edadA" name="edadA" [(ngModel)]="acercaDe.edadA" required>
                             </div>
                         </div>
                     </div>
                     <div class="tel-mail">
-                        <div class="form-group ">
+                        <div class="form-group">
                             <label for="telefonoA">Teléfono</label>
                             <input  type="text" class="form-control" id="telefonoA" name="telefonoA" [(ngModel)]="acercaDe.telefonoA" required>
                         </div>
-                        <div class="form-group ">
+                        <div class="form-group">
                             <label for="mailA">Mail</label>
                             <input  type="text" class="form-control" size="24" id="mailA" name="mailA" [(ngModel)]="acercaDe.mailA" required>
                         </div>
                     </div>    
                     <div class="form-group imgA">
-                        <label for="imgA">Imagen de Perfil</label>
-                        <input type="url" class="form-control" id="imgA" name="imgA" [(ngModel)]="acercaDe.imgA" required>
+                        <label for="img">Imagen de Perfil</label>
+                        <input type="url" size="30" class="form-control" id="imgA" name="imgA" [(ngModel)]="acercaDe.imgA" required>
                     </div>    
                 <button class="btn">
                     Guardar

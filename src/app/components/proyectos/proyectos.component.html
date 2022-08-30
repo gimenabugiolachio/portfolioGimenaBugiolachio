@@ -2,9 +2,9 @@
     <div class="proyectos-container">
         <div class="titulo">
             <h2>Mis proyectos</h2>
-            <div class="button-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
-                <fa-icon [icon]="faCirclePlus" class="icon-agregar"></fa-icon>
-            </div>
+            <button class="btn-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
+                <fa-icon [icon]="faCirclePlus"></fa-icon>
+            </button>
         </div>
         <div class="proyectos-body" >
             <div class="container-fluid">
@@ -26,7 +26,9 @@
                                 </div>
                                 <p>{{Proyectos.descripcionP}}</p>
                             </div>
-                            <button class="link"><a href={{Proyectos.linkP}}></a>Más info</button>
+                            <button class="link">
+                                <a class="link-proyecto" href={{Proyectos.linkP}} target="_blank">Más info ></a>
+                            </button>
                         </div>
                     </div>
                     <div class="button-area">

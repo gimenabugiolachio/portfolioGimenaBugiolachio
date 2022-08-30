@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
 }
 
 .footer-container{
@@ -22,4 +22,22 @@ footer{
 
 .lado-izq span{
     font-weight: bold;
+}
+
+@media (max-width: 576px){
+    .lado-der h3{
+        font-size: 1rem;
+    }
+
+    .lado-der span{
+        font-size: .8rem;
+    }
+
+    .lado-izq p{
+        font-size: 1rem;
+    }
+
+    .lado-izq span{
+        font-size: .8rem;
+    }
 }

@@ -8,13 +8,12 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-
-  URL = 'http://localhost:8080/skills/';
+  URL = 'http://localhost:8080/Skills/';
 
   constructor(private httpClient: HttpClient) { }
 
-public lista(): Observable<Skills[]>{
-  return this.httpClient.get<Skills[]>(this.URL + 'lista');
+public list(): Observable<Skills[]>{
+  return this.httpClient.get<Skills[]>(this.URL + 'list');
 }
 
 public detail(id: number): Observable<Skills>{

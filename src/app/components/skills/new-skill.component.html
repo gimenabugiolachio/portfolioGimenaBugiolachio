@@ -5,22 +5,27 @@
                 <h2>Agregar skill</h2>
                 <hr>
                 <div id="nombre-descripcion">
-                    <div class="form-group nombre">
-                        <label for="nombreE">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" size="43.4" [(ngModel)]="nombre" required>
+                    <div class="nombre-icono">
+                        <div class="form-group nombre">
+                            <label for="nombreE">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" size="30" [(ngModel)]="nombre" required>
+                        </div>
+                        <div class="form-group icono">
+                            <label for="icono">Icono</label>
+                            <input type="text" class="form-control" id="icono" name="icono" size="30" [(ngModel)]="icono" required>
+                        </div>
                     </div>
-                    <div class="form-group icono">
-                        <label for="icono">Icono</label>
-                        <input type="text" class="form-control" id="icono" name="icono" size="43.4" [(ngModel)]="icono" required>
+                    <div class="tipo-porcentaje">
+                        <div class="form-group tipo">
+                            <label for="tipo">Tipo</label>
+                            <input size="15" type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="tipo" required>
+                        </div>
+                        <div class="form-group porcentaje">
+                            <label for="porcentaje">Porcentaje</label>
+                            <input size="10" type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                        </div>
                     </div>
-                    <div class="form-group tipo">
-                        <label for="tipo">Tipo</label>
-                        <input size="43.4" type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="tipo" required>
-                    </div>
-                    <div class="form-group porcentaje">
-                        <label for="tipo">Porcentaje</label>
-                        <input size="43.4" type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
-                    </div>
+                    
                 </div>    
                 <button class="btn">
                     Guardar

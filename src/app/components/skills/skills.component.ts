@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-import { faAngular } from '@fortawesome/free-brands-svg-icons';
-import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { faJava } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { Skills } from 'src/app/model/skills';
@@ -39,12 +32,15 @@ export class SkillsComponent implements OnInit {
   }
 
   agregarSkill(): void {
-    this.skillsS.lista().subscribe(data => { this.skills = data; })
+    this.skillsS.list().subscribe(data => { this.skills = data; })
   }
 
   delete(id?: number) {
     if (id != undefined) {
-      this.skillsS.delete(id).subscribe(data => { this.agregarSkill() }, err => { alert("No se pudo eliminar skill"); })
+      this.skillsS.delete(id).subscribe(data => { this.agregarSkill()
+       }, err => { 
+        alert("No se pudo eliminar skill");
+       })
     }
   }
 }

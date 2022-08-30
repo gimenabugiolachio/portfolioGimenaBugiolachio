@@ -1,17 +1,24 @@
 .formulario{
     position: absolute;
     width: 700px;
+    height:450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #232323b4;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    -webkit-backgroubd-size: cover;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(.5rem);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     padding: 1rem 2rem;
     border-radius: 2rem; 
 }
+
 
 form h2{
     text-align: center;
@@ -48,16 +55,16 @@ form h2{
 
 .form-control{
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #f3f3f3;
     border-radius: .5rem;
     padding: .5rem 1.3rem;
-    color: #fff;
+    color: #f3f3f3;
     margin-bottom: 1.5rem;
 }
 
 .btn{
     background: #D49BB0;
-    color: #fff;
+    color: #f3f3f3;
     padding: .3rem;
     border-radius: .5rem;
     cursor: pointer;
@@ -65,14 +72,49 @@ form h2{
     position: relative;
     text-align: center;
     font-size: 1.1rem;
-    left: 45%
 }
 
 .btn:hover{
-    background: #fff;
+    background: #f3f3f3;
     color: #D49BB0;
 }
 
 .detalles-container{
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 576px){
+    .formulario{
+        width: 500px;
+        height: 480px;
+    }
+
+    form h2{
+        font-size: .9rem;
+    }
+
+    .nom-edad{
+        justify-content: space-between;
+    }
+
+    .form-group label,
+    .form-group input, 
+    .form-group textarea{
+        font-size: .7rem;
+    }
+
+    .tel-mail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group{
+        justify-content: space-evenly;
+    }
+
+    .imgA{
+       margin: 0 auto;
+    }
+
+    
 }

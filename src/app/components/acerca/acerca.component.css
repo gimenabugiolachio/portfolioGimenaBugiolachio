@@ -1,12 +1,12 @@
 #acerca{
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
-
 
 .titulo{
     display: flex;
-    color: #fff;
+    color: #f3f3f3;
     font-size: 1.5rem;
     letter-spacing: 1px;
     justify-content: center;
@@ -28,7 +28,7 @@
     cursor: pointer;
     transition: .2s;
     border: none;
-    color: #fff;
+    color: #f3f3f3;
     font-size: 1.3rem;
     background-color: transparent;
     left: 1rem;
@@ -45,11 +45,11 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid #f3f3f3;
 }
 
 .info-container{
-    max-width: 1200px;
+    width: 1200px;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -117,6 +117,13 @@
 }
 
 .contacto-card{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    -webkit-backgroubd-size: cover;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
     padding: .5rem 1rem;
     border-radius: .5rem;
@@ -135,12 +142,14 @@
 }
 
 .redes{
+    width: max-content;
     display: flex;
     flex-wrap: wrap;
     margin-top: .5rem;
     flex-direction: column;
     position: relative;
     top: 7rem;
+    left: 45%;
     align-items: center;
 }
 
@@ -159,7 +168,7 @@
 .redes-link a{
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: #f3f3f3;
     margin-left: .8rem;
 }
 
@@ -169,9 +178,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #f3f3f3;
     border-radius: 50%;
-    outline: 2px solid #fff;
+    outline: 2px solid #f3f3f3;
     transition-property: outline-offset, outline-color, background-color;
     transition-duration: .25s;
 }
@@ -213,7 +222,7 @@
     @media (max-width: 576px){
         #acerca{
             padding-top: 8rem;
-            height: 100%;
+            height:max-content;
         }
 
         .titulo h2{
@@ -260,8 +269,7 @@
             width: 200px;
             font-size: 12px;
             margin-right: .5rem;
-            margin-bottom: .5rem;
-            
+            margin-bottom: .5rem;  
         }
 
         .redes{
@@ -275,4 +283,130 @@
             outline: none;
         }
 
+        .btn-editar{
+            position: relative;
+            top: -.1rem;
+        }
+    }
+
+    @media (max-width: 768px){
+        #acerca{
+            padding-top: 8rem;
+            height:max-content;
+        }
+
+        .titulo h2{
+            font-size: 2rem;
+        }
+
+        #foto{
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+            left: -13rem;
+        }
+
+        .contacto-card{
+            width: 190px;
+            font-size: 12px;
+            margin-right: .2rem;
+            margin-bottom: .5rem;  
+        }
+
+        .redes{
+            position: relative;
+            padding-bottom: 10rem;
+        }
+
+        .acerca-texto{
+            position: relative;
+            left: -12rem;
+            max-width: 400px;
+            top: -3rem;
+        }
+
+        .acerca-texto p{
+            font-size: 1rem;
+        }
+
+        .acerca-texto span{
+            font-size: 1.8rem;
+            position: relative;
+            left: -1rem;
+        }
+    }
+
+    @media (max-width: 992px){
+        #acerca{
+            margin-top: -4rem;
+            height:100vh;
+        }
+
+        .contacto-card{
+            width: 230px;
+            font-size: 12px;
+            margin-right: .8rem;
+            margin-bottom: .5rem;  
+        }
+
+        .redes{
+            position: relative;
+            padding-top: 2rem;
+            padding-bottom: 10rem;
+        }
+        #foto{
+            width: 20rem;
+            height: 20rem;
+            position: relative;
+            left: -13rem;
+        }
+
+        .titulo h2{
+            font-size:2rem;
+        }
+        .acerca-texto{
+            position: relative;
+            left: -12rem;
+            max-width: 400px;
+            top: -1rem;
+        }
+
+        .acerca-texto p{
+            font-size: 1rem;
+        }
+
+        .acerca-texto span{
+            font-size: 1.8rem;
+            position: relative;
+            left: -1rem;
+        }
+    }
+
+    @media (max-width: 1200px){
+        #foto{
+            width: 20rem;
+            height: 20rem;
+            position: relative;
+            left: -18rem;
+        }
+        .acerca-texto{
+            position: relative;
+            left: -18rem;
+            max-width: 500px;
+            top: -1rem;
+        }
+        #acerca{
+            margin-top: -6rem;
+            height:100vh;
+        }
+
+        .redes{
+            position: relative;
+            padding-top: 4rem
+        }
+
+        .redes span{
+            font-size: 1.5rem;
+        }
+        
     }

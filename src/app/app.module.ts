@@ -27,6 +27,7 @@ import { NextPDirective } from './components/proyectos/next-p.directive';
 import { PrevPDirective } from './components/proyectos/prev-p.directive';
 import { EditarSkillComponent } from './components/skills/editar-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -61,7 +62,8 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
     FontAwesomeModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     interceptorProvider

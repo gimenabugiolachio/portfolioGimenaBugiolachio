@@ -1,11 +1,12 @@
 #proyectos {
     width: 100vw;
     height: 85vh;
+    overflow: hidden;
 }
 
 .titulo {
     display: flex;
-    color: #fff;
+    color: #f3f3f3;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-family: Verdana;
@@ -14,20 +15,25 @@
     font-family: 'Cairo', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-.icon-agregar{
+.btn-agregar{
     position: relative;
     cursor: pointer;
     transition: .2s;
-    left: 1.5rem;
-    top: .8rem;
+    border: none;
+    color: #f3f3f3;
+    font-size: 1.3rem;
+    background-color: transparent;
+    left: 1rem;
+    top: .2rem;
 }
 
-.icon-agregar:hover{
+.btn-agregar:hover{
     color: #D9A0BB;
+}
+
+
+a {
+    text-decoration: none;
 }
 
 .proyectos-body{
@@ -48,13 +54,22 @@ a {
 
 .item{
     display: inline-block;
-    width: 337px;
+    width: 335px;
     height: 450px;
-    background: #494848;
     position: relative;
     margin: 0 20px;
     border-radius: 1rem;
     flex-wrap: wrap;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    -webkit-backgroubd-size: cover;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(.5rem);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: .5rem 1rem;
+    align-items: center;
 }
 
 .card-image{
@@ -83,10 +98,10 @@ a {
 }
 
 .item button{
-    background: #232322c5;
+    background: transparent;
     border: none;
     border-radius: .5rem;
-    color: #fff;
+    color: #f3f3f3;
     cursor: pointer;
     line-height: 20px;
     padding: 6px 11px;
@@ -99,22 +114,41 @@ a {
 .item .link{
    position: relative;
    top: 3.5rem;
-   left: 7rem;
+   transition: .2s;
 }
+
+.item a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.link-proyecto::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0;
+    border-radius: 2px;
+    background-color: #D49BB0;
+    transition: 0.4s ease;
+}
+
+.link-proyecto:hover::after{
+    width: 100%;
+}
+
 
 .item button:hover{
-    background: #A498B3;
+    color: #D9A0BB;
 }
-
-
 
 .button-area button{
     background: transparent;
     color: #f3f3f3;
     cursor: pointer;
     font-size: 3.5rem;
-    border: none;
-    
+    border: none; 
 }
 
 .prev{
@@ -128,5 +162,92 @@ a {
     right: 1.5rem;
     top: 50%;
 }
-  
+
+@media (max-width: 576px){
+    #proyectos{
+        height: max-content;
+    }
+
+    .proyectos-container{
+        position: relative;
+        top: -4rem;
+    }
+
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+
+    .buttons button{
+        font-size: .8rem;
+    }
+
+    .text h2{
+        font-size: 1rem;
+    }
+
+    .item p{
+        display: none;
+    }
+
+    .item{
+        width: 200px;
+        height: 250px;
+    }
+
+    .slider-wrap{
+        height: 250px;
+    }
+
+    .card-image img{
+        height: 100px;
+        margin-left: -1rem;
+    }
+
+    .link-proyecto{
+        font-size: .8rem;
+        position: relative;
+        top: -9rem;
+    }
+    
+    .btn-agregar{
+        position: relative;
+        top: -.1rem;
+    }
+}
+
+@media (max-width: 768px){
+    #proyectos{
+        height: max-content;
+    }
+    .titulo h2{
+        font-size:2rem;
+    }
+
+    .proyectos-container{
+        position: relative;
+        top: -4rem;
+    }
+
+}
+
+@media (max-width: 992px){
+    #proyectos{
+        height: max-content;
+        padding-top: -3rem;
+    }
+    .titulo h2{
+        font-size:2rem;
+    }
+    .proyectos-container{
+       padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1200px){
+    #proyectos{
+        height: 80vh;
+        padding-top: -3rem;
+    }
+    
+}
     

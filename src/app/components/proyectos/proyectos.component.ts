@@ -42,8 +42,6 @@ export class ProyectosComponent implements OnInit {
     }
   }
 
-
-
   agregarProyecto():void{
     this.proyectosS.lista().subscribe(data => {
       this.proyectos = data;

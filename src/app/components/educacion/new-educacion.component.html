@@ -5,17 +5,23 @@
                 <h2>Agregar educación</h2>
                 <hr>
                 <div id="nombre-descripcion">
-                    <div class="form-group nombre">
-                        <label for="nombreE">Institución</label>
-                        <input type="text" class="form-control" id="nombreE" name="nombreE" size="43.4" [(ngModel)]="nombreE" required>
+                    <div class="form-group imagen">
+                        <label for="imgE">Imagen</label>
+                        <input type="text" class="form-control" id="imgE" name="imgE" size="30" [(ngModel)]="imgE" required>
                     </div>
-                    <div class="form-group puesto">
-                        <label for="puestoE">Carrera</label>
-                        <input size="43.4" type="text" class="form-control" id="detallesE" name="detallesE" [(ngModel)]="detallesE" required>
+                    <div class="nombre-detalles">
+                        <div class="form-group nombre">
+                            <label for="nombreE">Institución</label>
+                            <input type="text" class="form-control" id="nombreE" name="nombreE" size="30" [(ngModel)]="nombreE" required>
+                        </div> 
+                        <div class="form-group detalles">
+                            <label for="detallesE">Carrera</label>
+                            <input size="30" type="text" class="form-control" id="detallesE" name="detallesE" [(ngModel)]="detallesE" required>
+                        </div>
                     </div>
                     <div class="form-group descripcion">
                         <label for="descripcionE">Descripción</label>
-                        <textarea cols="40" rows="5" type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required></textarea>
+                        <textarea cols="50" rows="5" type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required></textarea>
                     </div>
                     <div class="form-group fechas">
                         <div>
