@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AcercaDeService {
-  URL = 'http://localhost:8080/acercaDe/';
+  URL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/acercaDe/';
 
 
   constructor(private httpClient: HttpClient) { }
