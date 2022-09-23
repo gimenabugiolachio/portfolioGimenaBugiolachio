@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-URL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/educacion/';
+URL = 'https://backendgimena.herokuapp.com/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

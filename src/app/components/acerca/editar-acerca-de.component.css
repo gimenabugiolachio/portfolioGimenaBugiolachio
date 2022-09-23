@@ -1,7 +1,7 @@
-.formulario{
+.formulario {
     position: absolute;
     width: 700px;
-    height:450px;
+    height: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -10,50 +10,50 @@
     background-size: cover;
     text-align: center;
     overflow: hidden;
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     padding: 1rem 2rem;
-    border-radius: 2rem; 
+    border-radius: 2rem;
 }
 
 
-form h2{
+form h2 {
     text-align: center;
 }
 
-.nom-edad{
+.nom-edad {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.tel-mail{
+.tel-mail {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: row;
 }
 
-.form-group label{
+.form-group label {
     margin-right: 1rem;
 }
 
-.detalles-container .descripcion{
-   margin-left: 1rem;
+.detalles-container .descripcion {
+    margin-left: 1rem;
 }
 
-.imgA{
+.imgA {
     margin-left: 8rem;
- }
+}
 
-.form-control{
+.form-control {
     background-color: transparent;
     border: 1px solid #f3f3f3;
     border-radius: .5rem;
@@ -62,7 +62,7 @@ form h2{
     margin-bottom: 1.5rem;
 }
 
-.btn{
+.btn {
     background: #D49BB0;
     color: #f3f3f3;
     padding: .3rem;
@@ -74,47 +74,93 @@ form h2{
     font-size: 1.1rem;
 }
 
-.btn:hover{
+.btn:hover {
     background: #f3f3f3;
     color: #D49BB0;
 }
 
-.detalles-container{
+.detalles-container {
     margin-top: 2rem;
 }
 
-@media (max-width: 576px){
-    .formulario{
-        width: 500px;
-        height: 480px;
+@media only screen and (max-width: 480px) {
+    .formulario {
+        width: 90%;
+        height: max-content;
     }
 
-    form h2{
-        font-size: .9rem;
+    form h2 {
+        font-size: 5vw;
     }
 
-    .nom-edad{
-        justify-content: space-between;
+    .nom-edad {
+        /* justify-content: space-between; */
+        flex-direction: column-reverse;
     }
 
     .form-group label,
-    .form-group input, 
-    .form-group textarea{
-        font-size: .7rem;
+    .form-group input,
+    .form-group textarea {
+        font-size: 3vw;
     }
 
-    .tel-mail{
-        display: flex;
+    .tel-mail {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        align-content: flex-start;
+    }
+
+    .form-group {
         flex-direction: column;
     }
 
-    .form-group{
-        justify-content: space-evenly;
+    .imgA {
+        margin: 0 auto;
     }
 
-    .imgA{
-       margin: 0 auto;
+    .btn{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .formulario {
+        width: 90%;
+        height: max-content;
     }
 
-    
+    form h2 {
+        font-size: 5vw;
+    }
+
+    .nom-edad {
+        /* justify-content: space-between; */
+        flex-direction: column-reverse;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        font-size: 3vw;
+    }
+
+    .tel-mail {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        align-content: flex-start;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .imgA {
+        margin: 0 auto;
+    }
+
+    .btn{
+        font-size: 3vw;
+    }
 }

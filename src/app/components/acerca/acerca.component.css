@@ -1,13 +1,14 @@
-#acerca{
+#acerca {
     height: 100vh;
     width: 100vw;
+    padding-bottom: 8rem;
     overflow: hidden;
 }
 
-.titulo{
+.titulo {
     display: flex;
     color: #f3f3f3;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     letter-spacing: 1px;
     justify-content: center;
     padding-top: 5rem;
@@ -15,76 +16,72 @@
     z-index: 1;
 }
 
+.acerca-texto p {
+    margin-top: 4.7em;
+}
 
-.foto-perfil{
+/*.foto-perfil {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 5rem;
-}
+}*/
 
-.btn-editar{
+.btn-editar {
     position: relative;
     cursor: pointer;
     transition: .2s;
     border: none;
     color: #f3f3f3;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     background-color: transparent;
     left: 1rem;
     top: .2rem;
 }
 
-.btn-editar:hover{
+.btn-editar:hover {
     color: #D9A0BB;
-
 }
 
-#foto{
+#foto {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 20em;
+    height: 20em;
     border-radius: 50%;
     border: 3px solid #f3f3f3;
 }
 
-.info-container{
-    width: 1200px;
+.info {
+    /* width: 1200px; */
     display: flex;
     position: relative;
     flex-direction: row;
     top: 5rem;
-    left: 15rem;
+    /* left: 5rem; */
     justify-content: space-around;
 }
 
-.info-container .foto-perfil{
+/*.info .foto-perfil {
     top: -3rem;
-}
+}*/
 
-.send{
+.send {
     color: #bb8fa3;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
 }
 
-.acerca-texto{
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+.acerca-texto {
+    max-width: 600px;
 }
 
-.acerca-texto span{
-   margin-left: 9rem;
-}
-
-.hola{
+/*.hola{
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 6ch;
     position: relative;
     overflow: hidden;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #D9A0BB;
     font-weight: bold;
   
@@ -100,313 +97,197 @@
 @keyframes cursor {
     50% {border-color: transparent;}
 }
+*/
 
-
-.contacto-info{
-    margin-top: 5rem;
+.contacto-info {
+    /* margin-top: 5rem; */
     position: relative;
     display: flex;
-    flex-direction:row;
-    top: 5rem;
-    margin: 0 auto;
+    flex-direction: row;
+    top: 10rem;
+    /* margin: 0 auto; */
+    align-content: center;
+    justify-content: center;
 }
 
-.contacto-card h3{
+.contacto-card h3 {
     margin-top: .2rem;
     margin-bottom: .2rem;
 }
 
-.contacto-card{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+.contacto-card {
+    box-shadow: 0 10px 20px #00000080;
     -webkit-backgroubd-size: cover;
-    background-size: cover;
+    /* background-size: cover; */
     text-align: center;
     overflow: hidden;
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
+    background-color: #0000004d;
+    border-left: 1px solid rgba(255,255,255,.5);
+    border-top: 1px solid rgba(255,255,255,.5);
     -webkit-backdrop-filter: blur(.5rem);
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    margin-right: 3rem;
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    /* align-items: center; */
+    width: 270px;
+    margin-right: 1rem;
 }
 
-.all-info-container{
+/*.all-info {
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    position: relative;  
-}
-
-.redes{
-    width: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: .5rem;
-    flex-direction: column;
     position: relative;
-    top: 7rem;
-    left: 45%;
-    align-items: center;
+}*/
+
+@media only screen and (max-width: 480px) {
+    #acerca {
+        height: max-content;
+        padding-bottom: 10rem;
+    }
+
+    .send {
+        font-size: 4vw;
+    }
+
+    .titulo h2 {
+        font-size: 6vw;
+    }
+
+    #foto {
+        width: 9em;
+        height: 9em;
+        /* position: relative; */
+        border-radius: 20%;
+    }
+
+    .acerca-texto p{
+        margin-top: -2.5em;
+    }
+
+    .acerca-texto {
+        max-width: 80%;
+        margin-bottom: 3em;
+        font-size: 3vw;
+        justify-content: center;
+    }
+
+    .contacto-info {
+        margin-top: -2em;
+        flex-direction: column;
+        /*top: 10rem;*/
+        align-items: center;
+    }
+
+    .info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /*.info p {
+        padding-left: 1%;
+        padding-right: 1%;
+    }*/
+
+    .contacto-card {
+        max-width: 200px;
+        align-items: center;
+        flex-direction: column;
+        /* margin-left: 20%; */
+        /* grid-column-gap: 1rem; */
+        margin-bottom: 1.5em;
+    }
+
+    .contacto-card h3 {
+        font-size: 4vw;
+    }
+
+    .contacto-card span {
+        font-size: 3vw;
+    }
+
+    .btn-editar {
+        position: relative;
+        top: -0.1em;
+        font-size: 4vw;
+    }
 }
 
-.redes span{
-    border-bottom: 2px solid #D9A0BB;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    padding: 0 3rem;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #acerca {
+        height: max-content;
+        padding-bottom: 22rem;
+    }
+
+    .titulo h2 {
+        font-size: 6vw;
+    }
+
+    .send {
+        font-size: 4vw;
+    }
+
+    .btn-editar {
+        position: relative;
+        top: -0.1em;
+        font-size: 4vw;
+    }
+
+    .contacto-card h3 {
+        font-size: 4vw;
+    }
+
+    .contacto-card span {
+        font-size: 3vw;
+    }
+
+    .info-redes p {
+        padding-top: 1rem;
+        position: relative;
+        left: 40%;
+        text-align: justify;
+    }
+
+    #foto {
+        width: 15em;
+        height: 15em;
+        top: 16rem;
+        border-radius: 20%;
+        left: 20%;
+    }
+
+    .acerca-texto {
+        position: relative;
+        /* text-align: center; */
+        /* align-items: center; */
+        left: -46rem;
+        top: -3rem;
+        font-size: 3vw;
+    }
+
+    .info-container {
+        top: 3rem;
+    }
+
+    .contacto-info {
+        align-items: center;
+        flex-direction: column;
+        top: 20rem;
+    }
+
+    .info p {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .contacto-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* margin-left: 20%; */
+        /* grid-column-gap: 1rem; */
+        margin-bottom: 1.5em;
+    }
 }
-
-.redes-link{
-    position: relative;
-    top: 1rem;
-}
-
-.redes-link a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #f3f3f3;
-    margin-left: .8rem;
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #f3f3f3;
-    border-radius: 50%;
-    outline: 2px solid #f3f3f3;
-    transition-property: outline-offset, outline-color, background-color;
-    transition-duration: .25s;
-}
-
-.icon:hover{
-    outline-offset: 3px;
-}
-
-.icon:hover{
-    transform: translateY(-5px);
-}
-
-.icon-instagram:hover{
-    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    outline-color: #ff0080;
-    }
-    
-    .icon-facebook:hover{
-        background-color: #3b5998;
-        outline-color: #3b5998;
-    }
-    
-    .icon-github:hover{
-        background-color:   #4c2882;
-        outline-color:  #4c2882;
-    }
-    
-    .icon-twitter:hover{
-        background-color: #00acee;
-        outline-color: #00acee;
-    }
-    
-    .icon-linkedin:hover{
-        background-color: #0072b1;
-        outline-color: #0072b1;
-    }
-    
-
-    @media (max-width: 576px){
-        #acerca{
-            padding-top: 8rem;
-            height:max-content;
-        }
-
-        .titulo h2{
-            font-size: 1.5rem;
-        }
-
-        .all-info-container{
-            display: flex;
-            flex-direction: column;
-        }
-
-        #foto{
-            width: 10rem;
-            height: 10rem;
-            position: relative;
-            left: -13rem;
-        }
-
-        .acerca-texto{
-            position: relative;
-            left: -15rem;
-            max-width: 250px;
-            top: -3rem;
-        }
-
-        .acerca-texto span{
-            font-size: 1.2rem;
-            position: relative;
-            left: -3rem;
-        }
-
-        .acerca-texto p{
-            font-size: .7rem;
-        }
-
-        .contacto-info {
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            left: 5.5rem;
-        }
-
-        .contacto-card{
-            width: 200px;
-            font-size: 12px;
-            margin-right: .5rem;
-            margin-bottom: .5rem;  
-        }
-
-        .redes{
-            position: relative;
-            padding-bottom: 10rem;
-        }
-
-        .icon{
-            width: 20px;
-            height: 20px;
-            outline: none;
-        }
-
-        .btn-editar{
-            position: relative;
-            top: -.1rem;
-        }
-    }
-
-    @media (max-width: 768px){
-        #acerca{
-            padding-top: 8rem;
-            height:max-content;
-        }
-
-        .titulo h2{
-            font-size: 2rem;
-        }
-
-        #foto{
-            width: 15rem;
-            height: 15rem;
-            position: relative;
-            left: -13rem;
-        }
-
-        .contacto-card{
-            width: 190px;
-            font-size: 12px;
-            margin-right: .2rem;
-            margin-bottom: .5rem;  
-        }
-
-        .redes{
-            position: relative;
-            padding-bottom: 10rem;
-        }
-
-        .acerca-texto{
-            position: relative;
-            left: -12rem;
-            max-width: 400px;
-            top: -3rem;
-        }
-
-        .acerca-texto p{
-            font-size: 1rem;
-        }
-
-        .acerca-texto span{
-            font-size: 1.8rem;
-            position: relative;
-            left: -1rem;
-        }
-    }
-
-    @media (max-width: 992px){
-        #acerca{
-            margin-top: -4rem;
-            height:100vh;
-        }
-
-        .contacto-card{
-            width: 230px;
-            font-size: 12px;
-            margin-right: .8rem;
-            margin-bottom: .5rem;  
-        }
-
-        .redes{
-            position: relative;
-            padding-top: 2rem;
-            padding-bottom: 10rem;
-        }
-        #foto{
-            width: 20rem;
-            height: 20rem;
-            position: relative;
-            left: -13rem;
-        }
-
-        .titulo h2{
-            font-size:2rem;
-        }
-        .acerca-texto{
-            position: relative;
-            left: -12rem;
-            max-width: 400px;
-            top: -1rem;
-        }
-
-        .acerca-texto p{
-            font-size: 1rem;
-        }
-
-        .acerca-texto span{
-            font-size: 1.8rem;
-            position: relative;
-            left: -1rem;
-        }
-    }
-
-    @media (max-width: 1200px){
-        #foto{
-            width: 20rem;
-            height: 20rem;
-            position: relative;
-            left: -18rem;
-        }
-        .acerca-texto{
-            position: relative;
-            left: -18rem;
-            max-width: 500px;
-            top: -1rem;
-        }
-        #acerca{
-            margin-top: -6rem;
-            height:100vh;
-        }
-
-        .redes{
-            position: relative;
-            padding-top: 4rem
-        }
-
-        .redes span{
-            font-size: 1.5rem;
-        }
-        
-    }

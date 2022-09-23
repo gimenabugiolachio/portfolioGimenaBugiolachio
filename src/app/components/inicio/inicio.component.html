@@ -1,10 +1,16 @@
 <section id="inicio">
- <!--Banner / quizas lo cambie y ponga una animacion / video-->
-    <div class="portada">
-        <img src="{{persona.img}}" alt="Banner" id="banner" class="img-fluid">
-    </div>
-    <div class="info"> 
-        <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
-        <p id="profesion">{{persona.profesion}}</p>
-    </div>
+    <div class="container-fluid">
+            <div class="imagen">
+                 <!--Banner / quizas lo cambie y ponga una animacion / video-->
+                <img src="./assets/BannerInicio.svg" alt="Banner" id="banner" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="col info">
+                    <h1>Gimena Bugiolachio</h1>
+                    <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+                    <p>Desarrolladora Full Stack Jr.</p>
+                    <p id="profesion">{{persona.profesion}}</p>
+                </div>
+            </div>
+        </div>
 </section>

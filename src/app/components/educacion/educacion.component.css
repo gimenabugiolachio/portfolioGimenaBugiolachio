@@ -1,10 +1,10 @@
-#educacion{
+#educacion {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.titulo{
+.titulo {
     display: flex;
     color: #f3f3f3;
     font-size: 1.5rem;
@@ -14,8 +14,11 @@
     font-family: 'Cairo', sans-serif;
 }
 
+.row {
+    text-align: center;
+}
 
-.btn-agregar{
+.btn-agregar {
     position: relative;
     cursor: pointer;
     transition: .2s;
@@ -27,50 +30,44 @@
     top: .2rem;
 }
 
-.btn-agregar:hover{
+.btn-agregar:hover {
     color: #D9A0BB;
 }
 
-
-.desc{
-    padding: .5rem;
-}
-
-.info{
+.info {
     display: flex;
     flex-direction: column;
 }
 
-.fechas{
+.fechas {
     display: flex;
-    width: 1025px;
-    position: relative;
-    left: -15rem;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
+    /* width: max-content; */
+    /* left: -16rem; */
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     background-color: #2a2a2a;
-    margin-top: .7rem;
-    margin-bottom: 1rem;
-    
+    margin-top: 0.7rem;
+    /* margin-bottom: 1rem; */
+    /* align-items: center; */
+    justify-content: center;
 }
 
-.fechas p{
-    font-size: small;
-    margin-left: 27rem;
-}
-
-.box{
+.box {
     position: relative;
     top: 2rem;
-    left: 17%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.card{
+.detalles {
+    padding-top: .6rem;
+}
+
+.card {
     width: 500px;
-    height: 525px;
+    height: 480px;
     -webkit-backgroubd-size: cover;
     background-size: cover;
     text-align: center;
@@ -84,10 +81,10 @@
     backdrop-filter: blur(1rem);
     overflow: hidden;
     color: #f3f3f3;
-    margin-right: 2rem;
+    margin: 0 auto;
 }
 
-.cover-card{
+.cover-card {
     width: 110%;
     height: 250px;
     border-radius: 1rem;
@@ -95,140 +92,91 @@
     margin-left: -2rem;
 }
 
-.cover-card img{
+.cover-card img {
     width: 110%;
     position: relative;
     left: 2rem;
+    top: -8rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    left: 24rem;
+    z-index: 111111;
 }
 
-.buttons button{
-    background-color: transparent;
+.buttons button {
     color: #f3f3f3;
     border: none;
     font-size: 1.1rem;
-    position: relative;
-    left: 15rem;
+    background-color: transparent;
 }
 
-.icon{
-    margin-left: .5rem;
+.icon {
+    margin-left: 1rem;
     cursor: pointer;
+    padding: .3rem;
+    background-color: #313131;
+    border-radius: .5rem;
 }
 
-.icon:hover{
+.icon:hover {
     color: #D9A0BB;
 }
 
-@media (max-width: 576px){
-    #educacion{
+@media only screen and (max-width: 480px) {
+    #educacion {
         margin-top: -4rem;
         height: max-content;
     }
 
-    .row{
+    .row {
         padding-bottom: 2rem;
     }
 
-    .card{
-        width: 500px;
-        height: 525px;
-        margin-bottom: 1rem;
+    .card {
+        height: max-content;
+        margin-bottom: 1.5rem;
     }
 
-    .box{
-       position: relative;
-       left: 8rem;
+    .titulo h2 {
+        font-size: 6vw;
     }
 
-    .titulo h2{
-        font-size: 1.5rem;
-    }
-
-    .footer-card .descripcion{
+    .footer-card .descripcion {
         font-size: .8rem;
         padding-left: .3rem;
         padding-right: .3rem;
     }
-    
-    .box{
-        width: 60%;
-        height: 50%;
+
+    .box {
+        width: 90%;
+        /* flex-direction: column; */
+        margin: 0 auto;
     }
 
-    .cover-card{
+    .cover-card {
         width: 120%;
+        height: 150px;
     }
 
-    .buttons button{
-        font-size: .8rem;
+    .buttons {
+        left: 70%;
     }
 
-    .fechas p{
+    .buttons button {
+        font-size: 3vw;
+    }
+
+    .fechas p {
         font-size: .6rem;
-       position: relative;
-       left: -16%;
     }
 
-    .btn-agregar{
+    .btn-agregar {
         position: relative;
-        top: -.1rem;
-    }
-}
-
-@media (max-width: 768px){
-    #educacion{
-        margin-top: -4rem;
-        height: max-content;
-    }
-
-    .titulo h2{
-        font-size: 2rem;
-    }
-
-    .box{
-        width: 70%;
-        height: 60%;
-    }
-
-    .card{
-        width: 550px;
-        height: 510px;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (max-width: 992px){
-    #educacion{
-         padding-top: -3rem;
-        height: max-content;
-    }
-    .titulo h2{
-        font-size: 2rem;
-    }
-
-    .card{
-        margin-bottom: 2rem;
-    }
-
-    .box{
-        margin-bottom: 4rem;
-        position: relative;
-        left: 25%;
-    }
-}
-
-@media (max-width: 1200px){
-    #educacion{
-        margin-top: -2rem;
-        height:100vh;
-    }
-
-    .box{
-        margin-left: -10rem;
+        top: -0.1em;
+        font-size: 4vw;
     }
 }

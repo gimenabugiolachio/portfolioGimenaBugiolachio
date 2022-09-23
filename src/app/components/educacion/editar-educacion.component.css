@@ -1,7 +1,7 @@
-.formulario{
+.formulario {
     position: absolute;
     width: 800px;
-    height:450px;
+    height: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -14,46 +14,48 @@
     -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(1rem);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(.5rem);
     padding: 1rem 2rem;
-    border-radius: 2rem; 
+    border-radius: 2rem;
 }
 
-form h2{
+form h2 {
     text-align: center;
 }
 
-.imagen{
+.imagen {
     position: relative;
     left: 20%;
 }
 
-.fechas{
+.fechas {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: row;
 }
 
-.form-group label{
+.form-group label {
     margin-right: 1rem;
 }
 
-.descripcion{
+.descripcion {
     display: flex;
     flex-direction: column;
 }
 
-.puesto input{
+.puesto input {
     margin-left: .8rem;
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
     border: 1px solid #f3f3f3;
     border-radius: .5rem;
@@ -62,13 +64,13 @@ form h2{
     margin-bottom: 1.5rem;
 }
 
-.institucion-carrera{
+.institucion-carrera {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.btn{
+.btn {
     background: #D49BB0;
     color: #f3f3f3;
     padding: .3rem;
@@ -80,43 +82,51 @@ form h2{
     font-size: 1.1rem;
 }
 
-.btn:hover{
+.btn:hover {
     background: #f3f3f3;
     color: #D49BB0;
 }
 
-#nombre-descripcion{
+#nombre-descripcion {
     margin-top: 2rem;
 }
 
-@media (max-width: 576px){
-    .formulario{
-        width: 500px;
-        height: 480px;
+@media only screen and (max-width: 480px) {
+    .formulario {
+        width: 90%;
+        height: max-content;
     }
 
-    .form-group label,
-    .form-group input, 
-    .form-group textarea{
-        font-size: .7rem;
-    }
-
-    form h2{
-        font-size: .9rem;
-    }
-
-    .form-group{
-        justify-content: space-evenly;
-    }
-
-    .institucion-carrera{
-        display:flex;
+    .form-group {
+        display: flex;
         flex-direction: column;
     }
 
-    .imagen{
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        font-size: 3vw;
+    }
+
+    form h2 {
+        font-size: 5vw;
+    }
+
+    .form-group {
+        justify-content: space-evenly;
+    }
+
+    .institucion-carrera {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagen {
         position: relative;
         left: 1%;
+    }
 
+    .btn {
+        font-size: 3vw;
     }
 }

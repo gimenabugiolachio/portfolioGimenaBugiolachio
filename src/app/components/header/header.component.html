@@ -1,19 +1,21 @@
-<div class="header-container container-fluid">
-    <div class="logoap">
-        <img class="img-fluid" src="./assets/logo-ap.png" alt="Logo-ArgentinaPrograma" id="logoAP">
-        <div>
-            <span class="logo-text"><b>#YoProgramo</b></span>
+<nav class="header-container container-fluid">
+    <div class="logoap col-md-4">
+        <div class="navbar-brand">
+            <img class="img-fluid" src="./assets/logo-ap.png" alt="Logo-ArgentinaPrograma" id="logoAP">
+            <div>
+                <span class="logo-text"><b>#YoProgramo</b></span>
+            </div>
         </div>
     </div> 
-    <div class="navbar">
-        <nav class="nav">
+    <div class="navbar col-md-8">
             <ul class="navbar-nav">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#acerca" class="nav-link">Acerca De</a></li>
-                <li><a href="#educacion" class="nav-link">Educación</a></li>
-                <li><a href="#experiencia" class="nav-link">Experiencia Laboral</a></li>
-                <li><a href="#skills" class="nav-link">Hard & Soft Skills</a></li>
-                <li><a href="#proyectos" class="nav-link">Mis Proyectos</a></li>
+                <li><a href="#inicio" class="nav-item">Inicio</a></li>
+                <li><a href="#acerca" class="nav-item">Acerca De</a></li>
+                <li><a href="#educacion" class="nav-item">Educación</a></li>
+                <li><a href="#experiencia" class="nav-item">Experiencia Laboral</a></li>
+                <li><a href="#skills" class="nav-item">Hard & Soft Skills</a></li>
+                <li><a href="#proyectos" class="nav-item">Mis Proyectos</a></li>
+                <li><a href="#contacto" class="nav-item"> Contacto</a></li>
                 <div class="buttons">
                     <li>
                         <button class="btn-log" (click)="login()" *ngIf="!isLogged">
@@ -26,8 +28,6 @@
                         </button>   
                     </li>
                 </div>
-                
             </ul>
-        </nav>
     </div>
-</div>
+</nav>

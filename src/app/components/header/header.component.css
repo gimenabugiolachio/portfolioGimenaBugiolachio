@@ -1,48 +1,47 @@
 .header-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     position:fixed;
     width:100vw;
     z-index: 999999;
     background: #313131;
     overflow: hidden;
+    font-size: 1.3vw;
+    height: max-content;
 }
 
 #logoAP{
     padding: 1rem;
     width: 9.5rem;
-    margin-left: 2rem;
 }
 
-.logoap{
+.navbar-brand{
     display:flex;
     align-items: center;
 }
 
 .logo-text{
     margin-left: 2rem;
-    margin-right: 2rem;
     color: #f3f3f3;
 }
 
 .navbar{
     position: relative;
-    top: 1rem;
+    top: 1em;
     left: -5rem;
 }
 
-
 .navbar-nav{
     display: flex;
+    flex-direction: row;
+}
+
+
+.nav-item{
     position: relative;
 }
 
-.nav-link{
-    position: relative;
-}
-
-.nav-link::after{
+.nav-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -54,20 +53,19 @@
     transition: 0.4s ease;
 }
 
-.nav-link:hover::after{
+.nav-item:hover::after{
     width: 100%;
 }
 
-.nav li{
+.navbar li{
     list-style: none;
 }
 
-.nav li a{
+.navbar li a{
     text-decoration: none;
     color: #f3f3f3;
-    margin-left: 1.5rem;
+    margin-left: 1.5em;
     align-items: center;
-    font-size: 1.1rem;
 }
 
 .nav li a:hover{
@@ -97,89 +95,38 @@
     color: #D49BB0;
 }
 
-@media (max-width: 576px){
-    .logoap{
-        left: 20%;
-        position: relative;
-        top: -5rem;
-    }
-
+@media only screen and (max-width: 480px){
     .logo-text{
-        font-size: 1rem;
+        font-size: 3vw;
     }
-
-    .navbar-nav{
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-    }
-
-    .navbar{
-        position: relative;
-        left: -13rem;
-        top: 4rem;
-    }
-
-    .navbar li{
-        text-align: center;
-    }
-
-    .nav li a{
-        font-size: .8rem;
+    
+    .nav-item{
+        visibility: hidden;
     }
 
     .buttons{
-        position: relative;
-        left: 20rem;
-        top: -14.2rem;
+        position: absolute;
+        left: 24em;
+        top: 3em;
     }
 }
 
-@media (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .nav-item{
+        visibility: hidden;
+    }
+
     .logoap{
         position: relative;
-        left: 22%;
-       
+        left: 20%;
     }
-  .navbar-nav{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 5.7rem;
-  }
 
-  .navbar{
-    position: relative;
-    top: -.5rem;
-  }
-
-  .nav li a{
-    font-size: 1rem;
-}
+    .logo-text{
+        font-size: 3vw;
+    }
+    .buttons{
+        position: absolute;
+        left: 30em;
+    }
 }
 
-@media (max-width: 992px){
-    .logoap{
-        position: relative;
-        left:30%;
-    }
-    .navbar-nav{
-        position: relative;
-        left: 10rem;
-    }
-    .navbar{
-        position: relative;
-        top: -.5rem;
-      }
-}
-
-@media (max-width: 1200px){
-    .nav li a{
-        font-size: 1rem;
-    }
-    
-    .navbar{
-        position: relative;
-        left: -8rem;
-    }
-}

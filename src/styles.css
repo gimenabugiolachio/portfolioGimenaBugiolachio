@@ -8,7 +8,6 @@
 }
 
 html{
-    width: 100%;
     background: #232323;
     color: #fff;
     font-family: 'Cairo', sans-serif;
@@ -17,3 +16,30 @@ html{
 body{
     font-family: 'Cairo', sans-serif;
 }
+
+body::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical{
+    width:1vw;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 1vh;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D9A0BB;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #6b6a6a;
+}
+

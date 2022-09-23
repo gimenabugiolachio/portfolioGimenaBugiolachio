@@ -8,7 +8,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  URL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/Skills/';
+  URL = 'https://backendgimena.herokuapp.com/Skills/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -1,7 +1,44 @@
 <section id="inicio-sesion">
-    <div class="sesion-container container">
+    <div class="container">
         <div class="imagen-inicio">
-            <img class="img-fluid" src="./assets/inicio3.png" alt="">
+            <img class="img-fluid" src="./assets/inicio1.svg" alt="ImagenInicio">
+        </div>
+        <div class="cuerpo-inicio">
+            <h2>Bienvenido</h2>
+            <hr>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-group row">
+                    <label for="inputUsuario3" class="col-sm-2 col-form-label">Usuario</label>
+                    <div class="col-sm-10">
+                        <fa-icon [icon]="faUser" class="icon-form"></fa-icon>
+                        <input type="text" class="form-control" id="inputUsuario3" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                        <fa-icon [icon]="faLock" class="icon-form"></fa-icon>
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" [(ngModel)]="password" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn">Ingresar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--
+    
+    --No logro hacerla Responsive--
+
+    <section id="inicio-sesion">
+    <div class="sesion-container container-fluid">
+        <div class="imagen-inicio">
+            <img class="img-fluid" src="./assets/inicio1.svg" id="img-inicio" >
         </div>
         <div class="cuerpo-inicio">
             <h2>Bienvenido</h2>
@@ -19,9 +56,8 @@
                             name="password" placeholder="Contraseña" [(ngModel)]="password" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <button type="submit" class="btn">Ingresar</button>
             </form>
         </div>
-
     </div>
-</section>
+</section>-->

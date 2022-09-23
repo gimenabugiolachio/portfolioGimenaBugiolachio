@@ -8,7 +8,7 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-authURL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/auth/';
+authURL = 'https://backendgimena.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

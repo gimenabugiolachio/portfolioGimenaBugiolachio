@@ -7,11 +7,6 @@ import { TokenService } from 'src/app/service/token.service';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faGears } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPerson } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -28,16 +23,8 @@ export class AcercaComponent implements OnInit {
   faEnvelope=faEnvelope;
   faWhatsapp=faWhatsapp;
   faGears=faGears;
-  faFacebook=faFacebook;
-  faInstagram=faInstagram;
-  faGithub=faGithub;
-  faTwitter=faTwitter;
-  faLinkedin=faLinkedin;
-  faPerson=faPerson;
   
- 
-
-
+  faPerson=faPerson;
 
   constructor(private SacercaDe: AcercaDeService, private tokenService: TokenService) { }
   isLogged = false;

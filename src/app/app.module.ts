@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SwiperModule } from "swiper/angular";
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -27,9 +26,7 @@ import { NextPDirective } from './components/proyectos/next-p.directive';
 import { PrevPDirective } from './components/proyectos/prev-p.directive';
 import { EditarSkillComponent } from './components/skills/editar-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-
-
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 @NgModule({
@@ -55,15 +52,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     PrevPDirective,
     EditarSkillComponent,
     NewSkillComponent,
+    ContactoComponent,
+
   ],
   imports: [
     BrowserModule,
-    SwiperModule,
     FontAwesomeModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     interceptorProvider

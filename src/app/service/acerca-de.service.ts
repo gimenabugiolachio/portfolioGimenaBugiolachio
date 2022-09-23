@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AcercaDeService {
-  URL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/acercaDe/';
+  URL = 'https://backendgimena.herokuapp.com/acercaDe/';
 
 
   constructor(private httpClient: HttpClient) { }
@@ -20,7 +20,7 @@ export class AcercaDeService {
   }
 
   public save(acercaDe: AcercaDe):Observable<any>{
-    return this.httpClient.post<any>(this.URL + `create`, acercaDe);
+    return this.httpClient.post<any>(this.URL + 'create', acercaDe);
   }
 
   public update(id: number, acercaDe: AcercaDe): Observable<any>{

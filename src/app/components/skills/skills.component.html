@@ -1,5 +1,5 @@
 <section id="skills" class="skills">
-    <div class="skills-container container">
+    <div class="container-fluid">
         <div class="titulo">
             <h2>Hard & Soft Skills</h2>
             <button class="btn-agregar" routerLink="/agregarSkill" *ngIf="isLogged">
@@ -10,12 +10,12 @@
             <div class="item" *ngFor="let Skills of skills">
                 <div class="buttons">
                     <td>
-                        <button routerLink="/editarSkill/{{Skills.id}}">
+                        <button routerLink="/editarSkill/{{Skills.id}}" *ngIf="isLogged">
                             <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
                         </button>
                     </td>
                     <td>
-                        <button (click)="delete(Skills.id)">
+                        <button (click)="delete(Skills.id)" *ngIf="isLogged">
                             <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
                         </button>
                     </td>

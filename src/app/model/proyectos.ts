@@ -1,15 +1,13 @@
 export class Proyectos {
-id: number;
+id?: number;
 nombreP: string;
 descripcionP: string;
 imgP: string;
-linkP: string;
 
-constructor(nombreP: string, descripcionP: string, imgP: string, linkP: string){
+constructor(nombreP: string, descripcionP: string, imgP: string){
     this.nombreP = nombreP;
     this.descripcionP = descripcionP;
     this.imgP = imgP;
-    this.linkP = linkP;
 }
 
 }

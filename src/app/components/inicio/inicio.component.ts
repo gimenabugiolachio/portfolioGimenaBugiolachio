@@ -4,14 +4,13 @@ import { PersonaService } from 'src/app/service/persona.service';
 
 
 
-
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-
+  
   persona: persona = new persona("", "", "", "");
 
   constructor(public personaService: PersonaService) { }
@@ -19,5 +18,4 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})
   }
-
 }

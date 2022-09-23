@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { TokenService } from 'src/app/service/token.service';
 
@@ -12,9 +13,11 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HeaderComponent implements OnInit {
   isLogged = false;
+  isMenuOpen = false;
 
   faUser=faUser;
   faArrowRightFromBracket=faArrowRightFromBracket;
+  faBars=faBars;
 
   constructor(private router: Router, private tokenService: TokenService) { }
 
@@ -35,6 +38,8 @@ export class HeaderComponent implements OnInit {
     window.location.reload();
   }
 
-
+  toggleMenu(): void{
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

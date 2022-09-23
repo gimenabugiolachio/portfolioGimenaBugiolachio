@@ -1,112 +1,93 @@
-#inicio{
+#inicio {
     width: 100%;
-    height: 91vh;  
+    height: 90vh;
 }
 
-#banner{
+#banner {
     width: 100%;
-    height:90vh ;
+    height: 90vh;
     position: relative;
-    top:4.5rem;
-}
-.portada{
-  position: relative;
- 
-}
-.info{
-    position: relative;
-    top: -20rem;
+    top: 4.5rem;
+    object-fit: cover;
 }
 
-.info h1{
-    background-color: #BA889B;
-    text-shadow: 2px  1px #2a2a2ac4;
-    font-size: 3rem;
-    color: #f3f3f3;
-    width: 500px;
-    border-radius: 1rem;
-    z-index: 8888;
-    text-align: center;
+.info {
+    position: relative;
     letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.info h1 {
+    background-color: #BA889B;
+    text-shadow: 2px 1px #2a2a2ac4;
+    font-size: 2.2vw;
+    color: #f3f3f3;
+    max-width: 30%;
+    border-radius: 1rem;
     margin: 0 auto;
 }
 
-.info p{
-    color:#707070;
+.info p {
+    color: #f3f3f3;
     font-weight: bold;
-    font-size: 2rem;
-    z-index: 8888;
-    text-align: center;
-    letter-spacing: 2px; 
-    position: relative;
-   
+    font-size: 2vw;
 }
 
-@media (max-width: 576px){
-    #inicio{
+@media only screen and (max-width: 480px) {
+    #inicio {
         width: 100%;
-        height: 70vh;
     }
 
-    #banner{
-        width: 100%;
-        height: 60vh;
-        position: relative;
-        top:17rem;
+    .redes-link {
+        display: flex;
+        flex-direction: row;
+        /* left: 5%; */
+        margin: 0 auto;
+        background-color: transparent;
+        border: none;
     }
 
-    .info{
-        position: relative;
-        top: 5rem;
+    .info {
+        margin: 0 auto;
     }
 
-    .info h1{
-        font-size: 1.2rem;
-        position: relative;
-        z-index: 8888;
+    .redes-link a {
+        margin-left: .7rem;
+        font-size: 4vw;
     }
 
-    .info p{
-        font-size: .8rem;
-        margin-top: .7rem;
-    }
-}
-
-@media (max-width: 768px){
-    #inicio{
-        width: 100%;
-        height: 80vh;
+    .info h1 {
+        font-size: 5vw;
+        max-width: 60%;
     }
 
-    .info h1{
-        font-size: 1.6rem;
-        position: relative;
-        z-index: 8888;
-    }
-
-    .info p{
-        font-size: 1.2rem;
-        margin-top: .7rem;
-    }
-
-    .info{
-        margin-top: 5rem;
+    .info p {
+        font-size: 4vw;
     }
 }
 
-@media (max-width: 992px){
-    #inicio{
-        width: 100%;
-        height: 70%;
-    } 
-    .portada img{
-        margin-top: 2rem;
-    }
-}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
-@media (max-width: 1200px){
-    #inicio{
-        width: 100%;
-        height: 70%;
+    .redes-link {
+        display: flex;
+        flex-direction: row;
+        left: 100%;
+        top: -32rem;
+        margin-top: -2rem;
+    }
+
+    .redes-link a {
+        margin-left: .7rem;
+        font-size: 3vw;
+    }
+
+    .info h1 {
+        font-size: 5vw;
+        max-width: 60%;
+    }
+
+    .info p {
+        font-size: 4vw;
     }
 }

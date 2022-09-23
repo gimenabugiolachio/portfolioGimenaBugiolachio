@@ -7,6 +7,8 @@
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding: 1rem 2rem;
     border-radius: 2rem; 
 }
@@ -69,43 +71,30 @@ form h2{
     color: #D49BB0;
 }
 
-@media (max-width: 576px){
-    .formulario{
-        width: 400px;
-        height: 310px;
+@media only screen and (max-width: 480px) {
+    .formulario {
+        width: 90%;
+        height: max-content;
+    }
+
+    form h2 {
+        font-size: 5vw;
+    }
+
+    .nombre-icono,
+    .tipo-porcentaje{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .form-group label,
-    .form-group input, 
-    .form-group textarea{
-        font-size: .7rem;
+    .form-group input,
+    .form-group textarea {
+        font-size: 3vw;
     }
 
-    form h2{
-        font-size: .9rem;
-    }
-
-    #nombre-descripcion{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .nombre-icono{
-        display:flex;
-        flex-direction: column;
-    }   
-
-    .tipo-porcentaje{
-        display: flex;
-        flex-direction: row;
-    }
-
-    #porcentaje{
-        width: 5rem;
-    }
-
-    #tipo{
-        width: 8rem;
+    .btn {
+        font-size: 3vw;
     }
 }
-

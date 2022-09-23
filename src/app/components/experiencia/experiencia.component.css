@@ -1,7 +1,6 @@
 #experiencia{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 .titulo{
@@ -16,16 +15,13 @@
 
 
 .fechas{
-    display: flex;
-    width: 1025px;
     text-align: center;
-   margin-bottom: 1rem;
-    
+    display: grid;
+    width: 100%; 
 }
 
 .fechas p{
     font-size: small;
-    margin-left: 27rem;
 }
 
 
@@ -48,29 +44,32 @@
 
 .desc{
     padding: .5rem;
+    text-align: center;
 }
 
 .box{
     width: 70%;
-    height: 70%;
+    height: max-content;
     margin: 0 auto;
     border-radius: 15px;
     backdrop-filter: blur(1rem);
     position: relative;
     top: 2rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     -webkit-backgroubd-size: cover;
     background-size: cover;
     text-align: center;
     overflow: hidden;
     color: #f3f3f3;
-    background-color: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(.5rem);
 }
 
 .nombreE{
     letter-spacing: 2px;
-    width: 1100px;
+    margin: 0 auto;
 }
 
 .nombreE h2{
@@ -79,13 +78,11 @@
 
 .descripcionE{
     padding: 1rem 0;
-    width: 1100px;
     font-size: 1.1rem;
 }
 
-
 .puestoE{
- width: 1100px;
+ width: 25%;
 }
 
 .puestoE p{
@@ -111,6 +108,8 @@
 
 .nombre-botones{
     display: flex;
+    /* align-items: center; */
+    flex-direction: row;
 }
 
 .icon{
@@ -123,18 +122,33 @@
 }
 
 
-@media (max-width: 576px){
+@media only screen and (max-width: 480px){
     #experiencia{
         margin-top: -4rem;
+        margin-bottom: 4em;
+        height: max-content;
     }
 
     .titulo h2{
-        font-size: 1.5rem;
+        font-size: 6vw;
     }
+
+    .box-contenido{
+        padding: 1vw;
+    }
+
     .nombreE h2{
         font-size: 1rem;
     }
 
+    .fechas p{
+        font-size: 3vw;
+    }
+    
+    .puestoE{
+        display: inline-table;
+    }
+    
     .puestoE p{
         font-size: .8rem;
     }
@@ -149,48 +163,7 @@
 
     .btn-agregar{
         position: relative;
-        top: -.1rem;
-    }
-}
-
-@media (max-width: 768px){
-    #experiencia{
-        margin-top: -4rem;
-    }
-
-    .titulo h2{
-        font-size: 2rem;
-    }
-
-    .nombreE h2{
-        font-size: 1.5rem;
-    }
-
-    .puestoE p{
-        font-size: 1rem;
-    }
-
-    .descripcionE p{
-        font-size: 1rem;
-    }
-
-    .buttons button{
-        font-size: 1rem;
-    }
-
-}
-
-@media (max-width: 992px){
-    #experiencia{
-        height: 100vh;
-        padding-top: -3rem;
-    }
-
-    .titulo h2{
-        font-size: 2rem;
-    }
-
-    .box{
-        margin-bottom: 2rem;
+        top: -0.1em;
+        font-size: 4vw;
     }
 }

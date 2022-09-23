@@ -1,7 +1,7 @@
 .formulario{
     position: absolute;
     width: 700px;
-    height:400px;
+    height:max-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -10,6 +10,8 @@
     background-size: cover;
     text-align: center;
     overflow: hidden;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
@@ -75,16 +77,21 @@ form h2{
    left: 20%;
 }
 
-@media (max-width: 576px){
+@media only screen and (max-width: 480px){
     .formulario{
-        width: 500px;
-        height: 440px;
+        width: 90%;
+        height: max-content;
     }
 
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .form-group label,
     .form-group input, 
     .form-group textarea{
-        font-size: .7rem;
+        font-size: 3vw;
     }
 
     .nombre-imagen{
@@ -93,6 +100,10 @@ form h2{
     }
     
     form h2{
-        font-size: .9rem;
+        font-size: 5vw;
+    }
+
+    .btn{
+        font-size: 3vw;
     }
 }

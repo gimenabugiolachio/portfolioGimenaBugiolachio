@@ -1,5 +1,5 @@
 <section class="proyectos" id="proyectos">
-    <div class="proyectos-container">
+    <div class="container-fluid">
         <div class="titulo">
             <h2>Mis proyectos</h2>
             <button class="btn-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
@@ -12,12 +12,17 @@
                     <div class="slider-main">
                         <div class="item" *ngFor="let Proyectos of proyectos">
                             <div class="buttons">
-                                <button routerLink="/editarProyecto/{{Proyectos.id}}">
-                                    <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                <td *ngIf="isLogged">
+                                    <button routerLink="/editarProyecto/{{Proyectos.id}}" >
+                                        <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                                    </button>
+                                </td>
+                               <td *ngIf="isLogged">
+                                <button (click)="delete(Proyectos.id)" >
+                                    <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
                                 </button>
-                                <button (click)="delete(Proyectos.id)">
-                                    <fa-icon [icon]="faTrashCan"></fa-icon>
-                                </button>
+                               </td>
+                                
                             </div>
                             <div class="text">
                                 <h2>{{Proyectos.nombreP}}</h2>
@@ -26,9 +31,6 @@
                                 </div>
                                 <p>{{Proyectos.descripcionP}}</p>
                             </div>
-                            <button class="link">
-                                <a class="link-proyecto" href={{Proyectos.linkP}} target="_blank">Más info ></a>
-                            </button>
                         </div>
                     </div>
                     <div class="button-area">
@@ -38,7 +40,6 @@
                         <button appNextP>
                             <fa-icon class="next" [icon]="faCircleChevronRight"></fa-icon>
                         </button>
-
                     </div>
                 </div> 
             </div>

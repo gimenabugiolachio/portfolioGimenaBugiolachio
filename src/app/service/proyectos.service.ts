@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  URL = 'https://portfoliogimenabugiolachiobkn.herokuapp.com/proyectos/';
+  URL = 'https://backendgimena.herokuapp.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

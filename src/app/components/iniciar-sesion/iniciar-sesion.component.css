@@ -1,5 +1,4 @@
-
-#inicio-sesion{
+#inicio-sesion {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(135deg, #c694df, #becbec, #BBA5AF);
@@ -8,29 +7,31 @@
     animation: fondoAnimado 10s infinite;
 }
 
-@keyframes fondoAnimado{
-    0%{
+@keyframes fondoAnimado {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
 
-.sesion-container{
+.container {
     background: #232323b4;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     color: #f3f3f3;
-    height: 33vh;
-    width: 700px;  
+    height: 37%;
+    width: 45%;
     padding: 1rem 2rem;
-    border-radius: 2rem; 
+    border-radius: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,34 +41,37 @@
     justify-content: space-around;
 }
 
-.imagen-inicio{
+.imagen-inicio {
     position: relative;
     left: -1rem;
-    top: -1rem;
 }
 
-.imagen-inicio img{
-    width: 20rem;
-    height: 18rem;
+.imagen-inicio img {
+    width: 17em;
 }
 
-.sesion-container h2{
+.form-group label {
+    font-size: 1vw;
+}
+
+.container h2 {
     text-align: center;
+    font-size: 1.5vw;
 }
 
-.icon-form{
+.icon-form {
     color: #D49BB0;
     margin-right: .5rem;
     font-size: 1.2rem;
 }
 
-form{
+form {
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1em;
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
     border: 1px solid #f3f3f3;
     border-radius: .5rem;
@@ -76,12 +80,7 @@ form{
     margin-bottom: 1.5rem;
 }
 
-.informacion{
-    display: flex;
-    flex-direction: column;
-}
-
-button{
+button {
     background: #D49BB0;
     color: #f3f3f3;
     padding: .3rem;
@@ -89,71 +88,88 @@ button{
     cursor: pointer;
     border: none;
     position: relative;
-    font-size: 1.1rem;
-    
+    font-size: 1.2vw;
 }
-button:hover{
+
+button:hover {
     background: #f3f3f3;
     color: #D49BB0;
 }
 
-.crear-cuenta a{
-    text-decoration: none;
-    color: #f3f3f3;
-}
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+        width: 80%;
+    }
 
-.crear-cuenta a:hover{
-    color: #BBA5AF;
-}
+    .imagen-inicio img {
+        width: 10em;
+    }
 
-.icon-crear{
-    margin-right: .7rem;
-}
+    .imagen-inicio {
+         left: 5%; 
+        text-align: center;
+        top: -1em;
+        
+    }
 
-@media (max-width: 576px){
-    .sesion-container{
+    .col-sm-10 {
         display: flex;
-        flex-direction: column-reverse;
-        height: 65vh;
-        width: 400px;  
+        flex-direction: row;
     }
 
-    .imagen-inicio{
+    .form-group input {
+        max-width: 90%;
+    }
+
+    .form-group label {
+        font-size: 3vw;
+    }
+
+    .cuerpo-inicio h2 {
+        font-size: 4vw;
+    }
+
+    .forma fa-icon {
+        font-size: 3vw;
+    }
+
+    .cuerpo-inicio {
         position: relative;
-        top: -1rem;
-        left: .5rem;
+        top: -1.5em;
     }
 
-    .cuerpo-inicio h2{
-        font-size: 1.1rem;
-    }
-
-    .forma fa-icon,
-    .forma input{
-        font-size: .8rem;
-    }
-
-    .cuerpo-inicio{
-        position: relative;
-        top: 1.1rem;
+    button {
+        font-size: 4vw;
+        left: 35%;
     }
 }
 
-@media (max-width: 768px){
-    .sesion-container{
-        height: 36vh;
-        width: 700px;  
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .sesion-container {
+        height: max-content;
+        max-width: 90%;
     }
 
-    .imagen-inicio{
-        position: relative;
-        top: -3.1rem;
+    .forma {
+        display: flex;
+        flex-direction: row;
     }
-}
 
-@media (max-width: 992px){
-    .imagen-inicio{
-        position: relative;
-        top: .5rem;
+    .forma input {
+        max-width: 90%;
+    }
+
+    .cuerpo-inicio h2 {
+        font-size: 4vw;
+    }
+
+    .forma fa-icon {
+        font-size: 3vw;
+    }
+
+    button {
+        font-size: 3vw;
     }
 }
