@@ -22,11 +22,11 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
 import { EditarAcercaDeComponent } from './components/acerca/editar-acerca-de.component';
 import { EditarProyectosComponent } from './components/proyectos/editar-proyectos.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
-import { NextPDirective } from './components/proyectos/next-p.directive';
-import { PrevPDirective } from './components/proyectos/prev-p.directive';
 import { EditarSkillComponent } from './components/skills/editar-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SwiperModule } from 'swiper/angular';
+
 
 
 @NgModule({
@@ -48,12 +48,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     EditarAcercaDeComponent,
     EditarProyectosComponent,
     NewProyectoComponent,
-    NextPDirective,
-    PrevPDirective,
     EditarSkillComponent,
     NewSkillComponent,
-    ContactoComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -61,6 +57,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    SwiperModule
+
   ],
   providers: [
     interceptorProvider

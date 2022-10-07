@@ -1,34 +1,37 @@
 <div class="container" *ngIf="skills">
     <div class="row">
         <div class="formulario">
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <h2>Editar skill</h2>
                 <hr>
                 <div id="nombre-descripcion">
                     <div class="nombre-icono">
                         <div class="form-group nombre">
                             <label for="nombreE">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" size="30" [(ngModel)]="skills.nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" size="30"
+                                [(ngModel)]="skills.nombre" required>
                         </div>
                         <div class="form-group icono">
                             <label for="icono">Icono</label>
-                            <input type="text" class="form-control" id="icono" name="icono" size="30" [(ngModel)]="skills.icono" required>
+                            <input type="text" class="form-control" id="icono" name="icono" size="30"
+                                [(ngModel)]="skills.icono" required>
                         </div>
                     </div>
                     <div class="tipo-porcentaje">
                         <div class="form-group tipo">
                             <label for="tipo">Tipo</label>
-                            <input size="30" type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="skills.tipo" required>
+                            <input size="30" type="text" class="form-control" id="tipo" name="tipo"
+                                [(ngModel)]="skills.tipo" required>
                         </div>
                         <div class="form-group porcentaje">
                             <label for="tipo">Porcentaje</label>
                             <input size="30" type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skills.porcentaje" required>
                         </div>
-                    </div> 
-                </div>    
+                    </div>
+                </div>
                 <button class="btn">
                     Guardar
-                </button>  
+                </button>
             </form>
         </div>
     </div>

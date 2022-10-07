@@ -1,43 +1,84 @@
 footer{
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 }
 
 .footer-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     background: #313131;
-    justify-content: space-around;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    align-items: center;
+}
+.lado-der p{
+    font-size: 1.2vw;
 }
 
-.lado-der{
-    text-align: center;
+.redes-link {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
 }
 
-.lado-izq{
-    text-align: center;
+.redes-link a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #f3f3f3;
+    margin-left: 1em;
 }
 
-.lado-izq span{
-    font-weight: bold;
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: 2px solid #f3f3f3;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
 }
 
-@media (max-width: 576px){
-    .lado-der h3{
-        font-size: 1rem;
+.icon:hover {
+    outline-offset: 2px;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}
+
+.icon-instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    outline-color: #ff0080;
+}
+
+.icon-facebook:hover {
+    background-color: #3b5998;
+    outline-color: #3b5998;
+}
+
+.icon-github:hover {
+    background-color: #4c2882;
+    outline-color: #4c2882;
+}
+
+.icon-twitter:hover {
+    background-color: #00acee;
+    outline-color: #00acee;
+}
+
+.icon-linkedin:hover {
+    background-color: #0072b1;
+    outline-color: #0072b1;
+}
+
+@media only screen and (max-width: 480px){
+    .redes-link a{
+        font-size: 4vw;
     }
 
-    .lado-der span{
-        font-size: .8rem;
+    .lado-der p{
+        font-size: 2vw;
     }
-
-    .lado-izq p{
-        font-size: 1rem;
-    }
-
-    .lado-izq span{
-        font-size: .8rem;
-    }
+    
 }

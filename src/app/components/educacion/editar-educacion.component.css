@@ -1,7 +1,7 @@
 .formulario {
     position: absolute;
     width: 800px;
-    height: 450px;
+    height: max-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -6,35 +6,36 @@
                 <fa-icon [icon]="faCirclePlus"></fa-icon>
             </button>
         </div>
-        <div class="box">
-            <div class="card" *ngFor="let Educacion of educacion">
-                <div class="buttons">
-                    <td *ngIf="isLogged">
-                        <button routerLink="/editarEducacion/{{Educacion.id}}">
-                            <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
-                        </button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button (click)="delete(Educacion.id)">
-                            <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
-                        </button>
-                    </td>
-                </div>
-                    <div class="cover-card">
-                        <img src="{{Educacion.imgE}}" alt="ml">
-                    </div>
-                    <h4>{{Educacion.nombreE}}</h4>
-                    <hr>
-                    <div class="footer-card">
-                        <h5 class="detalles">{{Educacion.detallesE}}</h5>
-                        <p class="descripcion">{{Educacion.descripcionE}}</p>
-                        <div class="fechas">
-                            <td>
-                                <p>{{Educacion.fechaInicioE}} al {{Educacion.fechaFinE}}</p>
-                            </td>
+        <div class="cards-container">
+            <ul class="educacion-cards">
+                <li class="educacion-card" *ngFor="let Educacion of educacion">
+                        <div class="educacion-card-img">
+                            <img src="{{Educacion.imgE}}" alt="Imagen de Institucion {{Educacion.nombreE}}">
                         </div>
-                </div>
-            </div>
+                        <div class="educacion-card-content">
+                            <h3 id="nombre">
+                                {{Educacion.detallesE}}
+                            </h3>
+                            <p class="text">{{Educacion.nombreE}}</p>
+                            <span class="fechas">{{Educacion.fechaInicioE}} - {{Educacion.fechaFinE}}</span>
+                            <span class="text">
+                                {{Educacion.descripcionE}}
+                            </span>
+                        </div>
+                        <div class="buttons">
+                            <td *ngIf="isLogged">
+                                <button (click)="delete(Educacion.id)">
+                                    <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+                                </button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button routerLink="/editarEducacion/{{Educacion.id}}">
+                                    <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                                </button>
+                            </td> 
+                        </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

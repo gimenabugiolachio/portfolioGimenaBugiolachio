@@ -53,6 +53,18 @@ form h2{
     margin-bottom: 1.5rem;
 }
 
+mat-slider {
+    width: 100px;
+  }
+
+  ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: rgb(55, 55, 167); /*replace with your color*/
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: rgb(120, 164, 182);  /*replace with your color*/
+}
+
 .btn{
     background: #D49BB0;
     color: #f3f3f3;

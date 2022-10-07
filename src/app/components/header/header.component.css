@@ -106,27 +106,25 @@
 
     .buttons{
         position: absolute;
-        left: 24em;
-        top: 3em;
+        left: 90%;
+        top: 2em;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .nav-item{
         visibility: hidden;
     }
 
-    .logoap{
-        position: relative;
-        left: 20%;
-    }
 
     .logo-text{
         font-size: 3vw;
     }
+    
     .buttons{
         position: absolute;
-        left: 30em;
+        left: 90%;
+        top: 1em;
     }
 }
 

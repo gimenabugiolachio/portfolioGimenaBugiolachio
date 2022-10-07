@@ -1,5 +1,4 @@
 #experiencia{
-    width: 100vw;
     height: 100vh;
 }
 
@@ -57,14 +56,18 @@
     top: 2rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
     -webkit-backgroubd-size: cover;
     background-size: cover;
     text-align: center;
     overflow: hidden;
     color: #f3f3f3;
     -webkit-backdrop-filter: blur(.5rem);
+}
+
+.box:hover{
+    border: 1px solid #D9A0BB;
 }
 
 .nombreE{
@@ -103,12 +106,11 @@
     background-color: transparent;
     color: #f3f3f3;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1vw;
 }
 
 .nombre-botones{
     display: flex;
-    /* align-items: center; */
     flex-direction: row;
 }
 
@@ -129,16 +131,20 @@
         height: max-content;
     }
 
+    .box{
+        width: 90%;
+    }
+
     .titulo h2{
         font-size: 6vw;
     }
 
     .box-contenido{
-        padding: 1vw;
+        padding: .5em;
     }
 
     .nombreE h2{
-        font-size: 1rem;
+        font-size: 4vw;
     }
 
     .fechas p{
@@ -158,7 +164,7 @@
     }
 
     .buttons button{
-        font-size: .8rem;
+        font-size:  2vw;
     }
 
     .btn-agregar{

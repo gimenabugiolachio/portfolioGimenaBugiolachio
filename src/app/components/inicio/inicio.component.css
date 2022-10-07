@@ -1,5 +1,5 @@
 #inicio {
-    width: 100%;
+    width: 100vw;
     height: 90vh;
 }
 
@@ -11,8 +11,16 @@
     object-fit: cover;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .info {
-    position: relative;
+    position: absolute;
+    top: 15%;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -23,9 +31,7 @@
     text-shadow: 2px 1px #2a2a2ac4;
     font-size: 2.2vw;
     color: #f3f3f3;
-    max-width: 30%;
     border-radius: 1rem;
-    margin: 0 auto;
 }
 
 .info p {
@@ -39,27 +45,8 @@
         width: 100%;
     }
 
-    .redes-link {
-        display: flex;
-        flex-direction: row;
-        /* left: 5%; */
-        margin: 0 auto;
-        background-color: transparent;
-        border: none;
-    }
-
-    .info {
-        margin: 0 auto;
-    }
-
-    .redes-link a {
-        margin-left: .7rem;
-        font-size: 4vw;
-    }
-
     .info h1 {
         font-size: 5vw;
-        max-width: 60%;
     }
 
     .info p {
@@ -68,23 +55,8 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
-    .redes-link {
-        display: flex;
-        flex-direction: row;
-        left: 100%;
-        top: -32rem;
-        margin-top: -2rem;
-    }
-
-    .redes-link a {
-        margin-left: .7rem;
-        font-size: 3vw;
-    }
-
     .info h1 {
         font-size: 5vw;
-        max-width: 60%;
     }
 
     .info p {

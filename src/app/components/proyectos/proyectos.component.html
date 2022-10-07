@@ -1,48 +1,42 @@
 <section class="proyectos" id="proyectos">
-    <div class="container-fluid">
+    <div class="proyectos-container-fluid">
         <div class="titulo">
             <h2>Mis proyectos</h2>
             <button class="btn-agregar" routerLink="/agregarProyecto" *ngIf="isLogged">
                 <fa-icon [icon]="faCirclePlus"></fa-icon>
             </button>
         </div>
-        <div class="proyectos-body" >
-            <div class="container-fluid">
-                <div class="slider-wrap">
-                    <div class="slider-main">
-                        <div class="item" *ngFor="let Proyectos of proyectos">
-                            <div class="buttons">
-                                <td *ngIf="isLogged">
-                                    <button routerLink="/editarProyecto/{{Proyectos.id}}" >
-                                        <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
-                                    </button>
-                                </td>
-                               <td *ngIf="isLogged">
-                                <button (click)="delete(Proyectos.id)" >
+        <div class="proyectos-cards-container">
+            <swiper class="project_cards my-swiper my_swiper"
+            #swiper 
+            [config]="config"
+            style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB" >
+               <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Proyectos of proyectos">
+                    <div class="proyecto-card">
+                        <div class="editar-eliminar">
+                            <td *ngIf="isLogged">
+                                <button routerLink="/editarProyecto/{{Proyectos.id}}">
+                                    <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                                </button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button (click)="delete(Proyectos.id)">
                                     <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
                                 </button>
-                               </td>
-                                
+                            </td>
+                        </div>
+                        <div class="proyecto-info">
+                            <div class="proyecto-header" id="proyecto-header">
+                                <img src={{Proyectos.imgP}} alt="Imagen del proyecto {{Proyectos.nombreP}}">
                             </div>
-                            <div class="text">
-                                <h2>{{Proyectos.nombreP}}</h2>
-                                <div class="card-image">
-                                    <img src={{Proyectos.imgP}}>
-                                </div>
-                                <p>{{Proyectos.descripcionP}}</p>
+                            <div class="proyecto-contenido">
+                                <h3 class="nombre" id="nombre">{{Proyectos.nombreP}}</h3>
+                                <p class="descripcion" id="descripcion">{{Proyectos.descripcionP}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="button-area">
-                        <button appPrevP>
-                            <fa-icon class="prev" [icon]="faCircleChevronLeft"></fa-icon>
-                        </button>
-                        <button appNextP>
-                            <fa-icon class="next" [icon]="faCircleChevronRight"></fa-icon>
-                        </button>
-                    </div>
-                </div> 
-            </div>
+                </ng-template>
+            </swiper> 
         </div>
     </div>
 </section>

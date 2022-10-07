@@ -1,19 +1,20 @@
-#proyectos {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+#proyectos{
+    height: 85vh;
 }
 
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .titulo {
     display: flex;
     color: #f3f3f3;
     font-size: 1.5rem;
     letter-spacing: 1px;
-    font-family: Verdana;
     justify-content: center;
     padding-top: 5rem;
-    font-family: 'Cairo', sans-serif;
 }
 
 .btn-agregar {
@@ -32,214 +33,129 @@
     color: #D9A0BB;
 }
 
-a {
-    text-decoration: none;
-}
-
-.proyectos-body {
-    padding: 2rem 0;
-}
-
-.slider-wrap {
+.proyectos-cards-container {
     position: relative;
+    top: 5em;
     overflow: hidden;
-    height: 405px;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,.5);
+    padding-top: 10px;
+    background-color: rgba(48, 47, 47, 0.3);
 }
 
-.slider-main {
-    position: absolute;
-    width: 200%;
+.my_swiper{
+    padding: 30px;
 }
 
-.item {
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    margin: 0 20px;
+.proyecto-card {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
-    flex-wrap: wrap;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    -webkit-backgroubd-size: cover;
-    background-size: cover;
-    text-align: center;
     overflow: hidden;
+    height: 270px;
+    width: 230px;
+    margin-bottom: 20px;
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(.5rem);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: .5rem 1rem;
-    align-items: center;
+    background-color: #0000004d;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all .3s;
 }
 
-.card-image {
-    height: 180px;
+.proyecto-card:hover {
+    border: 1px solid #D9A0BB;
 }
 
-.card-image img {
-    height: 180px;
-    position: relative;
-    left: -1.2rem;
+.swiper-pagination-bullet{
+    background: #696767;
 }
 
-.text h2 {
-    text-align: center;
-    padding: .5rem 0;
-    letter-spacing: 2px;
+.swiper-pagination-bullet-active{
+    background: #D9A0BB;
 }
 
-.text p {
-    justify-content: center;
-    text-align: center;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    max-height: 2rem;
+.proyecto-header {
+    height: 140px;
+    transition: all 1s;
+    max-width: 100%;
 }
 
-.item button {
-    background: transparent;
-    border: none;
-    border-radius: .5rem;
-    color: #f3f3f3;
-    cursor: pointer;
-    line-height: 20px;
-    padding: 6px 11px;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-.item .link {
-    position: relative;
-    top: 3.5rem;
-    transition: .2s;
-}
-
-.item a {
-    text-decoration: none;
-    color: #f3f3f3;
-}
-
-.link-proyecto::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 3px;
-    width: 0;
-    border-radius: 2px;
-    background-color: #D49BB0;
-    transition: 0.4s ease;
-}
-
-.buttons {
-    position: relative;
-    left: 2rem;
-}
-
-.buttons button {
-    color: #f3f3f3;
-    border: none;
-    font-size: 1.1rem;
-    background-color: transparent;
-}
-
-.icon {
-    margin-left: 1rem;
-    cursor: pointer;
-    padding: .3rem;
-    background-color: #313131;
-    border-radius: .5rem;
-}
-
-.icon:hover {
-    color: #D9A0BB;
-}
-
-.link-proyecto:hover::after {
+.proyecto-header>img {
+    object-fit: cover;
+    padding: 0.5em;
     width: 100%;
 }
 
-.item button:hover {
+.proyecto-contenido {
+    background-color: #353536;
+    padding: 10px 6px;
+}
+
+.buttons button {
+    background-color: transparent;
+    color: #f3f3f3;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+.buttons button:hover {
     color: #D9A0BB;
 }
 
-.button-area button {
-    background: transparent;
+.editar-eliminar {
+    position: relative;
+    left: 80%;
+}
+
+.editar-eliminar button {
+    background-color: transparent;
     color: #f3f3f3;
-    cursor: pointer;
-    font-size: 3.5rem;
     border: none;
+    font-size: 1vw;
+    cursor: pointer;
+    margin-right: .5rem;
 }
 
-.prev {
-    position: absolute;
-    left: .5rem;
-    top: 50%;
+.editar-eliminar button:hover {
+    color: #D9A0BB;
 }
 
-.next {
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
+.nombre {
+    letter-spacing: 2px;
+    font-size: 1.3vw;
 }
+
+.descripcion {
+    font-size: 1vw;
+    margin-bottom: 80px;
+}
+
 
 @media only screen and (max-width: 480px) {
     #proyectos {
-        height: max-content;
+        margin-top: -4em;
     }
 
-    .proyectos-container {
-        position: relative;
-        top: -4rem;
-    }
-
-    .titulo h2 {
+    .titulo h2{
         font-size: 6vw;
+    } 
+
+    .nombre {
+        font: 3vw;
     }
 
-    .buttons button {
-        font-size: .8rem;
+    .editar-eliminar button{
+        font-size: 2vw;
     }
 
-    .text h2 {
-        font-size: 1rem;
-    }
-
-    .item p {
-        display: none;
-    }
-
-    .item {
-        width: 280px;
-        height: 250px;
-        position: relative;
-        left: 4.5%;
-        margin-right: 10rem;
-    }
-
-    .slider-wrap {
-        height: 255px;
-    }
-
-    .card-image img {
-        height: 80%;
-        margin-left: 1.2rem;
-    }
-
-    .link-proyecto {
-        font-size: .8rem;
-        position: relative;
-        top: -9rem;
-    }
-
-    .btn-agregar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
+    .descripcion{
+        font-size: 2vw;
     }
 }

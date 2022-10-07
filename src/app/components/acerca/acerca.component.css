@@ -1,6 +1,5 @@
 #acerca {
     height: 100vh;
-    width: 100vw;
     padding-bottom: 8rem;
     overflow: hidden;
 }
@@ -8,24 +7,16 @@
 .titulo {
     display: flex;
     color: #f3f3f3;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     justify-content: center;
     padding-top: 5rem;
-    font-family: 'Cairo', sans-serif;
     z-index: 1;
 }
 
 .acerca-texto p {
     margin-top: 4.7em;
 }
-
-/*.foto-perfil {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 5rem;
-}*/
 
 .btn-editar {
     position: relative;
@@ -52,18 +43,12 @@
 }
 
 .info {
-    /* width: 1200px; */
     display: flex;
     position: relative;
     flex-direction: row;
     top: 5rem;
-    /* left: 5rem; */
     justify-content: space-around;
 }
-
-/*.info .foto-perfil {
-    top: -3rem;
-}*/
 
 .send {
     color: #bb8fa3;
@@ -74,75 +59,40 @@
     max-width: 600px;
 }
 
-/*.hola{
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 6ch;
-    position: relative;
-    overflow: hidden;
-    font-size: 2.5em;
-    color: #D9A0BB;
-    font-weight: bold;
-  
-    animation: tipeo 3s 1 steps(5),
-    cursor .6s infinite;
-    
-}
-
-@keyframes tipeo {
-    0% {width: 0;}
-}
-
-@keyframes cursor {
-    50% {border-color: transparent;}
-}
-*/
-
 .contacto-info {
-    /* margin-top: 5rem; */
     position: relative;
     display: flex;
     flex-direction: row;
     top: 10rem;
-    /* margin: 0 auto; */
     align-content: center;
     justify-content: center;
 }
 
 .contacto-card h3 {
-    margin-top: .2rem;
-    margin-bottom: .2rem;
+    margin: 0 .2rem;
 }
 
 .contacto-card {
     box-shadow: 0 10px 20px #00000080;
     -webkit-backgroubd-size: cover;
-    /* background-size: cover; */
     text-align: center;
     overflow: hidden;
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     background-color: #0000004d;
-    border-left: 1px solid rgba(255,255,255,.5);
-    border-top: 1px solid rgba(255,255,255,.5);
-    -webkit-backdrop-filter: blur(.5rem);
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 0.5rem 0rem;
     border-radius: 0.5rem;
-    /* align-items: center; */
     width: 270px;
     margin-right: 1rem;
 }
 
-/*.all-info {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}*/
+.contacto-card:hover{
+    border: 1px solid #D9A0BB;
+}
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #acerca {
         height: max-content;
         padding-bottom: 10rem;
@@ -150,6 +100,9 @@
 
     .send {
         font-size: 4vw;
+    }
+    .all-info{
+        margin-top: -2em;
     }
 
     .titulo h2 {
@@ -159,12 +112,11 @@
     #foto {
         width: 9em;
         height: 9em;
-        /* position: relative; */
         border-radius: 20%;
     }
 
-    .acerca-texto p{
-        margin-top: -2.5em;
+    .acerca-texto p {
+        margin-top: -3.5em;
     }
 
     .acerca-texto {
@@ -175,28 +127,20 @@
     }
 
     .contacto-info {
-        margin-top: -2em;
         flex-direction: column;
-        /*top: 10rem;*/
         align-items: center;
+        margin-top: -3em;
     }
 
-    .info{
+    .info {
         flex-direction: column-reverse;
         align-items: center;
     }
-
-    /*.info p {
-        padding-left: 1%;
-        padding-right: 1%;
-    }*/
 
     .contacto-card {
         max-width: 200px;
         align-items: center;
         flex-direction: column;
-        /* margin-left: 20%; */
-        /* grid-column-gap: 1rem; */
         margin-bottom: 1.5em;
     }
 
@@ -218,11 +162,15 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #acerca {
         height: max-content;
-        padding-bottom: 22rem;
+        padding-bottom: 12em;
     }
 
     .titulo h2 {
         font-size: 6vw;
+    }
+
+    .all-info {
+        margin-top: -8em;
     }
 
     .send {
@@ -239,55 +187,38 @@
         font-size: 4vw;
     }
 
-    .contacto-card span {
-        font-size: 3vw;
+    .info {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .info-redes p {
-        padding-top: 1rem;
-        position: relative;
-        left: 40%;
-        text-align: justify;
+    .contacto-card span {
+        font-size: 3vw;
     }
 
     #foto {
         width: 15em;
         height: 15em;
-        top: 16rem;
+        top: 4em;
         border-radius: 20%;
-        left: 20%;
-    }
-
-    .acerca-texto {
-        position: relative;
-        /* text-align: center; */
-        /* align-items: center; */
-        left: -46rem;
-        top: -3rem;
-        font-size: 3vw;
-    }
-
-    .info-container {
-        top: 3rem;
     }
 
     .contacto-info {
         align-items: center;
         flex-direction: column;
-        top: 20rem;
-    }
+        top: 12rem;
 
-    .info p {
-        padding-left: 1%;
-        padding-right: 1%;
     }
 
     .contacto-card {
         display: flex;
         align-items: center;
         flex-direction: column;
-        /* margin-left: 20%; */
-        /* grid-column-gap: 1rem; */
         margin-bottom: 1.5em;
+    }
+
+    .acerca-texto {
+        max-width: 90%;
+        font-size: 3vw;
     }
 }

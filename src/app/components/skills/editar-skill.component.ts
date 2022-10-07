@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Skills } from 'src/app/model/skills';
 import { SkillsService } from 'src/app/service/skills.service';
 
+
 @Component({
   selector: 'app-editar-skill',
   templateUrl: './editar-skill.component.html',

@@ -108,10 +108,10 @@ button:hover {
     }
 
     .imagen-inicio {
-         left: 5%; 
+        left: 5%;
         text-align: center;
         top: -1em;
-        
+
     }
 
     .col-sm-10 {
@@ -147,29 +147,35 @@ button:hover {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .sesion-container {
+    .container {
+        flex-direction: column;
         height: max-content;
-        max-width: 90%;
+        width: 70%;
     }
 
-    .forma {
-        display: flex;
-        flex-direction: row;
+    .imagen-inicio img {
+        width: 14em;
     }
 
-    .forma input {
-        max-width: 90%;
+    .imagen-inicio {
+        left: 5%;
+        text-align: center;
+        top: -1em;
+
+    }
+    .form-group label{
+        font-size: 3vw;
     }
 
     .cuerpo-inicio h2 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .forma fa-icon {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     button {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
