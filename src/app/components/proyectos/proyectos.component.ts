@@ -49,11 +49,11 @@ export class ProyectosComponent implements OnInit {
       },
       1250: {
         slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 30
       },
       1300: {
         slidesPerView: 5,
-        spaceBetween: 50
+        spaceBetween: 30
       }
     }
   }

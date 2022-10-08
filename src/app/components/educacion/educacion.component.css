@@ -75,7 +75,6 @@
     transition: all .3s;
 }
 
-
 .educacion-card:hover {
     border: 1px solid #D9A0BB;
 }
@@ -86,23 +85,24 @@
 }
 
 .educacion-card-content {
-    padding: 2em;
+    padding: .5em;
     width: 100%;
 }
 
 #nombre {
-    letter-spacing: 2px;
     font-size: 1.2vw;
 }
 
 .text {
     color: #c2c0c0;
     font-size: 1vw;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
 }
 
 .fechas{
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 @media only screen and (max-width: 480px) {
@@ -139,20 +139,18 @@
         height: 90px;
     }
 
-    .educacion-card-content {
-        padding: 0.5em;
-        margin-left: 0.5em;
-    }
-
     .btn-agregar {
         position: relative;
         top: -0.1em;
         font-size: 4vw;
     }
 
+    .fechas{
+        font-size: 1.5vw;
+    }
+    
     #nombre {
         font-size: 2.1vw;
-        width: 50vw;
     }
 
     .text {

@@ -18,7 +18,6 @@
     cursor: pointer;
     transition: .2s;
     border: none;
-    color: #f3f3f3;
     font-size: 1.3rem;
     background-color: transparent;
     left: 1rem;
@@ -31,36 +30,31 @@
 
 
 .skill-container{
-    width: 90vw;
     position: relative;
     top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     margin: 0 auto;
 }
 
 .item{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    -webkit-backgroubd-size: cover;
-    background-size: cover;
     text-align: center;
     overflow: hidden;
     backdrop-filter: blur(1rem);
     background-color: rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(255, 255, 255, .5);
     border-bottom: 1px solid rgba(255, 255, 255, .5);
-    width: 300px;
-    height: 150px;
+    width: 270px;
     margin: 0 auto;
     border-radius: 15px;
     color: #f3f3f3;
     -webkit-backdrop-filter: blur(.5rem);
     position: relative;
-   padding-left: .5rem;
-   padding-right: .5rem;
+    padding:.5em;
 }
 
 .item:hover{
@@ -74,8 +68,8 @@
     justify-content: center;
 }
 
-.titulo-icono h4{
-    margin-left: .8rem;
+.titulo-icono h3{
+    font-size: 1.2vw
 }
 
 .skill-bar, 
@@ -113,10 +107,14 @@
 
 .tipo p{
     letter-spacing: 1px;
+    color: #c2c0c0;
+    font-size: 1vw;
+    margin-bottom: .5em;
 }
 
 .icono-skill{
-    width: 1.5rem;
+    width: 1.5em;
+    margin-right: 1em;
 }
 
 @media only screen and (max-width: 480px){
@@ -144,8 +142,8 @@
         padding-bottom: .5em;
     }
 
-    .titulo-icono h4{
-        font-size: .8rem;
+    .titulo-icono h3{
+        font-size: 2.1vw;
     }
 
     .icono-skill{
@@ -153,7 +151,7 @@
     }
 
     .tipo p{
-        font-size: .7rem;
+        font-size: 1.1vw;
     }
 
     .skill-container{

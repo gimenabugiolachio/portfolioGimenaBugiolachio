@@ -7,11 +7,9 @@
             </button>
         </div>
         <div class="proyectos-cards-container">
-            <swiper class="project_cards my-swiper my_swiper"
-            #swiper 
-            [config]="config"
-            style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB" >
-               <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Proyectos of proyectos">
+            <swiper class="project_cards my-swiper my_swiper" [config]="config"
+                style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
+                <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Proyectos of proyectos">
                     <div class="proyecto-card">
                         <div class="editar-eliminar">
                             <td *ngIf="isLogged">
@@ -25,18 +23,16 @@
                                 </button>
                             </td>
                         </div>
-                        <div class="proyecto-info">
-                            <div class="proyecto-header" id="proyecto-header">
-                                <img src={{Proyectos.imgP}} alt="Imagen del proyecto {{Proyectos.nombreP}}">
-                            </div>
-                            <div class="proyecto-contenido">
-                                <h3 class="nombre" id="nombre">{{Proyectos.nombreP}}</h3>
-                                <p class="descripcion" id="descripcion">{{Proyectos.descripcionP}}</p>
-                            </div>
+                        <div class="proyecto-header" id="proyecto-header">
+                            <img src={{Proyectos.imgP}} alt="Imagen del proyecto {{Proyectos.nombreP}}">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <h3 class="nombre" id="nombre">{{Proyectos.nombreP}}</h3>
+                            <p class="descripcion" id="descripcion">{{Proyectos.descripcionP}}</p>
                         </div>
                     </div>
                 </ng-template>
-            </swiper> 
+            </swiper>
         </div>
     </div>
 </section>

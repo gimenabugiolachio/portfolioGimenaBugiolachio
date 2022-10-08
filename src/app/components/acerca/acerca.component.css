@@ -1,7 +1,5 @@
 #acerca {
     height: 100vh;
-    padding-bottom: 8rem;
-    overflow: hidden;
 }
 
 .titulo {
@@ -12,10 +10,6 @@
     justify-content: center;
     padding-top: 5rem;
     z-index: 1;
-}
-
-.acerca-texto p {
-    margin-top: 4.7em;
 }
 
 .btn-editar {
@@ -36,40 +30,53 @@
 
 #foto {
     position: relative;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-    border: 3px solid #f3f3f3;
+    width: 18em;
+    height: 18em;
+    border-radius: 20%;
+    border: 1px solid rgba(255, 255, 255, .5);
 }
 
 .info {
     display: flex;
     position: relative;
-    flex-direction: row;
     top: 5rem;
     justify-content: space-around;
+    align-items: flex-start;
 }
+
+/*.acerca-texto p {
+    margin-top: 4.7em;
+    font-size: 1.2vw;
+}*/
 
 .send {
     color: #bb8fa3;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
+    font-weight: bold;
 }
 
 .acerca-texto {
     max-width: 600px;
+    margin-top: 4.7em;
+    font-size: 1.2vw;
 }
 
 .contacto-info {
     position: relative;
     display: flex;
-    flex-direction: row;
     top: 10rem;
-    align-content: center;
     justify-content: center;
 }
 
 .contacto-card h3 {
     margin: 0 .2rem;
+    font-size: 1.2vw;
+}
+
+.contacto-card span{
+    color: #c2c0c0;
+    font-size: 1vw;
+    letter-spacing: 1px;
 }
 
 .contacto-card {
@@ -102,7 +109,7 @@
         font-size: 4vw;
     }
     .all-info{
-        margin-top: -2em;
+        margin-top: -5em;
     }
 
     .titulo h2 {
@@ -110,20 +117,20 @@
     }
 
     #foto {
-        width: 9em;
-        height: 9em;
+        width: 10em;
+        height: 10em;
         border-radius: 20%;
     }
 
     .acerca-texto p {
         margin-top: -3.5em;
+        font-size: 2.1vw;
     }
 
     .acerca-texto {
         max-width: 80%;
         margin-bottom: 3em;
         font-size: 3vw;
-        justify-content: center;
     }
 
     .contacto-info {
@@ -138,9 +145,7 @@
     }
 
     .contacto-card {
-        max-width: 200px;
-        align-items: center;
-        flex-direction: column;
+        max-width: 230px;
         margin-bottom: 1.5em;
     }
 
@@ -222,3 +227,4 @@
         font-size: 3vw;
     }
 }
+

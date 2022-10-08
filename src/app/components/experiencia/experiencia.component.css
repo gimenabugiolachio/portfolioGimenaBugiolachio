@@ -19,11 +19,6 @@
     width: 100%; 
 }
 
-.fechas p{
-    font-size: small;
-}
-
-
 .btn-agregar{
     position: relative;
     cursor: pointer;
@@ -76,21 +71,23 @@
 }
 
 .nombreE h2{
-    margin-bottom: .5rem;
+    font-size: 1.2vw
 }
 
 .descripcionE{
     padding: 1rem 0;
-    font-size: 1.1rem;
+    font-size: 1vw;
+    color: #c2c0c0;
 }
 
 .puestoE{
- width: 25%;
+ width: 35%;
 }
 
 .puestoE p{
-    margin-top: .8rem;
-    margin-bottom: .8rem;
+    margin: .8rem 0;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .box-contenido{
@@ -107,6 +104,12 @@
     color: #f3f3f3;
     border: none;
     font-size: 1vw;
+}
+
+.fechas{
+    font-weight: bold;
+    font-size: 1vw;
+    margin-bottom: .5em;
 }
 
 .nombre-botones{
@@ -142,29 +145,21 @@
     .box-contenido{
         padding: .5em;
     }
-
-    .nombreE h2{
-        font-size: 4vw;
-    }
-
-    .fechas p{
-        font-size: 3vw;
-    }
-    
-    .puestoE{
-        display: inline-table;
-    }
     
     .puestoE p{
-        font-size: .8rem;
+        font-size: 2.1vw;  
     }
-
     .descripcionE p{
-        font-size: .8rem;
+        font-size: 2.1vw;  
     }
-
+    
     .buttons button{
         font-size:  2vw;
+    }
+
+    .nombreE h2{
+        font-size:2.1vw;
+        margin-top: 1em;
     }
 
     .btn-agregar{
