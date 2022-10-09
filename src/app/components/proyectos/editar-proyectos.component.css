@@ -22,21 +22,23 @@
 }
 
 #info{
-   position: relative;
-   top: 2rem;
+   margin-top: 2em;
 }
 
 form h2{
     text-align: center;
+    font-size: 2vw;
 }
 
 .form-group{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .form-group label{
     margin-right: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
 }
 
 .nombre-imagen{
@@ -61,21 +63,16 @@ form h2{
     border-radius: .5rem;
     cursor: pointer;
     border: none;
-    position: relative;
     text-align: center;
     font-size: 1.1rem;
-    top: 3rem;
 }
 
 .btn:hover{
     background: #f3f3f3;
     color: #D49BB0;
+    outline: 1 px solid #D49BB0;
 }
 
-.link{
-   position: relative;
-   left: 20%;
-}
 
 @media only screen and (max-width: 480px){
     .formulario{

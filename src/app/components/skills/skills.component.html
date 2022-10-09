@@ -8,17 +8,13 @@
         </div>
         <div class="skill-container">
             <div class="item" *ngFor="let Skills of skills">
-                <div class="buttons">                
-                    <td>
+                <div class="buttons">                                  
                         <button (click)="delete(Skills.id)" *ngIf="isLogged">
                             <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
-                        </button>
-                    </td>
-                    <td>
+                        </button>                 
                         <button routerLink="/editarSkill/{{Skills.id}}" *ngIf="isLogged">
                             <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
-                        </button>
-                    </td>
+                        </button>                  
                 </div>
                 <div>
                     <div class="titulo-icono">

@@ -70,10 +70,11 @@
 
 .proyecto-card:hover {
     border: 1px solid #D9A0BB;
+    transform: scale(1.1);
 }
 
 .swiper-pagination-bullet {
-    background: #313131;
+    background: #f3f3f3;
 }
 
 .swiper-pagination-bullet-active {
@@ -111,7 +112,7 @@
 }
 
 .editar-eliminar {
-    position: relative;
+    position: absolute;
     left: 80%;
 }
 

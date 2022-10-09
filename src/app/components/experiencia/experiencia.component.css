@@ -1,8 +1,8 @@
-#experiencia{
+#experiencia {
     height: 100vh;
 }
 
-.titulo{
+.titulo {
     display: flex;
     color: #f3f3f3;
     font-size: 1.5rem;
@@ -13,13 +13,13 @@
 }
 
 
-.fechas{
+.fechas {
     text-align: center;
     display: grid;
-    width: 100%; 
+    width: 100%;
 }
 
-.btn-agregar{
+.btn-agregar {
     position: relative;
     cursor: pointer;
     transition: .2s;
@@ -31,17 +31,17 @@
     top: .2rem;
 }
 
-.btn-agregar:hover{
+.btn-agregar:hover {
     color: #D9A0BB;
 }
 
 
-.desc{
+.desc {
     padding: .5rem;
     text-align: center;
 }
 
-.box{
+.box {
     width: 70%;
     height: max-content;
     margin: 0 auto;
@@ -61,108 +61,111 @@
     -webkit-backdrop-filter: blur(.5rem);
 }
 
-.box:hover{
+.box:hover {
     border: 1px solid #D9A0BB;
 }
 
-.nombreE{
-    letter-spacing: 2px;
+.nombreE {
+    letter-spacing: 1px;
     margin: 0 auto;
-}
-
-.nombreE h2{
     font-size: 1.2vw
 }
 
-.descripcionE{
+
+.descripcionE {
     padding: 1rem 0;
     font-size: 1vw;
     color: #c2c0c0;
 }
 
-.puestoE{
- width: 35%;
+.puestoE {
+    width: 35%;
 }
 
-.puestoE p{
+.puestoE p {
     margin: .8rem 0;
     font-size: 1vw;
     font-weight: bold;
 }
 
-.box-contenido{
+.box-contenido {
     padding: 0 1rem 1rem 1rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
 }
 
-.buttons button{
+.buttons button {
     background-color: transparent;
     color: #f3f3f3;
     border: none;
     font-size: 1vw;
 }
 
-.fechas{
+.fechas {
     font-weight: bold;
     font-size: 1vw;
     margin-bottom: .5em;
 }
 
-.nombre-botones{
+.nombre-botones {
     display: flex;
     flex-direction: row;
 }
 
-.icon{
+.icon {
     margin-left: .5rem;
     cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
     color: #D9A0BB;
 }
 
 
-@media only screen and (max-width: 480px){
-    #experiencia{
+@media only screen and (max-width: 480px) {
+    #experiencia {
         margin-top: -4rem;
         margin-bottom: 4em;
         height: max-content;
     }
 
-    .box{
+    .box {
         width: 90%;
     }
 
-    .titulo h2{
+    .titulo h2 {
         font-size: 6vw;
     }
 
-    .box-contenido{
+    .box-contenido {
         padding: .5em;
     }
-    
-    .puestoE p{
-        font-size: 2.1vw;  
-    }
-    .descripcionE p{
-        font-size: 2.1vw;  
-    }
-    
-    .buttons button{
-        font-size:  2vw;
+
+    .puestoE p {
+        font-size: 2.1vw;
     }
 
-    .nombreE h2{
-        font-size:2.1vw;
-        margin-top: 1em;
+    .descripcionE p {
+        font-size: 2.1vw;
     }
 
-    .btn-agregar{
+    .buttons button {
+        font-size: 2vw;
+    }
+
+    .nombreE h3 {
+        font-size: 2.1vw;
+        margin-left: 1em;
+    }
+
+    .fechas {
+        font-size: 2vw;
+    }
+
+    .btn-agregar {
         position: relative;
         top: -0.1em;
         font-size: 4vw;

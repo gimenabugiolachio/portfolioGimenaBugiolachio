@@ -10,9 +10,9 @@
     background-size: cover;
     text-align: center;
     overflow: hidden;
-    backdrop-filter: blur(1rem);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(.5rem);
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(1rem);
@@ -21,27 +21,30 @@
     border-radius: 2rem; 
 }
 
-#nombre-descripcion{
-   margin-top: 2rem;
+#info{
+   margin-top: 2em;
 }
 
 form h2{
     text-align: center;
+    font-size: 2vw;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin-right: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
 }
 
 .nombre-imagen{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.form-group{
-    display: flex;
-    flex-direction: row;
-}
-
-.form-group label{
-    margin-right: 1rem;
 }
 
 .form-control{
@@ -60,7 +63,6 @@ form h2{
     border-radius: .5rem;
     cursor: pointer;
     border: none;
-    position: relative;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -68,12 +70,8 @@ form h2{
 .btn:hover{
     background: #f3f3f3;
     color: #D49BB0;
+    outline: 1 px solid #D49BB0;
 }
-
-.link{
-    position: relative;
-    left: 20%;
- }
  
  @media only screen and (max-width: 480px){
     .formulario{

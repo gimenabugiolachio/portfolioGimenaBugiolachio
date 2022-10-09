@@ -145,16 +145,17 @@
     }
 
     .contacto-card {
-        max-width: 230px;
+        max-width: 170px;
         margin-bottom: 1.5em;
+        margin-right: 0;
     }
 
     .contacto-card h3 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .contacto-card span {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .btn-editar {
@@ -189,7 +190,7 @@
     }
 
     .contacto-card h3 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .info {
@@ -198,7 +199,7 @@
     }
 
     .contacto-card span {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     #foto {
