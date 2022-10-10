@@ -80,5 +80,14 @@ footer{
     .lado-der p{
         font-size: 2vw;
     }
-    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .redes-link a{
+        font-size: 2vw;
+    }
+
+    .lado-der p{
+        font-size: 1.8vw;
+    }
 }

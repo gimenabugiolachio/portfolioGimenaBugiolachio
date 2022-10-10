@@ -94,6 +94,7 @@ button {
 button:hover {
     background: #f3f3f3;
     color: #D49BB0;
+    outline: 1px solid #D49BB0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -149,8 +150,8 @@ button:hover {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .container {
         flex-direction: column;
-        height: max-content;
-        width: 70%;
+        height: 600px;
+        width: 50%;
     }
 
     .imagen-inicio img {
@@ -164,18 +165,33 @@ button:hover {
 
     }
     .form-group label{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .cuerpo-inicio h2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .forma fa-icon {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     button {
         font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .container{
+        width: 60vw;
+        height: 300px;
+    }
+
+    .cuerpo-inicio h2 {
+        font-size: 2vw;
+    }
+
+    button {
+        font-size: 1.5vw;
     }
 }

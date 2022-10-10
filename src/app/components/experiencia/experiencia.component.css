@@ -93,6 +93,8 @@
 }
 
 .buttons {
+    position: absolute;
+    left: 90%;
     display: flex;
     flex-direction: row;
 }
@@ -158,7 +160,6 @@
 
     .nombreE h3 {
         font-size: 2.1vw;
-        margin-left: 1em;
     }
 
     .fechas {
@@ -169,5 +170,44 @@
         position: relative;
         top: -0.1em;
         font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #experiencia {
+        margin-top: -4rem;
+        margin-bottom: 4em;
+        height: max-content;
+    }
+
+    .box{
+        width: 80%;
+    }
+    .titulo h2 {
+        font-size: 5vw;
+    }
+
+    .btn-agregar {
+        font-size: 3.5vw;
+    }
+
+    .puestoE p {
+        font-size: 1.5vw;
+    }
+
+    .descripcionE p {
+        font-size: 1.5vw;
+    }
+
+    .buttons button {
+        font-size: 1.8vw;
+    }
+
+    .nombreE h3 {
+        font-size: 2vw;
+    }
+
+    .fechas {
+        font-size: 1.5vw;
     }
 }

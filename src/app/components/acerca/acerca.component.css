@@ -172,25 +172,23 @@
     }
 
     .titulo h2 {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .all-info {
         margin-top: -8em;
     }
 
-    .send {
-        font-size: 4vw;
+    .btn-editar {
+        font-size: 3.5vw;
     }
 
-    .btn-editar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
+    .send {
+        font-size: 3vw;
     }
 
     .contacto-card h3 {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .info {
@@ -215,7 +213,6 @@
         top: 12rem;
 
     }
-
     .contacto-card {
         display: flex;
         align-items: center;
@@ -224,8 +221,11 @@
     }
 
     .acerca-texto {
-        max-width: 90%;
-        font-size: 3vw;
+        max-width: 90vw;
+        font-size: 2.5vw;
     }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+}

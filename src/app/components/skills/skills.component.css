@@ -1,10 +1,10 @@
-#skills{
+#skills {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.titulo{
+.titulo {
     display: flex;
     color: #f3f3f3;
     font-size: 1.5rem;
@@ -13,7 +13,7 @@
     padding-top: 5rem;
 }
 
-.btn-agregar{
+.btn-agregar {
     position: relative;
     cursor: pointer;
     transition: .2s;
@@ -24,12 +24,12 @@
     top: .2rem;
 }
 
-.btn-agregar:hover{
+.btn-agregar:hover {
     color: #D9A0BB;
 }
 
 
-.skill-container{
+.skill-container {
     position: relative;
     top: 2rem;
     display: flex;
@@ -40,7 +40,7 @@
     margin: 0 auto;
 }
 
-.item{
+.item {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     overflow: hidden;
@@ -53,42 +53,42 @@
     border-radius: 15px;
     color: #f3f3f3;
     -webkit-backdrop-filter: blur(.5rem);
-    padding-bottom:.5em;
+    padding-bottom: .5em;
 }
 
-.item:hover{
+.item:hover {
     border: 1px solid #D9A0BB;
 }
 
-.titulo-icono{
+.titulo-icono {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 1.5em;
+    margin-top: 1.3em;
 }
 
-.titulo-icono h3{
+.titulo-icono h3 {
     font-size: 1.2vw
 }
 
-.skill-bar, 
-.progress-bar{
+.skill-bar,
+.progress-bar {
     height: 5px;
     border-radius: .25rem;
 }
 
-.skill-bar{
+.skill-bar {
     background-color: #494949;
     margin: .5em;
 }
 
-.progress-bar{
+.progress-bar {
     display: block;
     background-color: #B394C4;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -96,7 +96,7 @@
     top: .5em;
 }
 
-.buttons button{
+.buttons button {
     background-color: transparent;
     color: #f3f3f3;
     border: none;
@@ -105,74 +105,100 @@
     margin-right: .5rem;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     color: #D9A0BB;
 }
 
-.tipo p{
+.tipo p {
     letter-spacing: 1px;
     color: #c2c0c0;
     font-size: 1vw;
     margin-bottom: .5em;
 }
 
-.icono-skill{
+.icono-skill {
     width: 1.5em;
     margin-right: 1em;
 }
 
-@media only screen and (max-width: 480px){
-    #skills{
+@media only screen and (max-width: 480px) {
+    #skills {
         margin-top: -4rem;
         height: max-content;
     }
 
-    .titulo h2{
+    .titulo h2 {
         font-size: 6vw;
     }
 
-    .buttons button{
-        font-size:  2vw;
-    }
-
-    .titulo-icono{
-        margin-bottom: .5em;
-    }
-
-    .item{
-        width: 150px;
-    }
-
-    .titulo-icono h3{
-        font-size: 2.1vw;
-    }
-
-    .icono-skill{
-        width: .7rem;
-    }
-
-    .tipo p{
+    .buttons button {
         font-size: 2vw;
     }
 
-    .skill-container{
+    .titulo-icono {
+        margin-bottom: .5em;
+    }
+
+    .item {
+        width: 150px;
+    }
+
+    .titulo-icono h3 {
+        font-size: 2.1vw;
+    }
+
+    .icono-skill {
+        width: .7rem;
+    }
+
+    .tipo p {
+        font-size: 2vw;
+    }
+
+    .skill-container {
         margin-bottom: 4rem;
         grid-column-gap: 1rem;
     }
 
-    .btn-agregar{
+    .btn-agregar {
         position: relative;
         top: -0.1em;
         font-size: 4vw;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
-    #skills{
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #skills {
         margin-top: -4rem;
         height: max-content;
         padding-bottom: 4em;
     }
 
-}
+    .titulo h2 {
+        font-size: 5vw;
+    }
 
+    .btn-agregar {
+        font-size: 3.5vw;
+    }
+
+    .item {
+        width: 210px;
+    }
+
+    .icono-skill {
+        width: 1em;
+    }
+
+    .buttons button {
+        font-size: 1.8vw;
+    }
+
+    .titulo-icono h3 {
+        font-size: 2vw;
+    }
+
+    .tipo p{
+        font-size: 1.5vw;
+    }
+}

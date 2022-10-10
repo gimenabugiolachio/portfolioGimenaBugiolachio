@@ -35,8 +35,15 @@
     color: #D9A0BB;
 }
 
+.buttons {
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 0.5em;
+}
 
 .buttons button {
+    flex-direction: row;
     color: #f3f3f3;
     border: none;
     font-size: 1vw;
@@ -58,7 +65,7 @@
 
 .educacion-card {
     position: relative;
-    border-radius: 10px;
+    border-radius: 1em;
     overflow: hidden;
     width: 70vw;
     display: flex;
@@ -84,12 +91,13 @@
 }
 
 .educacion-card-content {
-    padding: .5em;
+    padding: .7em;
     width: 100%;
 }
 
 #nombre {
     font-size: 1.2vw;
+    margin-top: .8em;
 }
 
 .text {
@@ -99,7 +107,7 @@
     margin-top: 0.5em;
 }
 
-.fechas{
+.fechas {
     font-weight: bold;
     font-size: 1.1vw;
 }
@@ -124,11 +132,6 @@
         font-size: 2vw;
     }
 
-    .buttons {
-        position: relative;
-        top: -0.5em;
-    }
-
     .educacion-card-img>img {
         height: 90px;
     }
@@ -143,10 +146,10 @@
         font-size: 4vw;
     }
 
-    .fechas{
+    .fechas {
         font-size: 2vw;
     }
-    
+
     #nombre {
         font-size: 2.1vw;
     }
@@ -163,5 +166,32 @@
         padding-bottom: 2em;
     }
 
+    
+    .titulo h2 {
+        font-size: 5vw;
+    }
 
+    .btn-agregar {
+        font-size: 3.5vw;
+    }
+
+    .fechas {
+        font-size: 1.5vw;
+    }
+
+    #nombre {
+        font-size: 2vw;
+    }
+
+    .text {
+        font-size: 1.5vw;
+    }
+
+    .educacion-card {
+        width: 80vw;
+    }
+
+    .buttons button {
+        font-size: 1.8vw;
+    }
 }
