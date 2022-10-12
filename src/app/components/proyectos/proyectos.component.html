@@ -11,7 +11,7 @@
                 style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
                 <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Proyectos of proyectos">
                     <div class="proyecto-card">
-                        <div class="editar-eliminar">
+                        <div class="buttons">
                             <button routerLink="/editarProyecto/{{Proyectos.id}}" *ngIf="isLogged">
                                 <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
                             </button>

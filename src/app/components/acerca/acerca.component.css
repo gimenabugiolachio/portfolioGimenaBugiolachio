@@ -1,31 +1,6 @@
 #acerca {
     height: 100vh;
-}
-
-.titulo {
-    display: flex;
-    color: #f3f3f3;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    justify-content: center;
-    padding-top: 5rem;
-    z-index: 1;
-}
-
-.btn-editar {
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-    border: none;
-    color: #f3f3f3;
-    font-size: 1.3vw;
-    background-color: transparent;
-    left: 1rem;
-    top: .2rem;
-}
-
-.btn-editar:hover {
-    color: #D9A0BB;
+    width: 100vw;
 }
 
 #foto {
@@ -33,21 +8,17 @@
     width: 18em;
     height: 18em;
     border-radius: 20%;
-    border: 1px solid rgba(255, 255, 255, .5);
+    border: 1px solid #f3f3f3;
 }
 
 .info {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
     position: relative;
-    top: 5rem;
-    justify-content: space-around;
-    align-items: flex-start;
+    top: 5em;
 }
-
-/*.acerca-texto p {
-    margin-top: 4.7em;
-    font-size: 1.2vw;
-}*/
 
 .send {
     color: #bb8fa3;
@@ -62,18 +33,18 @@
 }
 
 .contacto-info {
-    position: relative;
     display: flex;
-    top: 10rem;
+    flex-direction: row;
     justify-content: center;
+    position: relative;
+    top: 10em;  
 }
 
 .contacto-card h3 {
-    margin: 0 .2rem;
-    font-size: 1.2vw;
+    margin: 0 .2em;
 }
 
-.contacto-card span{
+.contacto-card span {
     color: #c2c0c0;
     font-size: 1vw;
     letter-spacing: 1px;
@@ -84,42 +55,38 @@
     -webkit-backgroubd-size: cover;
     text-align: center;
     overflow: hidden;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
     background-color: #0000004d;
     border-right: 1px solid rgba(255, 255, 255, .5);
     border-bottom: 1px solid rgba(255, 255, 255, .5);
-    padding: 0.5rem 0rem;
-    border-radius: 0.5rem;
-    width: 270px;
-    margin-right: 1rem;
+    padding: 0.5em 0em;
+    border-radius: 0.5em;
+    width: 15.6em;
+    margin-right: 1em;
 }
 
-.contacto-card:hover{
+.contacto-card:hover {
     border: 1px solid #D9A0BB;
 }
 
 @media screen and (max-width: 480px) {
     #acerca {
         height: max-content;
-        padding-bottom: 10rem;
+        padding-bottom: 10em;
     }
 
     .send {
         font-size: 4vw;
     }
-    .all-info{
-        margin-top: -5em;
-    }
 
-    .titulo h2 {
-        font-size: 6vw;
+    .all-info {
+        margin-top: -5em;
     }
 
     #foto {
         width: 10em;
         height: 10em;
-        border-radius: 20%;
     }
 
     .acerca-texto p {
@@ -150,18 +117,8 @@
         margin-right: 0;
     }
 
-    .contacto-card h3 {
-        font-size: 3vw;
-    }
-
     .contacto-card span {
         font-size: 2vw;
-    }
-
-    .btn-editar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
     }
 }
 
@@ -171,24 +128,12 @@
         padding-bottom: 12em;
     }
 
-    .titulo h2 {
-        font-size: 5vw;
-    }
-
     .all-info {
         margin-top: -8em;
     }
 
-    .btn-editar {
-        font-size: 3.5vw;
-    }
-
     .send {
         font-size: 3vw;
-    }
-
-    .contacto-card h3 {
-        font-size: 2.2vw;
     }
 
     .info {
@@ -210,9 +155,9 @@
     .contacto-info {
         align-items: center;
         flex-direction: column;
-        top: 12rem;
-
+        top: 12em;
     }
+
     .contacto-card {
         display: flex;
         align-items: center;
@@ -226,6 +171,24 @@
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px){
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contacto-card span {
+        font-size: 1.3vw;
+    }
 
+    .acerca-texto {
+        margin-top: 6em;
+        font-size: 1.5vw;
+    }
+
+    .send{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .acerca-texto {
+        max-width: 60vw;
+        font-size: 1.4vw;
+    }
 }

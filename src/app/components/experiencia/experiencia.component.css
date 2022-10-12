@@ -2,53 +2,14 @@
     height: 100vh;
 }
 
-.titulo {
-    display: flex;
-    color: #f3f3f3;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    justify-content: center;
-    padding-top: 5rem;
-    font-family: 'Cairo', sans-serif;
-}
-
-
-.fechas {
-    text-align: center;
-    display: grid;
-    width: 100%;
-}
-
-.btn-agregar {
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-    border: none;
-    color: #f3f3f3;
-    font-size: 1.3rem;
-    background-color: transparent;
-    left: 1rem;
-    top: .2rem;
-}
-
-.btn-agregar:hover {
-    color: #D9A0BB;
-}
-
-
-.desc {
-    padding: .5rem;
-    text-align: center;
-}
-
 .box {
-    width: 70%;
+    width: 70vw;
     height: max-content;
     margin: 0 auto;
     border-radius: 15px;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1em);
     position: relative;
-    top: 2rem;
+    top: 2em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(255, 255, 255, .5);
@@ -58,7 +19,7 @@
     text-align: center;
     overflow: hidden;
     color: #f3f3f3;
-    -webkit-backdrop-filter: blur(.5rem);
+    -webkit-backdrop-filter: blur(.5em);
 }
 
 .box:hover {
@@ -71,11 +32,25 @@
     font-size: 1.2vw
 }
 
+.fechas {
+    text-align: center;
+    display: grid;
+    width: 100%;
+}
+
+.desc {
+    padding: .5em;
+    text-align: center;
+}
 
 .descripcionE {
-    padding: 1rem 0;
-    font-size: 1vw;
+    padding: 1em 0;
     color: #c2c0c0;
+}
+
+.descripcionE p,
+.puestoE p{
+    font-size: 1vw;
 }
 
 .puestoE {
@@ -83,32 +58,15 @@
 }
 
 .puestoE p {
-    margin: .8rem 0;
-    font-size: 1vw;
+    margin: .8em 0;
     font-weight: bold;
 }
 
 .box-contenido {
-    padding: 0 1rem 1rem 1rem;
-}
-
-.buttons {
-    position: absolute;
-    left: 90%;
-    display: flex;
-    flex-direction: row;
-}
-
-.buttons button {
-    background-color: transparent;
-    color: #f3f3f3;
-    border: none;
-    font-size: 1vw;
+    padding: 0 1em 1em 1em;
 }
 
 .fechas {
-    font-weight: bold;
-    font-size: 1vw;
     margin-bottom: .5em;
 }
 
@@ -117,65 +75,35 @@
     flex-direction: row;
 }
 
-.icon {
-    margin-left: .5rem;
-    cursor: pointer;
+.buttons{
+    left: 90%;
 }
-
-.icon:hover {
-    color: #D9A0BB;
-}
-
 
 @media only screen and (max-width: 480px) {
     #experiencia {
-        margin-top: -4rem;
+        margin-top: -4em;
         margin-bottom: 4em;
         height: max-content;
     }
 
     .box {
-        width: 90%;
-    }
-
-    .titulo h2 {
-        font-size: 6vw;
+        width: 90vw;
     }
 
     .box-contenido {
         padding: .5em;
     }
 
-    .puestoE p {
+    .puestoE p,
+    .descripcionE p
+     {
         font-size: 2.1vw;
-    }
-
-    .descripcionE p {
-        font-size: 2.1vw;
-    }
-
-    .buttons button {
-        font-size: 2vw;
-    }
-
-    .nombreE h3 {
-        font-size: 2.1vw;
-    }
-
-    .fechas {
-        font-size: 2vw;
-    }
-
-    .btn-agregar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
-    }
+    }  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #experiencia {
-        margin-top: -4rem;
+        margin-top: -4em;
         margin-bottom: 4em;
         height: max-content;
     }
@@ -183,31 +111,17 @@
     .box{
         width: 80%;
     }
-    .titulo h2 {
-        font-size: 5vw;
-    }
 
-    .btn-agregar {
-        font-size: 3.5vw;
-    }
-
-    .puestoE p {
+    .puestoE p,
+    .descripcionE p
+     {
         font-size: 1.5vw;
-    }
+    }  
+}
 
-    .descripcionE p {
-        font-size: 1.5vw;
-    }
-
-    .buttons button {
-        font-size: 1.8vw;
-    }
-
-    .nombreE h3 {
-        font-size: 2vw;
-    }
-
-    .fechas {
-        font-size: 1.5vw;
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .puestoE p,
+    .descripcionE p{
+        font-size: 1.2vw;
     }
 }

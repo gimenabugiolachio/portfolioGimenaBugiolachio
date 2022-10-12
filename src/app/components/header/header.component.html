@@ -1,7 +1,7 @@
 <nav class="header-container container-fluid">
     <div class="logoap col-md-4">
         <div class="navbar-brand">
-            <img class="img-fluid" src="./assets/logo-ap.png" alt="Logo-ArgentinaPrograma" id="logoAP">
+            <img src="./assets/LogoArgentinaPrograma.png" alt="LogoArgentinaPrograma" id="logoAP">
             <div>
                 <span class="logo-text"><b>#YoProgramo</b></span>
             </div>
@@ -15,14 +15,14 @@
                 <li><a href="#experiencia" class="nav-item">Experiencia Laboral</a></li>
                 <li><a href="#skills" class="nav-item">Hard & Soft Skills</a></li>
                 <li><a href="#proyectos" class="nav-item">Mis Proyectos</a></li>
-                <div class="buttons">
+                <div class="botones">
                     <li>
-                        <button class="btn-log" (click)="login()" *ngIf="!isLogged">
+                        <button class="boton-log" (click)="login()" *ngIf="!isLogged">
                             <fa-icon [icon]="faUser"></fa-icon>
                         </button>
                     </li>
                     <li>
-                        <button class="btn-log" (click)="onLogOut()" *ngIf="isLogged">
+                        <button class="boton-log" (click)="onLogOut()" *ngIf="isLogged">
                             <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
                         </button>   
                     </li>

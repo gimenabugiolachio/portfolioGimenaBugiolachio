@@ -1,66 +1,11 @@
 #educacion {
     height: 100vh;
-    overflow: hidden;
 }
 
 .container-fluid {
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-.titulo {
-    display: flex;
-    color: #f3f3f3;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    justify-content: center;
-    padding-top: 5rem;
-    font-family: 'Cairo', sans-serif;
-}
-
-.btn-agregar {
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-    border: none;
-    color: #f3f3f3;
-    font-size: 1.3rem;
-    background-color: transparent;
-    left: 1rem;
-    top: .2rem;
-}
-
-.btn-agregar:hover {
-    color: #D9A0BB;
-}
-
-.buttons {
-    display: flex;
-    position: absolute;
-    left: 90%;
-    top: 0.5em;
-}
-
-.buttons button {
-    flex-direction: row;
-    color: #f3f3f3;
-    border: none;
-    font-size: 1vw;
-    background-color: transparent;
-}
-
-.icon {
-    margin-left: .5em;
-    cursor: pointer;
-}
-
-.icon:hover {
-    color: #D9A0BB;
-}
-
-.educacion-card-img {
-    height: 105px;
 }
 
 .educacion-card {
@@ -85,6 +30,9 @@
     border: 1px solid #D9A0BB;
 }
 
+.educacion-card-img {
+    height: 105px;
+}
 .educacion-card-img>img {
     object-fit: cover;
     height: 125px;
@@ -96,25 +44,23 @@
 }
 
 #nombre {
-    font-size: 1.2vw;
     margin-top: .8em;
 }
 
 .text {
     color: #c2c0c0;
-    font-size: 1vw;
+    font-size: 1.1vw;
     letter-spacing: 1px;
     margin-top: 0.5em;
 }
 
-.fechas {
-    font-weight: bold;
-    font-size: 1.1vw;
+.buttons{
+    left: 90%;
 }
 
 @media only screen and (max-width: 480px) {
     #educacion {
-        margin-top: -4rem;
+        margin-top: -4em;
         height: max-content;
         padding-bottom: 2em;
     }
@@ -122,14 +68,6 @@
     .educacion-card {
         width: 90vw;
         height: 90px;
-    }
-
-    .titulo h2 {
-        font-size: 6vw;
-    }
-
-    .buttons button {
-        font-size: 2vw;
     }
 
     .educacion-card-img>img {
@@ -140,20 +78,6 @@
         height: 90px;
     }
 
-    .btn-agregar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
-    }
-
-    .fechas {
-        font-size: 2vw;
-    }
-
-    #nombre {
-        font-size: 2.1vw;
-    }
-
     .text {
         font-size: 2.1vw;
     }
@@ -161,26 +85,9 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #educacion {
-        margin-top: -4rem;
+        margin-top: -4em;
         height: max-content;
         padding-bottom: 2em;
-    }
-
-    
-    .titulo h2 {
-        font-size: 5vw;
-    }
-
-    .btn-agregar {
-        font-size: 3.5vw;
-    }
-
-    .fechas {
-        font-size: 1.5vw;
-    }
-
-    #nombre {
-        font-size: 2vw;
     }
 
     .text {
@@ -190,8 +97,10 @@
     .educacion-card {
         width: 80vw;
     }
+}
 
-    .buttons button {
-        font-size: 1.8vw;
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .text {
+        font-size: 1.2vw;
     }
 }

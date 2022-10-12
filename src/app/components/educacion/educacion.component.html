@@ -23,11 +23,11 @@
                         </span>
                     </div>
                     <div class="buttons">
-                        <button (click)="delete(Educacion.id)" *ngIf="isLogged">
-                            <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
-                        </button>
                         <button routerLink="/editarEducacion/{{Educacion.id}}" *ngIf="isLogged">
                             <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                        </button>
+                        <button (click)="delete(Educacion.id)" *ngIf="isLogged">
+                            <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
                         </button>
                     </div>
                 </li>

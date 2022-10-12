@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     background: #232323;
     color: #fff;
     font-family: 'Cairo', sans-serif;
 }
 
-body{
+body {
     font-family: 'Cairo', sans-serif;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
-body::-webkit-scrollbar:vertical{
-    width:1vw;
+body::-webkit-scrollbar:vertical {
+    width: 1vw;
 }
 
 body::-webkit-scrollbar-button:increment,
@@ -38,6 +38,169 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
     background-color: #6b6a6a;
+}
+
+.titulo {
+    display: flex;
+    color: #f3f3f3;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-top: 5em;
+    font-family: 'Cairo', sans-serif;
+}
+
+h3 {
+    font-size: 1.2vw;
+}
+
+.fechas {
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+/*Botones de editar, eliminar, agregar */
+.btn-agregar,
+.boton-editar {
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    color: #f3f3f3;
+    font-size: 1.5vw;
+    background-color: transparent;
+    left: 1em;
+}
+
+.btn-agregar:hover,
+.boton-editar:hover {
+    color: #D9A0BB;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 80%;
+    top: .3em;
+}
+
+.buttons button {
+    background-color: #313131;
+    padding: .2em;
+    border-radius: 20%;
+    color: #f3f3f3;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+    margin-right: .5em;
+}
+
+.buttons button:hover {
+    color: #D9A0BB;
+}
+
+/*Otros botones*/
+.btn {
+    background: #D49BB0;
+    color: #f3f3f3;
+    padding: .3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.btn:hover {
+    background: #f3f3f3;
+    color: #D49BB0;
+}
+
+/*Media Query*/
+@media screen and (max-width: 480px) {
+    .titulo h2 {
+        font-size: 6vw;
+    }
+
+    .boton-editar {
+        position: relative;
+        top: -0.1em;
+        font-size: 4vw;
+    }
+
+    .buttons button {
+        font-size: 2vw;
+    }
+
+    .btn-agregar {
+        position: relative;
+        top: -0.1em;
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 2.1vw;
+    }
+
+    .fechas {
+        font-size: 2vw;
+    }
+
+    .btn {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .titulo h2 {
+        font-size: 5vw;
+    }
+
+    .boton-editar {
+        font-size: 3.5vw;
+    }
+
+    .btn-agregar {
+        font-size: 3.5vw;
+    }
+
+    .buttons button {
+        font-size: 1.8vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    .fechas {
+        font-size: 1.5vw;
+    }
+
+    .btn{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .btn{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.6vw;
+    }
+
+    .fechas{
+        font-size: 1.2vw;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .btn{
+        font-size: 1.5vw;
+    }
 }

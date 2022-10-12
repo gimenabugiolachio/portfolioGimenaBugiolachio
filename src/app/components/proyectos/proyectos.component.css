@@ -10,31 +10,6 @@
     height: 100%;
 }
 
-.titulo {
-    display: flex;
-    color: #f3f3f3;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    justify-content: center;
-    padding-top: 5rem;
-}
-
-.btn-agregar {
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-    border: none;
-    color: #f3f3f3;
-    font-size: 1.3rem;
-    background-color: transparent;
-    left: 1rem;
-    top: .2rem;
-}
-
-.btn-agregar:hover {
-    color: #D9A0BB;
-}
-
 .proyectos-cards-container {
     position: relative;
     top: 5em;
@@ -43,25 +18,25 @@
     padding-left: 2%;
     padding-right: 2%;
     box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, .5);
-    padding-top: 10px;
+    padding-top: 0.62em;
     background-color: rgba(48, 47, 47, 0.3);
 }
 
 .my_swiper {
-    padding: 30px;
+    padding: 1.8em;
 }
 
 .proyecto-card {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 1em;
     overflow: hidden;
     height: 270px;
     margin-bottom: 2em;
     list-style: none;
     list-style-type: none;
     text-align: center;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
     background-color: #0000004d;
     border-right: 1px solid rgba(255, 255, 255, .5);
     border-bottom: 1px solid rgba(255, 255, 255, .5);
@@ -98,37 +73,6 @@
     padding: 10px 6px;
 }
 
-.buttons button {
-    background-color: transparent;
-    color: #f3f3f3;
-    border: none;
-    font-size: 2vw;
-    cursor: pointer;
-    margin-right: .5rem;
-}
-
-.buttons button:hover {
-    color: #D9A0BB;
-}
-
-.editar-eliminar {
-    position: absolute;
-    left: 80%;
-}
-
-.editar-eliminar button {
-    background-color: transparent;
-    color: #f3f3f3;
-    border: none;
-    font-size: 1vw;
-    cursor: pointer;
-    margin-right: .5rem;
-}
-
-.editar-eliminar button:hover {
-    color: #D9A0BB;
-}
-
 .nombre {
     letter-spacing: 2px;
     font-size: 1em;
@@ -139,23 +83,15 @@
     margin-bottom: 80px;
 }
 
-
+.buttons{
+    left: 75%;
+}
 
 @media only screen and (max-width: 480px) {
     #proyectos {
         margin-top: -4em;
         height: max-content;
         padding-bottom: 8em;
-    }
-
-    .titulo h2 {
-        font-size: 6vw;
-    }
-
-    .btn-agregar {
-        position: relative;
-        top: -0.1em;
-        font-size: 4vw;
     }
 
     .proyectos-cards-container {
@@ -177,12 +113,5 @@
     .proyectos-cards-container {
         top: 2em;
     }
-
-    .titulo h2 {
-        font-size: 5vw;
-    }
-
-    .btn-agregar{
-        font-size: 3.5vw;
-    }
 }
+

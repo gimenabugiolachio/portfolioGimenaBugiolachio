@@ -10,27 +10,22 @@
     background-size: cover;
     text-align: center;
     overflow: hidden;
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(.5em);
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(1rem);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(.5rem);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    backdrop-filter: blur(1em);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(.5em);
+    padding: 1em 2em;
+    border-radius: 2em;
 }
 
 form h2 {
     text-align: center;
 }
 
-.imagen {
-    position: relative;
-    left: 20%;
-}
-
-.fechas {
+.fechasIF {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -39,11 +34,11 @@ form h2 {
 
 .form-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .form-group label {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 .descripcion {
@@ -52,16 +47,16 @@ form h2 {
 }
 
 .puesto input {
-    margin-left: .8rem;
+    margin-left: .8em;
 }
 
 .form-control {
     background-color: transparent;
     border: 1px solid #f3f3f3;
-    border-radius: .5rem;
-    padding: .5rem 1.3rem;
+    border-radius: .5em;
+    padding: .5em 1.3em;
     color: #f3f3f3;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
 }
 
 .institucion-carrera {
@@ -70,30 +65,13 @@ form h2 {
     justify-content: space-around;
 }
 
-.btn {
-    background: #D49BB0;
-    color: #f3f3f3;
-    padding: .3rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.btn:hover {
-    background: #f3f3f3;
-    color: #D49BB0;
-}
-
 #nombre-descripcion {
-    margin-top: 2rem;
+    margin-top: 1em;
 }
 
 @media only screen and (max-width: 480px) {
     .formulario {
-        width: 90%;
+        width: 90vw;
         height: max-content;
     }
 
@@ -112,21 +90,19 @@ form h2 {
         font-size: 5vw;
     }
 
-    .form-group {
-        justify-content: space-evenly;
-    }
-
     .institucion-carrera {
         display: flex;
         flex-direction: column;
     }
+}
 
-    .imagen {
-        position: relative;
-        left: 1%;
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .formulario{
+        width: 90vw;
+        height: max-content;
     }
 
-    .btn {
-        font-size: 3vw;
+    form h2 {
+        font-size: 4.5vw;
     }
 }

@@ -2,7 +2,7 @@
     <div class="container-fluid" *ngFor="let AcercaDe of acercaDe">
         <div class="titulo">
             <h2>Acerca De</h2>
-            <button class="btn-editar" routerLink="editarAcercaDe/{{AcercaDe.id}}" *ngIf="isLogged">
+            <button class="boton-editar" routerLink="editarAcercaDe/{{AcercaDe.id}}" *ngIf="isLogged">
                 <fa-icon [icon]="faPenToSquare"></fa-icon>
             </button>
         </div>
@@ -10,7 +10,7 @@
             <div class="info row">
                 <div class="col-md-6 col-xs-6 col-sm-6 foto-perfil">
                     <!--Elegir otra foto-->
-                    <img src={{AcercaDe.imgA}} alt="Foto-Gimena" class="img-fluid" id="foto">
+                    <img src={{AcercaDe.imgA}} alt="Foto de {{AcercaDe.nombreA}}" class="img-fluid" id="foto">
                 </div>
                 <div class="col-md-6 col-xs-6 col-sm-6 acerca-texto">
                     <p>{{AcercaDe.descripcionA}}</p>

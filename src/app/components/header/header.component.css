@@ -1,8 +1,8 @@
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
-    position:fixed;
-    width:100vw;
+    position: fixed;
+    width: 100vw;
     z-index: 999999;
     background: #313131;
     overflow: hidden;
@@ -10,38 +10,36 @@
     height: max-content;
 }
 
-#logoAP{
+#logoAP {
     padding: 1rem;
     width: 9.5rem;
 }
 
-.navbar-brand{
-    display:flex;
+.navbar-brand {
+    display: flex;
     align-items: center;
 }
 
-.logo-text{
-    margin-left: 2rem;
-    color: #f3f3f3;
+.logo-text {
+    margin-left: 2em;
 }
 
-.navbar{
+.navbar {
     position: relative;
     top: 1em;
-    left: -5rem;
+    left: -5em;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
     flex-direction: row;
 }
 
-
-.nav-item{
+.nav-item {
     position: relative;
 }
 
-.nav-item::after{
+.nav-item::after {
     content: '';
     position: absolute;
     left: 0;
@@ -53,78 +51,112 @@
     transition: 0.4s ease;
 }
 
-.nav-item:hover::after{
+.nav-item:hover::after {
     width: 100%;
 }
 
-.navbar li{
+.navbar li {
     list-style: none;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     color: #f3f3f3;
     margin-left: 1.5em;
     align-items: center;
 }
 
-.nav li a:hover{
+.nav li a:hover {
     color: #D49BB0;
-    transform:translateY(5px);
+    transform: translateY(5px);
 }
 
-.buttons{
+.botones {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 1rem;
+    left: 1em;
 }
 
-.btn-log{
+.boton-log{
     position: relative;
-    top: -.2rem;
-    padding: .6rem;
+    top: -.2em;
+    padding: .6em;
     background-color: transparent;
-    color: #f3f3f3;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.2vw;
+    color: #f3f3f3;
 }
 
-.btn-log:hover{
+.boton-log:hover {
     color: #D49BB0;
 }
 
-@media only screen and (max-width: 480px){
-    .logo-text{
+@media only screen and (max-width: 480px) {
+    .logo-text {
         font-size: 3vw;
     }
-    
-    .nav-item{
+
+    .nav-item {
         visibility: hidden;
     }
 
-    .buttons{
+    .botones {
         position: absolute;
-        left: 90%;
+        left: 80%;
         top: 2em;
+    }
+
+    .boton-log{
+        font-size: 3.5vw;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .nav-item{
+    .nav-item {
         visibility: hidden;
     }
 
-
-    .logo-text{
-        font-size: 3vw;
+    .logo-text {
+        font-size: 2vw;
     }
-    
-    .buttons{
+
+    .botones {
         position: absolute;
-        left: 90%;
+        left: 80%;
         top: 1em;
+    }
+
+    .boton-log{
+        font-size: 2vw;
     }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .logo-text {
+        font-size: 1.5vw;
+        margin-right: 0;
+    }
+
+    .nav-item{
+        top: .5em;
+        font-size: 1.5vw;
+    }
+
+    .boton-log{
+        font-size: 1.5vw;
+        top: .1em;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .nav-item{
+        font-size: 1.4vw;
+    }
+
+    .boton-log{
+        font-size: 1.4vw;
+        top: -.2em;
+    }
+}

@@ -1,7 +1,7 @@
 .formulario {
     position: absolute;
     width: 700px;
-    height: 450px;
+    height: 550px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,91 +11,55 @@
     text-align: center;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(.5rem);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(.5em);
+    padding: 1em 2em;
+    border-radius: 2em;
 }
-
 
 form h2 {
     text-align: center;
 }
 
-.nom-edad {
+.fila{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.tel-mail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 .form-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .form-group label {
-    margin-right: 1rem;
-}
-
-.detalles-container .descripcion {
-    margin-left: 1rem;
-}
-
-.imgA {
-    margin-left: 8rem;
+    margin-right: 1em;
 }
 
 .form-control {
     background-color: transparent;
     border: 1px solid #f3f3f3;
-    border-radius: .5rem;
-    padding: .5rem 1.3rem;
+    border-radius: .5em;
+    padding: .5em 1.3em;
     color: #f3f3f3;
-    margin-bottom: 1.5rem;
-}
-
-.btn {
-    background: #D49BB0;
-    color: #f3f3f3;
-    padding: .3rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.btn:hover {
-    background: #f3f3f3;
-    color: #D49BB0;
+    margin-bottom: 1.5em;
 }
 
 .detalles-container {
-    margin-top: 2rem;
+    margin-top: 1em;
 }
 
 @media only screen and (max-width: 480px) {
     .formulario {
-        width: 90%;
+        width: 80vw;
         height: max-content;
     }
 
     form h2 {
-        font-size: 5vw;
-    }
-
-    .nom-edad {
-        /* justify-content: space-between; */
-        flex-direction: column-reverse;
+        font-size: 4.5vw;
     }
 
     .form-group label,
@@ -104,39 +68,19 @@ form h2 {
         font-size: 3vw;
     }
 
-    .tel-mail {
+    .fila{
         flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: flex-end; */
-        align-content: flex-start;
-    }
-
-    .form-group {
-        flex-direction: column;
-    }
-
-    .imgA {
-        margin: 0 auto;
-    }
-
-    .btn{
-        font-size: 3vw;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .formulario {
-        width: 90%;
+        width: 90vw;
         height: max-content;
     }
 
     form h2 {
-        font-size: 5vw;
-    }
-
-    .nom-edad {
-        /* justify-content: space-between; */
-        flex-direction: column-reverse;
+        font-size: 4.5vw;
     }
 
     .form-group label,
@@ -144,23 +88,18 @@ form h2 {
     .form-group textarea {
         font-size: 3vw;
     }
+}
 
-    .tel-mail {
-        flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: flex-end; */
-        align-content: flex-start;
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .formulario{
+        height: max-content;
     }
 
-    .form-group {
-        flex-direction: column;
-    }
-
-    .imgA {
-        margin: 0 auto;
-    }
-
-    .btn{
+    form h2 {
         font-size: 3vw;
     }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    
 }

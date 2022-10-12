@@ -5,10 +5,6 @@
                 <h2>Editar educación</h2>
                 <hr>
                 <div id="nombre-descripcion">
-                    <div class="form-group imagen">
-                        <label for="imgE">Imagen</label>
-                        <input type="text" class="form-control" id="imgE" name="imgE" size="30" [(ngModel)]="educacion.imgE" required>
-                    </div>
                     <div class="institucion-carrera">
                         <div class="form-group nombre">
                             <label for="nombreE">Institución</label>
@@ -19,22 +15,28 @@
                             <input size="30" type="text" class="form-control" id="detallesE" name="detallesE" [(ngModel)]="educacion.detallesE" required>
                         </div>
                     </div>
-                    <div class="form-group descripcion">
+                    <div class="form-group">
                         <label for="descripcionE">Descripción</label>
                         <textarea cols="40" rows="5" type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required></textarea>
                     </div>
-                    <div class="form-group fechas">
-                        <div>
-                            <label for="fechaInicioE">Fecha Inicio</label>
-                        <input  type="text" class="form-control" id="fechaInicioE" name="fechaInicioE" [(ngModel)]="educacion.fechaInicioE" required>
-                        </div>
-                        <div>
-                            <label for="fechaFinE">Fecha Fin</label>
-                            <input type="text" class="form-control" name="fechaFinE" id="fechaFinE" [(ngModel)]="educacion.fechaFinE" required>
+                    <div class="form-group imagen">
+                        <label for="imgE">Imagen</label>
+                        <input type="text" class="form-control" id="imgE" name="imgE" size="20" [(ngModel)]="educacion.imgE" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="fechasIF">
+                            <div>
+                                <label for="fechaInicioE">Fecha Inicio</label>
+                            <input  type="text" class="form-control" id="fechaInicioE" name="fechaInicioE" [(ngModel)]="educacion.fechaInicioE" required>
+                            </div>
+                            <div>
+                                <label for="fechaFinE">Fecha Fin</label>
+                                <input type="text" class="form-control" name="fechaFinE" id="fechaFinE" [(ngModel)]="educacion.fechaFinE" required>
+                            </div>
                         </div>
                     </div>
                 </div>    
-                <button class="btn">
+                <button type="submit" class="btn">
                     Guardar
                 </button>  
             </form>
